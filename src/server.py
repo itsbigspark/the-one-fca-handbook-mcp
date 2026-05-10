@@ -2,21 +2,19 @@
 
 from __future__ import annotations
 
-import base64
 import json
 import math
 import os
 import re
-import time
 
 import httpx
 from mcp.server.fastmcp import FastMCP
 
+from src.kb_assets import download_release_assets, load_embeddings, load_index
+
 PORT = int(os.environ.get("FCA_HANDBOOK_PORT", "4103"))
 GIT_TOKEN = os.environ.get("FCA_HANDBOOK_GIT_TOKEN", "")
-REPO = os.environ.get("FCA_HANDBOOK_REPO", "")
-BRANCH = os.environ.get("FCA_HANDBOOK_BRANCH", "main")
-INDEX_TTL = int(os.environ.get("FCA_HANDBOOK_INDEX_TTL", "300"))
+KB_REPO = os.environ.get("FCA_HANDBOOK_KB_REPO", "itsbigspark/the-one-fca-handbook-kb")
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 EMBEDDING_MODEL = "text-embedding-3-small"
 
@@ -31,36 +29,24 @@ STOPWORDS = frozenset(["a", "an", "and", "are", "as", "at", "be", "by", "for", "
 
 _index_cache: dict | None = None
 _embeddings_cache: list[dict] | None = None
-_index_loaded_at: float = 0
+_assets_ready = False
 
 
-async def _fetch_file(path: str) -> str:
-    headers = {"Authorization": f"token {GIT_TOKEN}", "Accept": "application/vnd.github.v3+json"}
-    url = f"https://api.github.com/repos/{REPO}/contents/{path}"
-    async with httpx.AsyncClient() as client:
-        resp = await client.get(url, headers=headers, params={"ref": BRANCH})
-        resp.raise_for_status()
-        return base64.b64decode(resp.json()["content"]).decode()
-
-
-async def _get_index() -> dict:
-    global _index_cache, _index_loaded_at
-    if _index_cache is None or (time.time() - _index_loaded_at) > INDEX_TTL:
-        raw = await _fetch_file("data/index.json")
-        _index_cache = json.loads(raw)
-        _index_loaded_at = time.time()
-    return _index_cache
-
-
-async def _get_embeddings() -> list[dict] | None:
-    global _embeddings_cache
-    if _embeddings_cache is None:
-        try:
-            raw = await _fetch_file("data/embeddings.json")
-            _embeddings_cache = json.loads(raw)["entries"]
-        except Exception:
-            return None
-    return _embeddings_cache
+async def _ensure_assets():
+    global _index_cache, _embeddings_cache, _assets_ready
+    if _assets_ready:
+        return
+    await download_release_assets(
+        repo=KB_REPO,
+        token=GIT_TOKEN,
+        assets=["index.json", "embeddings.json"],
+    )
+    _index_cache = load_index()
+    try:
+        _embeddings_cache = load_embeddings()
+    except Exception:
+        _embeddings_cache = None
+    _assets_ready = True
 
 
 def _cosine_sim(a: list[float], b: list[float]) -> float:
@@ -88,12 +74,12 @@ async def _embed_query(query: str) -> list[float] | None:
 
 
 async def _keyword_search(query: str, max_results: int) -> list[tuple[float, dict]]:
-    index = await _get_index()
+    await _ensure_assets()
     query_terms = set(re.findall(r"[a-z]{3,}", query.lower())) - STOPWORDS
     if not query_terms:
         return []
     scored = []
-    for entry in index.get("entries", []):
+    for entry in _index_cache.get("entries", []):
         matches = query_terms & set(entry.get("keywords", []))
         if matches:
             scored.append((len(matches) / len(query_terms), entry))
@@ -102,16 +88,15 @@ async def _keyword_search(query: str, max_results: int) -> list[tuple[float, dic
 
 
 async def _semantic_search(query: str, max_results: int) -> list[tuple[float, dict]]:
-    embeddings = await _get_embeddings()
-    if not embeddings:
+    await _ensure_assets()
+    if not _embeddings_cache:
         return []
     query_vec = await _embed_query(query)
     if not query_vec:
         return []
-    index = await _get_index()
-    path_to_entry = {e["path"]: e for e in index.get("entries", [])}
+    path_to_entry = {e["path"]: e for e in _index_cache.get("entries", [])}
     scored = []
-    for emb in embeddings:
+    for emb in _embeddings_cache:
         sim = _cosine_sim(query_vec, emb["vector"])
         entry = path_to_entry.get(emb["path"])
         if entry and sim > 0.3:
@@ -121,7 +106,6 @@ async def _semantic_search(query: str, max_results: int) -> list[tuple[float, di
 
 
 async def _hybrid_search(query: str, max_results: int = 10) -> list[dict]:
-    """Semantic (0.6) + keyword (0.4). Falls back to keyword-only if no embeddings."""
     kw_results = await _keyword_search(query, max_results * 2)
     sem_results = await _semantic_search(query, max_results * 2)
     if not sem_results:
@@ -138,44 +122,26 @@ async def _hybrid_search(query: str, max_results: int = 10) -> list[dict]:
 
 
 @mcp.tool()
-async def get_ontology() -> str:
-    """Get the FCA Handbook ontology — read this first to understand sourcebooks and structure."""
-    return await _fetch_file("data/ontology.md")
-
-
-@mcp.tool()
-async def get_system_prompt() -> str:
-    """Get the system prompt for consumer-facing use of the FCA Handbook."""
-    return await _fetch_file("prompts/system_prompt.md")
-
-
-@mcp.tool()
 async def list_sourcebooks() -> str:
     """List all available FCA Handbook sourcebooks (e.g., PRIN, COBS, SYSC)."""
-    index = await _get_index()
-    sourcebooks = sorted(set(e["sourcebook"] for e in index.get("entries", []) if e.get("sourcebook")))
+    await _ensure_assets()
+    sourcebooks = sorted(set(e["sourcebook"] for e in _index_cache.get("entries", []) if e.get("sourcebook")))
     return json.dumps({"sourcebooks": sourcebooks})
 
 
 @mcp.tool()
 async def list_chapters(sourcebook: str) -> str:
     """List all chapters within a sourcebook."""
-    index = await _get_index()
-    chapters = sorted(set(e["chapter"] for e in index.get("entries", []) if e.get("sourcebook") == sourcebook))
+    await _ensure_assets()
+    chapters = sorted(set(e["chapter"] for e in _index_cache.get("entries", []) if e.get("sourcebook") == sourcebook))
     if not chapters:
         return json.dumps({"error": f"No chapters found for '{sourcebook}'"})
     return json.dumps({"sourcebook": sourcebook, "chapters": chapters})
 
 
 @mcp.tool()
-async def get_section(reference: str) -> str:
-    """Get a specific section by path (e.g., 'PRIN/prin2/prin2s1')."""
-    return await _fetch_file(f"data/handbook/{reference}.md")
-
-
-@mcp.tool()
 async def search_handbook(query: str, max_results: int = 10) -> str:
-    """Search the FCA Handbook using hybrid semantic + keyword search. Falls back to keyword-only if no embeddings."""
+    """Search the FCA Handbook using hybrid semantic + keyword search."""
     results = await _hybrid_search(query, max_results)
     if not results:
         return json.dumps({"query": query, "results": []})
