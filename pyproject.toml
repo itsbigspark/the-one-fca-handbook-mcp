@@ -1,6 +1,6 @@
 [project]
 name = "the-one-fca-handbook-mcp"
-version = "0.1.0"
+version = "0.2.0-dev"
 description = "MCP server for FCA Handbook knowledge base"
 requires-python = ">=3.11"
 dependencies = [
