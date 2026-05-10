@@ -6,8 +6,13 @@ on:
   pull_request:
     branches: [main]
 
+permissions:
+  contents: write
+  packages: write
+
 jobs:
   pipeline:
     uses: itsbigspark/the-one-continuous-integration/.github/workflows/mcp-server-pipeline.yml@main
     with:
       image-name: ${{ github.event.repository.name }}
+    secrets: inherit
