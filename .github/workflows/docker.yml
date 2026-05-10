@@ -1,0 +1,15 @@
+name: Docker
+
+on:
+  push:
+    branches: [main, dev]
+  release:
+    types: [published]
+
+jobs:
+  build:
+    uses: itsbigspark/the-one-continuous-integration/.github/workflows/docker-build.yml@main
+    with:
+      image-name: the-one-fca-handbook-mcp
+    secrets:
+      GHCR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
