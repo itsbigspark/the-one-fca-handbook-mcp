@@ -27,6 +27,9 @@ async def download_release_assets(
 ) -> Path:
     """Download release assets from a GitHub repo.
 
+    Checks for local files first — if all requested assets exist locally,
+    skips the download entirely (useful for local dev/testing).
+
     Args:
         repo: GitHub repo in 'owner/name' format
         token: GitHub token with repo read access
@@ -37,6 +40,11 @@ async def download_release_assets(
         Path to the cache directory containing downloaded files.
     """
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
+
+    # Skip download if all assets already exist locally
+    if assets and all((CACHE_DIR / a).exists() for a in assets):
+        return CACHE_DIR
+
     etag_file = CACHE_DIR / ".release_etag"
 
     async with httpx.AsyncClient(follow_redirects=True, timeout=120) as client:
