@@ -151,6 +151,25 @@ async def search_handbook(query: str, max_results: int = 10) -> str:
     })
 
 
+@mcp.tool()
+async def get_handbook_section(path: str) -> str:
+    """Fetch the full markdown content of a handbook section by path (e.g. 'CREDS/creds8/creds8s2.md')."""
+    from pathlib import Path as P
+    f = P("data") / "handbook" / path
+    if f.exists():
+        return f.read_text()
+    # Fetch from KB repo if not local
+    if GIT_TOKEN and KB_REPO:
+        url = f"https://raw.githubusercontent.com/{KB_REPO}/main/data/handbook/{path}"
+        async with httpx.AsyncClient(timeout=30) as client:
+            resp = await client.get(url, headers={"Authorization": f"token {GIT_TOKEN}"})
+            if resp.status_code == 200:
+                f.parent.mkdir(parents=True, exist_ok=True)
+                f.write_text(resp.text)
+                return resp.text
+    return f"Section not found: {path}"
+
+
 def run() -> None:
     mcp.run(transport="streamable-http")
 
