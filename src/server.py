@@ -155,6 +155,22 @@ async def search_handbook(query: str, max_results: int = 10) -> str:
 async def get_handbook_section(path: str) -> str:
     """Fetch FCA Handbook section content by path."""
     from pathlib import Path as P
+    # Strip .md if user provided a path-like string ending in /
+    path = path.strip()
+    base = P("data") / "handbook" / path
+    # Caller may have given a chapter directory rather than a section file
+    if base.is_dir():
+        await _ensure_assets()
+        sections = []
+        if _index_cache:
+            for entry in _index_cache.get("entries", []):
+                if entry.get("path", "").startswith(path.rstrip("/") + "/"):
+                    sections.append({"path": entry["path"], "title": entry.get("title", "")})
+        return json.dumps({
+            "error": f"'{path}' is a chapter directory, not a section file.",
+            "hint": "Pick one of the listed sections below and call get_handbook_section with its full path.",
+            "sections": sections[:50],
+        })
     # Add .md extension if missing
     if not path.endswith(".md"):
         path = path + ".md"
