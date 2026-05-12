@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    *******************************************************************
+    *                                                                 
+    *    Schema for: Data Item FSA002-IncomeStatement                 
+    *                                                                 
+    *                                                                 
+    *    Version:    3 
+    *    Date:       16 November 2007 
+    *                                                                 
+    *    History:    
+    *                Version 3 enforces consistency between rows
+    *                which have a Total and a TradingBook column. The
+    *                Total is made mandatory, and the TradingBook optional
+    *                (affects rows 1, 25, 34 and 44). GroupInfo added.
+    *
+    *                Version 2 includes top level attribute group 
+    *                BasisCurrencyAndUnitsAttrGroup in place of 
+    *                CurrencyAndUnitsAttrGroup.
+    *
+    *                Version 1.0 issued following publication   
+    *                of the data item with Handbook Instrument  
+    *                FSA 2006/67. 
+    * 
+    *                                                                 
+    *******************************************************************
+-->
+
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified"
+
+    targetNamespace="urn:fsa-gov-uk:MER:FSA002:3"
+    xmlns=          "urn:fsa-gov-uk:MER:FSA002:3"
+    xmlns:mer-meta= "urn:fsa-gov-uk:MER:Meta-Data:1"
+
+    version="3"
+    id="MER-FSA002">
+
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>FSA002</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>Income Statement</mer-meta:DataItemName>
+        </xs:documentation>
+    </xs:annotation>
+
+    <xs:include schemaLocation="../../CommonTypes/v3/CommonTypes-Schema.xsd"/>
+    <xs:include schemaLocation="../../SDS003/v2/SDS003-Schema.xsd"/>
+    
+    <xs:element name="FSA002-IncomeStatement">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="GroupInfo" type="GroupInfoStructure" minOccurs="0"/>
+                
+                <xs:element name="FinancialOperatingIncome"  minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="TotalIncome"    type="TotalTradingBookStructure" minOccurs="1"/>
+                            <xs:element name="InterestIncome" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Total"                type="MonetaryType" minOccurs="0"/>
+                                        <xs:element name="RetailSecuredLoans"   type="MonetaryType" minOccurs="0"/>
+                                        <xs:element name="RetailUnsecuredLoans" type="MonetaryType" minOccurs="0"/>
+                                        <xs:element name="CardAccounts"         type="MonetaryType" minOccurs="0"/>
+                                        <xs:element name="Other"                type="MonetaryType" minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                            <xs:element name="FeesCommissionIncome" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Total"                    type="MonetaryType" minOccurs="0"/>
+                                        <xs:element name="GrossCommissionBrokerage" type="MonetaryType" minOccurs="0"/>
+                                        <xs:element name="PerformanceFees"          type="MonetaryType" minOccurs="0"/>
+                                        <xs:element name="InvestmentManagementFees" type="MonetaryType" minOccurs="0"/>
+                                        <xs:element name="InvestmentAdvisoryFees"   type="MonetaryType" minOccurs="0"/>
+                                        <xs:element name="CorporateFinance"         type="MonetaryType" minOccurs="0"/>
+                                        <xs:element name="UCITSManagementFees"      type="MonetaryType" minOccurs="0"/>
+                                        <xs:element name="Other"                    type="MonetaryType" minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                            <xs:element name="TradingIncome" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Total"              type="MonetaryType" minOccurs="0"/>
+                                        <xs:element name="TradingInvestments" type="MonetaryType" minOccurs="0"/>
+                                        <xs:element name="ChargesUCITS"       type="MonetaryType" minOccurs="0"/>
+                                        <xs:element name="ForeignExchange"    type="MonetaryType" minOccurs="0"/>
+                                        <xs:element name="Other"              type="MonetaryType" minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                            <xs:element name="NonTradingInstruments"     type="MonetaryType" minOccurs="0"/>
+                            <xs:element name="RealisedGainsLosses"       type="MonetaryType" minOccurs="0"/>
+                            <xs:element name="DividendIncome"            type="MonetaryType" minOccurs="0"/>
+                            <xs:element name="OtherOperatingIncome"      type="MonetaryType" minOccurs="0"/>
+                            <xs:element name="DisposalGainsLosses"       type="MonetaryType" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="FinancialOperatingCharges" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="TotalCharges" type="TotalTradingBookStructure" minOccurs="1"/>
+                
+                            <xs:element name="InterestPaid" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Total"                type="MonetaryType" minOccurs="0"/>
+                                        <xs:element name="BankBuildingDeposits" type="MonetaryType" minOccurs="0"/>
+                                        <xs:element name="RetailDeposits"       type="MonetaryType" minOccurs="0"/>
+                                        <xs:element name="CorporateDeposits"    type="MonetaryType" minOccurs="0"/>
+                                        <xs:element name="IntragroupDeposits"   type="MonetaryType" minOccurs="0"/>
+                                        <xs:element name="OtherDeposits"        type="MonetaryType" minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                
+                            <xs:element name="FeesCommissionExpenses" type="MonetaryType" minOccurs="0"/>
+                            <xs:element name="OtherOperatingExpenses" type="MonetaryType" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="OtherCosts" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="TotalCosts"             type="TotalTradingBookStructure" minOccurs="1"/>
+                
+                            <xs:element name="StaffExpenses" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Total"            type="MonetaryType" minOccurs="0"/>
+                                        <xs:element name="NonDiscretionary" type="MonetaryType" minOccurs="0"/>
+                                        <xs:element name="Discretionary"    type="MonetaryType" minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="GeneralAdministrativeExpenses" type="MonetaryType"  minOccurs="0"/>
+                            <xs:element name="Depreciation"                  type="MonetaryType"  minOccurs="0"/>
+                            <xs:element name="ImpairmentProvisions"          type="MonetaryType"  minOccurs="0"/>
+                            <xs:element name="OtherCharges"                  type="MonetaryType"  minOccurs="0"/>
+                            <xs:element name="ShareProfitAssociates"         type="MonetaryType"  minOccurs="0"/>
+                            <xs:element name="ExceptionalItems"              type="MonetaryType"  minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="ProfitBeforeTax"               type="TotalTradingBookStructure" minOccurs="1"/>
+                <xs:element name="TaxExpense"                    type="MonetaryType"  minOccurs="0"/>
+                <xs:element name="ProfitAfterTax"                type="MonetaryType"  minOccurs="1"/>
+                <xs:element name="MemorandumItems"               minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="DividendsInYear"         type="MonetaryType"  minOccurs="0"/>
+                            <xs:element name="DetailsExceptionalItems" type="String400Type" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attributeGroup ref="BasisCurrencyAndUnitsAttrGroup"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="TotalTradingBookStructure">
+        <xs:sequence>
+            <xs:element name="Total"       type="MonetaryType" minOccurs="1" />
+            <xs:element name="TradingBook" type="MonetaryType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    
+</xs:schema>

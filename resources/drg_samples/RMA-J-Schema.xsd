@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    *******************************************************************
+    *
+    *    Schema for: Data Item RMA-J-Fees
+    *
+    *    Version:    7
+    *    Date:       1 November 2018
+    *
+    *    History:   Version 7 (01/11/18) follows publication of CP18/11
+    
+    *               Version 6 (01/11/17) follows publication of CP16/42 and 
+    *               subsequent Instrument No. FCA 2017/58
+    *               
+    *               Version 5 (01/12/12) removes FSA and replaced with FCA
+    *               
+    &               Version 4 (31/10/11) change MinOccur value to 0 for all  
+    *               
+    *               Version 3 (30/09/11) follows publication of PS11/07 
+    *               a. New Elements:
+    *                   FSALandPAnnualIncome and FOSLandPAnnualIncom
+    *                   FSAInvestmentAnnualIncome and FOSInvestmentAnnualIncome
+    *               b. Removal of FOSRelevantCF30s
+    *                 
+    *               Version 2 (24/02/09) follows publication of PS08/11
+    *                   a. New element FSCSLandPAnnualIncome
+    *                   b. The 3 elements within  
+    *                RetailInvestments:    
+    *                   FSAApprovedPersons 
+    *                   FOSApprovedPersons
+    *                   FSCSApprovedPersons
+    *               are replaced with:
+    *                   FSCSInvestmentAnnualIncome
+    *                   FOSRelevantCF30s
+    *                
+    *                Version 1 (12/10/07) follows publication of CP07/17
+    *
+    *******************************************************************
+-->
+
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified" 
+    
+    targetNamespace=    "urn:fsa-gov-uk:MER:RMA-J:7"
+    xmlns=              "urn:fsa-gov-uk:MER:RMA-J:7" 
+    xmlns:mer-meta=     "urn:fsa-gov-uk:MER:Meta-Data:1" 
+    version="7"
+    id="MER-RMA-J">
+
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>RMA-J</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>Fees</mer-meta:DataItemName>
+        </xs:documentation>
+    </xs:annotation>
+    
+    <xs:include schemaLocation="../../CommonTypes/v12/CommonTypes-Schema.xsd"/>
+    
+    <xs:element name="RMA-J-Fees">
+        <xs:complexType>
+            <xs:sequence>
+                
+                <xs:element name="Part1" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="HomeFinance"          minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="FCAAnnualIncome"  type="NonNegativeMonetaryType"  minOccurs="0"/>
+                                        <xs:element name="FOSAnnualIncome"  type="NonNegativeMonetaryType"  minOccurs="0"/>
+                                        <xs:element name="FSCSAnnualIncome" type="NonNegativeMonetaryType"  minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="GeneralInsurance"     minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="FCAAnnualIncome"  type="NonNegativeMonetaryType"  minOccurs="0"/>
+                                        <xs:element name="FOSAnnualIncome"  type="NonNegativeMonetaryType"  minOccurs="0"/>
+                                        <xs:element name="FSCSAnnualIncome" type="NonNegativeMonetaryType"  minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="LifeAndInvestment"    minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="FCAAnnualIncome"     type="NonNegativeMonetaryType"  minOccurs="0"/>
+                                        <xs:element name="FOSAnnualIncome"     type="NonNegativeMonetaryType"  minOccurs="0"/>
+                                        <xs:element name="FSCSAnnualIncome"    type="NonNegativeMonetaryType"  minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Part2" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="OfferSalePurchaseOfEnhRepInv"     type="YesNoType"    minOccurs="0"/>
+                            <xs:element name="IfYes"                            type="IfYesType"    minOccurs="0"   maxOccurs="5"/>
+                        </xs:sequence>
+                    </xs:complexType>         
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="currency" fixed="GBP" use="required"/>
+            <xs:attribute name="units" fixed="single" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="IfYesType">
+        <xs:sequence>
+            <xs:element name="EnhancedReportingInvestment" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Non-mainstream pooled investments"/>
+                        <xs:enumeration value="Non-readily realisable securities"/>
+                        <xs:enumeration value="Contingent convertible investments"/>
+                        <xs:enumeration value="CoCo funds"/>
+                        <xs:enumeration value="Mutual society shares"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="AnnualIncome"                 type="MonetaryType"             minOccurs="0"/>
+            <xs:element name="NumberOfClients"              type="NonNegativeIntegerType"   minOccurs="0"/>           
+        </xs:sequence>
+    </xs:complexType>
+    
+</xs:schema>

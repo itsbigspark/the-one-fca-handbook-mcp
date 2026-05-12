@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    *******************************************************************
+    *
+    *    Schema for: Data Item RMA-I-SupplementaryPSD
+    *
+    *    Version:    3
+    *    Date:       16 August 2010       
+    *
+    *    History:    Version 3 corrects PrivateHealthInsurance to
+    *                    PermanentHealthInsurance
+    *                Version 2 follows publication of LI 2007/70.
+    *                TotalInsurancePremium moved to start of schema.
+    *
+    *                Version 1 follows publication of CP07/17
+    *
+    *******************************************************************
+-->
+
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified" 
+    attributeFormDefault="unqualified" 
+    
+    targetNamespace="urn:fsa-gov-uk:MER:RMA-I:3" 
+    xmlns=          "urn:fsa-gov-uk:MER:RMA-I:3" 
+    xmlns:mer-meta= "urn:fsa-gov-uk:MER:Meta-Data:1" 
+    
+    version="3" 
+    id="MER-RMA-I">
+    
+    
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>RMA-I</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>SupplementaryPSD</mer-meta:DataItemName>
+        </xs:documentation>
+    </xs:annotation>
+    
+    <xs:include schemaLocation="../../CommonTypes/v5/CommonTypes-Schema.xsd"/>
+    
+    <xs:element name="RMA-I-SupplementaryPSD">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="TotalInsurancePremium"   type="NonNegativeMonetaryType" minOccurs="1"/>
+                <xs:element name="ProductTypeBusiness" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="PrivateMotor"              type="SuppPSDRowStructure" minOccurs="0"/>
+                            <xs:element name="Household"                 type="SuppPSDRowStructure" minOccurs="0"/>
+                            <xs:element name="CreditorPaymentProtection" type="SuppPSDRowStructure" minOccurs="0"/>
+                            <xs:element name="Travel"                    type="SuppPSDRowStructure" minOccurs="0"/>
+                            <xs:element name="PersonalAccidentSickness"  type="SuppPSDRowStructure" minOccurs="0"/>
+                            <xs:element name="LegalExpenses"             type="SuppPSDRowStructure" minOccurs="0"/>
+                            <xs:element name="PrivateMedicalInsurance"   type="SuppPSDRowStructure" minOccurs="0"/>
+                            <xs:element name="CriticalIllness"           type="SuppPSDRowStructure" minOccurs="0"/>
+                            <xs:element name="PermanentHealthInsurance"    type="SuppPSDRowStructure" minOccurs="0"/>
+                            <xs:element name="LifeAssurance"             type="SuppPSDRowStructure" minOccurs="0"/>
+                            <xs:element name="HealthCareCashPlan"        type="SuppPSDRowStructure" minOccurs="0"/>
+                            <xs:element name="ExtendedWarrantyMotor"     type="SuppPSDRowStructure" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attributeGroup ref="CurrencyAndUnitsAttrGroup"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="SuppPSDRowStructure">
+        <xs:sequence>
+            <xs:element name="AdvisedArranged"            type="YesNoType" minOccurs="0"/>
+            <xs:element name="SignificantAdvisedArranged" type="YesNoType" minOccurs="0"/>
+            <xs:element name="SignificantChain"           type="YesNoType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+</xs:schema>

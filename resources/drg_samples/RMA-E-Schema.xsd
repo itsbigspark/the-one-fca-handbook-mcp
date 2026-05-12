@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    *******************************************************************
+    *
+    *    Schema for: Data Item RMA-E-PIISelfCertification
+    *
+    *    Version:    9
+    *    Date:       15 November 2019   
+    *
+    *    History:    Version 9 includes a new version (10) of SDS001 which 
+                     is updated with a new PIIInsurerType list. Changes in name from
+                     "Business line category" to "Business line category subject to policy excess"
+                     and Business line category " to Business line category subject to policy exclusions"
+		     2 new categories 
+
+		     Version 8 is subject to consultation
+    *
+    *                Version 7 includes new version (8) of SDS001 which
+    *		     is updated to remove "Abacus Syndicate (Lloyds Syndicate)" 
+    *		     and "Magian Underwriting" from PIIInsurerType and adds 
+    *		     "Chartis UK" and "Zurich Insurance plc"			
+    *			
+    *		       Version 6 includes new version (7) of SDS001 which 
+    *                is updated to change the name of an insurer.
+    *
+    *                Version 5 includes new version (5) of SDS001 to
+    *                split TypeOfLimit into SingleTypeOfLimit and
+    *                AggregateTypeOfLimit within the LimitIndemnityReceived.
+    *                Also corrects insurer names for AIG and Eurika.
+    *
+    *                Version 4 issued to accompany new SDS001 which
+    *                makes the Single and Aggregate PII policy limits
+    *                received optional.
+    *
+    *                Version 3 issued to accompany LI 2007/70. New
+    *                element TypeOfLimit within LimitIndemnityReceived
+    *                defined in SDS001. PIIRequirementsExempt made optional.
+    *
+    *                Version 2 issued to include new version of SDS001 
+    *                which separates out policy excesses and exclusions,
+    *                but the RMA-E schema itself has not changed.
+    *
+    *                Version 1 follows publication of CP07/17, but is
+    *                based on an as yet unpublished alternative layout 
+    *                (similar to the layout of the PII table in FSA031 
+    *                and FSA032).
+    *
+    *******************************************************************
+-->
+
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified" 
+    attributeFormDefault="unqualified"
+    
+    targetNamespace="urn:fsa-gov-uk:MER:RMA-E:9" 
+    xmlns=          "urn:fsa-gov-uk:MER:RMA-E:9" 
+    xmlns:mer-meta= "urn:fsa-gov-uk:MER:Meta-Data:1" 
+    
+    version="9" 
+    id="MER-RMA-E">
+    
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>RMA-E</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>PIISelfCertification</mer-meta:DataItemName>
+        </xs:documentation>
+    </xs:annotation>
+
+    <xs:include schemaLocation="../../CommonTypes/v11/CommonTypes-Schema.xsd"/>
+    <xs:include schemaLocation="../../SDS001/v10/SDS001-Schema.xsd"/>
+    
+    <xs:element name="RMA-E-PIISelfCertification">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="PIIRequirementsExempt"             type="PIIActivityBreakdownStructure" minOccurs="0"/>
+                <xs:element name="PIICurrentlyHeld"                  type="PIIActivityBreakdownStructure" minOccurs="0"/>
+                <xs:element name="PIICoverRenewed"                   type="PIIActivityBreakdownStructure" minOccurs="0"/>
+                <xs:element name="PIICoverChanged"                   type="PIIActivityBreakdownStructure" minOccurs="0"/>  
+                <xs:element name="PIIPolicies"                       type="PIIWithActivitiesStructure"    minOccurs="0"/>
+                <xs:element name="AnnualIncome"                      type="NonNegativeMonetaryType"       minOccurs="0"/>
+                <xs:element name="AdditionalCapitalRequiredExcesses" type="NonNegativeMonetaryType"       minOccurs="0"/>
+                <xs:element name="OwnFundsRequiredExclusions"        type="NonNegativeMonetaryType"       minOccurs="0"/>
+                <xs:element name="AdditionalOwnFunds"                type="NonNegativeMonetaryType"       minOccurs="0"/>
+                <xs:element name="ReadilyRealisableOwnFunds"         type="NonNegativeMonetaryType"       minOccurs="0"/>
+                <xs:element name="Excess"                            type="MonetaryType"                  minOccurs="0"/>
+            </xs:sequence>
+            <xs:attributeGroup ref="CurrencyAndUnitsAttrGroup"/>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema>

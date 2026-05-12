@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    *******************************************************************
+    *
+    *    Schema for: Data Item CCR001 Consumer Credit data: Financial Data
+    *
+    *    Version:    1
+    *    Date:       31 October 2013 
+    *
+    *    History:    Version  1 follows publication of CP13/10
+    *                
+    *
+    *******************************************************************
+-->
+<xs:schema    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified" 
+    
+    targetNamespace=    "urn:fsa-gov-uk:MER:CCR001:1"
+    xmlns=              "urn:fsa-gov-uk:MER:CCR001:1" 
+    xmlns:mer-meta=     "urn:fsa-gov-uk:MER:Meta-Data:1" 
+    
+    version="1"
+    id="MER-CCR001"> 
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>CCR001</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>Consumer Credit data: Financial Data</mer-meta:DataItemName>
+        </xs:documentation>
+    </xs:annotation>
+    
+    <xs:include schemaLocation="../../CommonTypes/v7/CommonTypes-Schema.xsd"/>
+    <xs:element name="CCR001-FinancialData">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="BalanceSheetItems" minOccurs="1">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="TotalFundsOrCapital"              type="MonetaryType" minOccurs="1"/> 
+                        <xs:element name="IntangibleAssetsOrInvestments"    type="MonetaryType" minOccurs="0"/> 
+                        <xs:element name="SubordinatedDebtAndLoans"         type="MonetaryType" minOccurs="0"/> 
+                        <xs:element name="CurrentAssets" minOccurs="0">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="Cash"                 type="MonetaryType" minOccurs="0"/> 
+                                    <xs:element name="DebtorsOrOther"       type="MonetaryType" minOccurs="0"/> 
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>           
+                        <xs:element name="CurrentLiabilities" minOccurs="0">         
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="Creditors"            type="MonetaryType" minOccurs="0"/>                 
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="LargestExposures" minOccurs="0" maxOccurs="2">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="Amount"           type="MonetaryType" minOccurs="0" />
+                                    <xs:element name="CounterpartyName" type="String100Type" minOccurs="0" />
+                                    <xs:element name="TypeOfExposure" minOccurs="0">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="Debtor"/>
+                                                <xs:enumeration value="Creditor"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="IncomeStatement" minOccurs="1">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="TotalIncome"          type="MonetaryType" minOccurs="1"/>
+                        <xs:element name="RetainedProfit"        type="MonetaryType" minOccurs="1"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element> 
+             
+        </xs:sequence>
+        <xs:attributeGroup ref="BasisCurrencyAndUnitsAttrGroup"/>
+    </xs:complexType>
+</xs:element>
+
+
+</xs:schema>

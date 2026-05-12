@@ -1,0 +1,117 @@
+[
+  {
+    "href": "https://regdata.fca.org.uk/specifications/DRG/*Common/52/DRG%20Change%20Log.xlsx",
+    "text": "Change Log",
+    "parent": "*Common  DRG Change Log  52  Latest  06/05/2026  Change Log"
+  },
+  {
+    "href": "https://regdata.fca.org.uk/specifications/DRG/AIF001/2/AIF001-Data-Definition%20V2.xls",
+    "text": "XLS",
+    "parent": "AIF001  AIFMD Manager Report  2  Latest  01/04/2022  XLS  XSD  XML unavailable"
+  },
+  {
+    "href": "https://regdata.fca.org.uk/specifications/DRG/AIF001/2/AIFMD_DATMAN_V2.xsd",
+    "text": "XSD",
+    "parent": "AIF001  AIFMD Manager Report  2  Latest  01/04/2022  XLS  XSD  XML unavailable"
+  },
+  {
+    "href": "https://regdata.fca.org.uk/specifications/DRG/AIF001/2/AIF001%20Sample%20V2.xml",
+    "text": "XML",
+    "parent": "AIF001  AIFMD Manager Report  2  Latest  01/04/2022  XLS  XSD  XML unavailable"
+  },
+  {
+    "href": "https://regdata.fca.org.uk/specifications/DRG/AIF001/1.2/AIF001-Data-Definition%20V1.2.1.xls",
+    "text": "XLS",
+    "parent": "AIF001  AIFMD Manager Report  1.2  Previous  01/10/2014  XLS  XSD n/aunavailable"
+  },
+  {
+    "href": "https://regdata.fca.org.uk/specifications/DRG/AIF001/1.2/AIFMD_DATMAN_V1.2.xsd",
+    "text": "XSD",
+    "parent": "AIF001  AIFMD Manager Report  1.2  Previous  01/10/2014  XLS  XSD n/aunavailable"
+  },
+  {
+    "href": "https://regdata.fca.org.uk/specifications/DRG/AIF002/2.1/AIF002-Data-Definition%20V2.1.xlsx",
+    "text": "XLSX",
+    "parent": "AIF002  Fund Transparency Report  2.1  Latest  06/07/2022  XLSX  XSD  XML unavailable"
+  },
+  {
+    "href": "https://regdata.fca.org.uk/specifications/DRG/AIF002/2.1/AIFMD_DATAIF_V2.xsd",
+    "text": "XSD",
+    "parent": "AIF002  Fund Transparency Report  2.1  Latest  06/07/2022  XLSX  XSD  XML unavailable"
+  },
+  {
+    "href": "https://regdata.fca.org.uk/specifications/DRG/AIF002/2.1/AIF002%20Sample%20V2.xml",
+    "text": "XML",
+    "parent": "AIF002  Fund Transparency Report  2.1  Latest  06/07/2022  XLSX  XSD  XML unavailable"
+  },
+  {
+    "href": "https://regdata.fca.org.uk/specifications/DRG/AIF002/1.2/AIF002-Data-Definition%20V1.2.1.xlsx",
+    "text": "XLSX",
+    "parent": "AIF002  Fund Transparency Report  1.2  Previous  01/10/2014  XLSX  XSD n/aunavailable"
+  },
+  {
+    "href": "https://regdata.fca.org.uk/specifications/DRG/AIF002/1.2/AIFMD_DATAIF_V1.2.xsd",
+    "text": "XSD",
+    "parent": "AIF002  Fund Transparency Report  1.2  Previous  01/10/2014  XLSX  XSD n/aunavailable"
+  },
+  {
+    "href": "https://regdata.fca.org.uk/specifications/DRG/AIFMD/2/AIFMD_REPORTING_DataTypes_V2.xsd",
+    "text": "XSD",
+    "parent": "AIFMD  AIFMD Data Types  2  Latest  01/04/2022 n/a XSD n/an/a"
+  },
+  {
+    "href": "https://regdata.fca.org.uk/specifications/DRG/AIFMD/1.2/AIFMD_REPORTING_DataTypes_V1.2.xsd",
+    "text": "XSD",
+    "parent": "AIFMD  AIFMD Data Types  1.2  Previous  01/10/2014 n/a XSD n/an/a"
+  },
+  {
+    "href": "https://regdata.fca.org.uk/specifications/DRG/CCR-Complaints/3/CCR-Complaints-Data-Definition.xlsx",
+    "text": "XLSX",
+    "parent": "CCR-Complaints  CCR-Complaints Return  3  Latest  01/01/2023  XLSX  XSD  XML  XLSX"
+  },
+  {
+    "href": "https://regdata.fca.org.uk/specifications/DRG/CCR-Complaints/3/CCR-Complaints-Schema.xsd",
+    "text": "XSD",
+    "parent": "CCR-Complaints  CCR-Complaints Return  3  Latest  01/01/2023  XLSX  XSD  XML  XLSX"
+  },
+  {
+    "href": "https://regdata.fca.org.uk/specifications/DRG/CCR-Complaints/3/CCR-Complaints-Sample-Full-And-Valid.xml",
+    "text": "XML",
+    "parent": "CCR-Complaints  CCR-Complaints Return  3  Latest  01/01/2023  XLSX  XSD  XML  XLSX"
+  },
+  {
+    "href": "https://regdata.fca.org.uk/specifications/DRG/CCR-Complaints/3/CCR-Complaints-Map-Template.xlsx",
+    "text": "XLSX",
+    "parent": "CCR-Complaints  CCR-Complaints Return  3  Latest  01/01/2023  XLSX  XSD  XML  XLSX"
+  },
+  {
+    "href": "https://regdata.fca.org.uk/specifications/DRG/CCR-Complaints/2.1/CCR-Complaints-Data-Definition.xlsx",
+    "text": "XLSX",
+    "parent": "CCR-Complaints  CCR-Complaints Return  2.1  Previous  30/12/2016  XLSX  XSD  XML unavailable"
+  },
+  {
+    "href": "https://regdata.fca.org.uk/specifications/DRG/CCR-Complaints/2.1/CCR-Complaints-Schema.xsd",
+    "text": "XSD",
+    "parent": "CCR-Complaints  CCR-Complaints Return  2.1  Previous  30/12/2016  XLSX  XSD  XML unavailable"
+  },
+  {
+    "href": "https://regdata.fca.org.uk/specifications/DRG/CCR-Complaints/2.1/CCR-Complaints-Sample-Full-And-Valid.xml",
+    "text": "XML",
+    "parent": "CCR-Complaints  CCR-Complaints Return  2.1  Previous  30/12/2016  XLSX  XSD  XML unavailable"
+  },
+  {
+    "href": "https://regdata.fca.org.uk/specifications/DRG/CCR-Complaints/1/CCR-Complaints-Data-Definition.xlsx",
+    "text": "XLSX",
+    "parent": "CCR-Complaints  CCR-Complaints Return  1  Previous  01/10/2014  XLSX  XSD  XML unavailable"
+  },
+  {
+    "href": "https://regdata.fca.org.uk/specifications/DRG/CCR-Complaints/1/CCR-Complaints-Schema.xsd",
+    "text": "XSD",
+    "parent": "CCR-Complaints  CCR-Complaints Return  1  Previous  01/10/2014  XLSX  XSD  XML unavailable"
+  },
+  {
+    "href": "https://regdata.fca.org.uk/specifications/DRG/CCR-Complaints/1/CCR-Complaints-Sample-Full-And-Valid.xml",
+    "text": "XML",
+    "parent": "CCR-Complaints  CCR-Complaints Return  1  Previous  01/10/2014  XLSX  XSD  XML unavailable"
+  }
+]

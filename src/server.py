@@ -123,7 +123,7 @@ async def _hybrid_search(query: str, max_results: int = 10) -> list[dict]:
 
 @mcp.tool()
 async def list_sourcebooks() -> str:
-    """List all available FCA Handbook sourcebooks (e.g., PRIN, COBS, SYSC)."""
+    """List FCA Handbook sourcebooks (PRIN, COBS, SYSC, etc.)."""
     await _ensure_assets()
     sourcebooks = sorted(set(e["sourcebook"] for e in _index_cache.get("entries", []) if e.get("sourcebook")))
     return json.dumps({"sourcebooks": sourcebooks})
@@ -131,7 +131,7 @@ async def list_sourcebooks() -> str:
 
 @mcp.tool()
 async def list_chapters(sourcebook: str) -> str:
-    """List all chapters within a sourcebook."""
+    """List chapters within a sourcebook."""
     await _ensure_assets()
     chapters = sorted(set(e["chapter"] for e in _index_cache.get("entries", []) if e.get("sourcebook") == sourcebook))
     if not chapters:
@@ -141,7 +141,7 @@ async def list_chapters(sourcebook: str) -> str:
 
 @mcp.tool()
 async def search_handbook(query: str, max_results: int = 10) -> str:
-    """Search the FCA Handbook using hybrid semantic + keyword search."""
+    """Search FCA Handbook by keyword + semantic similarity."""
     results = await _hybrid_search(query, max_results)
     if not results:
         return json.dumps({"query": query, "results": []})
@@ -153,7 +153,7 @@ async def search_handbook(query: str, max_results: int = 10) -> str:
 
 @mcp.tool()
 async def get_handbook_section(path: str) -> str:
-    """Fetch the full markdown content of a handbook section by path (e.g. 'CREDS/creds8/creds8s2.md')."""
+    """Fetch FCA Handbook section content by path."""
     from pathlib import Path as P
     f = P("data") / "handbook" / path
     if f.exists():

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    *******************************************************************
+    *
+    *    Schema for: Data Item RMA-D1-RegulatoryCapital
+    *
+    *    Version:   5
+    *    Date:      02 February 2017     
+    *
+    *    History:   Version 5 changes validation for BaseRequirement for PIFs
+    *               Version 4 follows publication of PS15/28 
+    *               Version 3 follows publication of PS09/19
+    *               Version 2 changes element AdjustedCapital type to 
+    *               MonetaryType was NonNegativeMonetaryType  
+    *               Version 1 follows publication of CP07/17
+    *
+    *
+    *******************************************************************
+-->
+
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified" 
+    attributeFormDefault="unqualified" 
+    
+    targetNamespace="urn:fsa-gov-uk:MER:RMA-D1:5" 
+    xmlns=          "urn:fsa-gov-uk:MER:RMA-D1:5" 
+    xmlns:mer-meta= "urn:fsa-gov-uk:MER:Meta-Data:1" version="1"  
+    id="MER-RMA-D1">
+    
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>RMA-D1</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>RegulatoryCapital</mer-meta:DataItemName>
+        </xs:documentation>
+    </xs:annotation>
+    
+    <xs:include schemaLocation="../../CommonTypes/v11/CommonTypes-Schema.xsd"/>
+    
+    <xs:element name="RMA-D1-RegulatoryCapital">
+        <xs:complexType>
+            <xs:sequence>
+                
+                <xs:element name="CapitalRequirementsExemption" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="HomeFinance"            type="YesNoType" minOccurs="0"/>
+                            <xs:element name="NonInvestmentInsurance" type="YesNoType" minOccurs="0"/>
+                            <xs:element name="RetailInvestments"      type="YesNoType" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="RequirementsHomeFinanceGI" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ClientMoneyDependentRequirement" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ClientMoneyFirms"    minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="BaseRequirement"    type="NonNegativeMonetaryType" minOccurs="0"/>
+                                                    <xs:element name="IncomeBasedMeasure" type="NonNegativeMonetaryType" minOccurs="0"/>
+                                                    <xs:element name="CapitalRequirement" type="NonNegativeMonetaryType" minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="NonClientMoneyFirms" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="BaseRequirement"    type="NonNegativeMonetaryType" minOccurs="0"/>
+                                                    <xs:element name="IncomeBasedMeasure" type="NonNegativeMonetaryType" minOccurs="0"/>
+                                                    <xs:element name="CapitalRequirement" type="NonNegativeMonetaryType" minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="OtherFCARequirements"      type="NonNegativeMonetaryType" minOccurs="0"/>
+                            <xs:element name="AdditionalPIIRequirements" type="NonNegativeMonetaryType" minOccurs="0"/>
+                            <xs:element name="TotalCapitalRequirment"    type="NonNegativeMonetaryType" minOccurs="0"/>
+                            <xs:element name="TotalCapitalResources"     type="MonetaryType"            minOccurs="0"/>
+                            <xs:element name="TotalCapitalExcess"        type="MonetaryType"            minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="PIFRequirementsRetailInvestments" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="PIFCategory" minOccurs="0">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="B1"/>
+                                        <xs:enumeration value="B2"/>
+                                        <xs:enumeration value="B3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="OwnFundsRequirement" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="BaseRequirement"           type="NonNegativeMonetaryType" minOccurs="0"/>
+                                        <xs:element name="AdditionalPIIRequirements" type="NonNegativeMonetaryType" minOccurs="0"/>
+                                        <xs:element name="OtherFCARequirements"      type="NonNegativeMonetaryType" minOccurs="0"/>
+                                        <xs:element name="TotalRequirement"          type="NonNegativeMonetaryType" minOccurs="0"/>
+                                        <xs:element name="CapitalResources"          type="MonetaryType"            minOccurs="0"/>
+                                        <xs:element name="SurplusDeficit"            type="MonetaryType"            minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="EligibleCapitalHomeFinanceGI" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="IncorporatedFirms"   minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ShareCapital"              type="NonNegativeMonetaryType" minOccurs="0"/>
+                                        <xs:element name="Reserves"                  type="MonetaryType"            minOccurs="0"/>
+                                        <xs:element name="InterimNetProfits"         type="NonNegativeMonetaryType" minOccurs="0"/>
+                                        <xs:element name="RevaluationReserves"       type="NonNegativeMonetaryType" minOccurs="0"/>
+                                        <xs:element name="EligibleSubordinatedLoans" type="NonNegativeMonetaryType" minOccurs="0"/>
+                                        <xs:element name="Deductions"                                               minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="InvestmentsInOwnShares"   type="NonNegativeMonetaryType"  minOccurs="0"/>
+                                                    <xs:element name="IntangibleAssets"         type="NonNegativeMonetaryType"  minOccurs="0"/>
+                                                    <xs:element name="InterimNetLosses"         type="NonNegativeMonetaryType"  minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="TotalCapitalResources"    type="MonetaryType"             minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+    
+                            <xs:element name="UnincorporatedFirms" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="SoleTraderPartnershipCapital" type="MonetaryType"             minOccurs="0"/>
+                                        <xs:element name="EligibleSubordinatedLoans"    type="NonNegativeMonetaryType"  minOccurs="0"/>
+                                        <xs:element name="PersonalAssets"               type="NonNegativeMonetaryType"  minOccurs="0"/>
+                                        <xs:element name="Deductions" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="IntangibleAssets" type="NonNegativeMonetaryType"  minOccurs="0"/>
+                                                    <xs:element name="InterimNetLosses" type="NonNegativeMonetaryType"  minOccurs="0"/>
+                                                    <xs:element name="ExcessDrawings"   type="NonNegativeMonetaryType"  minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="TotalCapitalResources"        type="MonetaryType"             minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                    
+                    <xs:element name="EligibleCapitalPIF" minOccurs="0">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="ShareCapital"             type="NonNegativeMonetaryType"  minOccurs="0"/>
+                                <xs:element name="LLPMembersCapital"        type="NonNegativeMonetaryType"  minOccurs="0"/>
+                                <xs:element name="SharePremium"             type="NonNegativeMonetaryType"  minOccurs="0"/>
+                                <xs:element name="AuditedRetainedProfit"    type="MonetaryType"             minOccurs="0"/>
+                                <xs:element name="VerifiedInterimProfit"    type="MonetaryType"             minOccurs="0"/>
+                                <xs:element name="RevaluationReserves"      type="NonNegativeMonetaryType"  minOccurs="0"/>
+                                <xs:element name="SubordinatedLoans"        type="NonNegativeMonetaryType"  minOccurs="0"/>
+                                <xs:element name="DebtCapital"              type="NonNegativeMonetaryType"  minOccurs="0"/>
+                                <xs:element name="CapitalAccount"           type="MonetaryType"             minOccurs="0"/>
+                                <xs:element name="CurrentAccount"           type="MonetaryType"             minOccurs="0"/>
+                                <xs:element name="PersonalAssets"           type="NonNegativeMonetaryType"  minOccurs="0"/>
+                                <xs:element name="Deductions" minOccurs="0">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="IntangibleAssets"             type="NonNegativeMonetaryType" minOccurs="0"/>
+                                            <xs:element name="CurrentYearLosses"            type="NonNegativeMonetaryType" minOccurs="0"/>
+                                            <xs:element name="ExcessCurrentYrDrawings"      type="NonNegativeMonetaryType" minOccurs="0"/>
+                                            <xs:element name="ExcessLLPDrawings"            type="NonNegativeMonetaryType" minOccurs="0"/>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                                <xs:element name="TotalCapitalResources"    type="MonetaryType"             minOccurs="0"/>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+            </xs:sequence>
+            <xs:attributeGroup ref="CurrencyAndUnitsAttrGroup"/>
+        </xs:complexType>
+        </xs:element>
+    </xs:schema>

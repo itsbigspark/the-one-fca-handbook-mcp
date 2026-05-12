@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    *******************************************************************
+    *
+    *    Schema for: Data Item CCR004 Consumer Credit data: Debt Management Firms
+    *
+    *    Version:    2
+    *    Date:       1 September 2014 
+    *
+    *    History:    Version  2 follows publication of CP14/8
+    *                Version  1 follows publication of CP13/10
+    *
+    *******************************************************************
+-->
+<xs:schema    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified" 
+    
+    targetNamespace=    "urn:fsa-gov-uk:MER:CCR004:2"
+    xmlns=              "urn:fsa-gov-uk:MER:CCR004:2" 
+    xmlns:mer-meta=     "urn:fsa-gov-uk:MER:Meta-Data:1" 
+    
+    version="2"
+    id="MER-CCR004"> 
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>CCR004</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>Consumer Credit data: Debt Management Firms</mer-meta:DataItemName>
+        </xs:documentation>
+    </xs:annotation>
+    
+    <xs:include schemaLocation="../../CommonTypes/v8/CommonTypes-Schema.xsd"/>
+    <xs:element name="CCR004-DebtManagementFirms">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="TotalDebtsUnderManagement"    type="MonetaryType" minOccurs="1"/>
+            <xs:element name="HigherOf"                     type="MonetaryType" minOccurs="1"/>
+            <xs:element name="TotalPrudentialResources"     type="MonetaryType" minOccurs="1"/>           
+            <xs:element name="NumberOfPlansEndEarly"        type="NonNegativeIntegerType" minOccurs="1"/>
+             
+        </xs:sequence>
+        <xs:attribute name="currency" fixed="GBP" use="required"/>
+        <xs:attribute name="units" fixed="single" use="required"/>
+    </xs:complexType>
+</xs:element>
+
+
+</xs:schema>

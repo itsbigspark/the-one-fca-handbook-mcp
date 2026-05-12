@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    *******************************************************************
+    *
+    *    Schema for: Data Item RMA-H-COBS
+    *
+    *    Version:    3
+    *    Date:       5 June 2008 
+    *
+    *    History:    
+    *                Version 3 corrects MonitoringAppointedReps to be minOccurs="0".
+    *
+    *                Version 2 follows publication of LI 2007/70.
+    *                TypesOfAdvice and ClawedBackCommission moved to
+    *                different data item (RMA-G), hence attributeGroup
+    *                CurrencyAndUnitsAttrGroup also dropped.
+    *
+    *                Version 1 follows publication of CP07/17
+    *
+    *******************************************************************
+-->
+
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified" 
+    attributeFormDefault="unqualified" 
+    
+    targetNamespace="urn:fsa-gov-uk:MER:RMA-H:3" 
+    xmlns=          "urn:fsa-gov-uk:MER:RMA-H:3" 
+    xmlns:mer-meta= "urn:fsa-gov-uk:MER:Meta-Data:1" 
+    
+    version="3" 
+    id="MER-RMA-H">
+    
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>RMA-H</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>COBS</mer-meta:DataItemName>
+        </xs:documentation>
+    </xs:annotation>
+    <xs:include schemaLocation="../../CommonTypes/v4/CommonTypes-Schema.xsd"/>
+    <xs:element name="RMA-H-COBS">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="GeneralCOBSData" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="CoreBusinessRegulated" type="YesNoType"       minOccurs="1"/>
+                            <xs:element name="StandardBusinessType"  minOccurs="0">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Motor - Dealer"/>
+                                        <xs:enumeration value="Motor - Hire or Lease"/>
+                                        <xs:enumeration value="Motor - Mobility and Access"/>
+                                        <xs:enumeration value="Motor - Other"/>
+                                        <xs:enumeration value="Associations or Utilities"/>
+                                        <xs:enumeration value="Institutions - Trade Union"/>
+                                        <xs:enumeration value="Institutions - University"/>
+                                        <xs:enumeration value="Institutions - Housing Association and Trust"/>
+                                        <xs:enumeration value="Institutions - Trade Body"/>
+                                        <xs:enumeration value="Institutions - Sports Club and Association"/>
+                                        <xs:enumeration value="Institutions - Other"/>
+                                        <xs:enumeration value="Retail Goods - Electrical Applicance Retailer"/>
+                                        <xs:enumeration value="Retail Goods - Furniture Retailer"/>
+                                        <xs:enumeration value="Retail Goods - Mobile Telephones"/>
+                                        <xs:enumeration value="Retail Goods - Sports Equipment"/>
+                                        <xs:enumeration value="Retail Goods - Caravans and Mobile Homes"/>
+                                        <xs:enumeration value="Retail Goods - Other"/>
+                                        <xs:enumeration value="Service Sector - Travel"/>
+                                        <xs:enumeration value="Service Sector - Supermarket"/>
+                                        <xs:enumeration value="Service Sector - Veterinary Surgeon"/>
+                                        <xs:enumeration value="Service Sector - Removals"/>
+                                        <xs:enumeration value="Service Sector - Property Management"/>
+                                        <xs:enumeration value="Service Sector - Building Improvements or Extensions"/>
+                                        <xs:enumeration value="Service Sector - Other"/>
+                                        <xs:enumeration value="Other"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="OtherBusinessType"     type="String100Type"   minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+               
+                <xs:element name="MonitoringAppointedReps" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="RegisteredARs"     type="NonNegativeIntegerType" minOccurs="1"/>
+                            <xs:element name="SecondaryARs"      type="NonNegativeIntegerType" minOccurs="0"/>
+                            <xs:element name="IntroducerARs"     type="NonNegativeIntegerType" minOccurs="0"/>
+                            <xs:element name="AdvisorsWithinARs" type="NonNegativeIntegerType" minOccurs="0"/>
+                            <xs:element name="MonitoringInPlace" type="YesNoType"              minOccurs="0"/>
+                            <xs:element name="MonitoringVisits"  type="NonNegativeIntegerType" minOccurs="0"/>
+                            <xs:element name="FileReviews"       type="NonNegativeIntegerType" minOccurs="0"/>
+                            <xs:element name="FinancialChecks"   type="NonNegativeIntegerType" minOccurs="0"/>
+                            <xs:element name="OtherMonitoring"   type="YesNoType"              minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
