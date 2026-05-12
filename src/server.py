@@ -155,9 +155,25 @@ async def search_handbook(query: str, max_results: int = 10) -> str:
 async def get_handbook_section(path: str) -> str:
     """Fetch FCA Handbook section content by path."""
     from pathlib import Path as P
+    # Add .md extension if missing
+    if not path.endswith(".md"):
+        path = path + ".md"
     f = P("data") / "handbook" / path
     if f.exists():
         return f.read_text()
+    # Fallback: resolve display section number (e.g. "SUP/sup16/sup16s12.md" → actual ID)
+    # The display number "16.12" doesn't match the API section ID "sup16s41"
+    await _ensure_assets()
+    import re
+    m = re.search(r"(\d+)\.(\d+[a-z]?)", path)
+    if m and _index_cache:
+        display_num = m.group(0)
+        # Find by title prefix like "SUP 16.12 "
+        for entry in _index_cache.get("entries", []):
+            if entry.get("title", "").startswith(f"SUP {display_num} "):
+                resolved = P("data") / "handbook" / entry["path"]
+                if resolved.exists():
+                    return resolved.read_text()
     # Fetch from KB repo if not local
     if GIT_TOKEN and KB_REPO:
         url = f"https://raw.githubusercontent.com/{KB_REPO}/main/data/handbook/{path}"
