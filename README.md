@@ -49,3 +49,9 @@ get_handbook_section("SUP/sup16/sup16s12.md")
 ```
 
 The `.md` extension is optional — it will be added if missing.
+
+If a chapter directory is passed instead of a section file (e.g.
+`SUP/sup16` rather than `SUP/sup16/sup16s41.md`), the tool returns a
+JSON listing of the available sections in that chapter rather than
+crashing with `IsADirectoryError`. This helps the calling agent recover
+from a confused tool call.
