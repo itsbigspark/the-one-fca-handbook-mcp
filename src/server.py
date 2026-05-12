@@ -165,12 +165,16 @@ async def get_handbook_section(path: str) -> str:
     # The display number "16.12" doesn't match the API section ID "sup16s41"
     await _ensure_assets()
     import re
-    m = re.search(r"(\d+)\.(\d+[a-z]?)", path)
+    # Extract chapter and section from the path: e.g. SUP/sup16/sup16s12.md
+    m = re.search(r"/([a-z]+)(\d+[a-z]*)/[a-z]+\d+[a-z]*s(\d+[a-z]*)\.md$", path, re.IGNORECASE)
     if m and _index_cache:
-        display_num = m.group(0)
+        sourcebook_part = m.group(1).upper()  # 'SUP'
+        chapter_num = m.group(2)              # '16'
+        section_num = m.group(3)              # '12'
+        display_num = f"{chapter_num}.{section_num}"
         # Find by title prefix like "SUP 16.12 "
         for entry in _index_cache.get("entries", []):
-            if entry.get("title", "").startswith(f"SUP {display_num} "):
+            if entry.get("title", "").startswith(f"{sourcebook_part} {display_num} "):
                 resolved = P("data") / "handbook" / entry["path"]
                 if resolved.exists():
                     return resolved.read_text()
