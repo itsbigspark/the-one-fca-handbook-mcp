@@ -14,12 +14,7 @@ from src.kb_assets import ensure_assets, fetch_content, load_embeddings, load_in
 
 PORT = int(os.environ.get("FCA_HANDBOOK_PORT", "4103"))
 GIT_TOKEN = os.environ.get("FCA_HANDBOOK_GIT_TOKEN", "")
-KB_URI = os.environ.get("FCA_HANDBOOK_KB_URI")
-if not KB_URI:
-    raise SystemExit(
-        "FCA_HANDBOOK_KB_URI is required. Set it to the base URI of the KB tree, "
-        "e.g. https://raw.githubusercontent.com/itsbigspark/the-one-fca-handbook-kb/main"
-    )
+KB_URI = os.environ.get("FCA_HANDBOOK_KB_URI", "")
 KB_EMBEDDINGS_URI = os.environ.get(
     "FCA_HANDBOOK_KB_EMBEDDINGS_URI",
     "https://github.com/itsbigspark/the-one-fca-handbook-kb/releases/latest/download/embeddings.json",
@@ -212,6 +207,11 @@ async def get_handbook_section(path: str) -> str:
 
 
 def run() -> None:
+    if not KB_URI:
+        raise SystemExit(
+            "FCA_HANDBOOK_KB_URI is required. Set it to the base URI of the KB tree, "
+            "e.g. https://raw.githubusercontent.com/itsbigspark/the-one-fca-handbook-kb/main"
+        )
     mcp.run(transport="streamable-http")
 
 
