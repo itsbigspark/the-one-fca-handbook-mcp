@@ -14,7 +14,7 @@ make run        # Start MCP server on port 4103
 | Variable | Description |
 |----------|-------------|
 | `FCA_HANDBOOK_PORT` | Server port (default: 4103) |
-| `FCA_HANDBOOK_KB_URI` | Base URI of the KB tree (default: `https://raw.githubusercontent.com/itsbigspark/the-one-fca-handbook-kb/main`). Override to point at a different branch, fork, or git host (GitLab, gitea, etc.) |
+| `FCA_HANDBOOK_KB_URI` | **Required.** Base URI of the KB tree, e.g. `https://raw.githubusercontent.com/itsbigspark/the-one-fca-handbook-kb/main`. Container fails to start if this is unset. Override to point at a different branch, fork, or git host (GitLab, gitea, etc.) |
 | `FCA_HANDBOOK_KB_EMBEDDINGS_URI` | Override URI for `embeddings.json` (default: GitHub release asset — `embeddings.json` is too large for git). Set to your own URL to use a fork or alternate location |
 | `FCA_HANDBOOK_GIT_TOKEN` | GitHub token with read access to the KB repo (required for private KB repos) |
 | `OPENAI_API_KEY` | For semantic search query embedding |
