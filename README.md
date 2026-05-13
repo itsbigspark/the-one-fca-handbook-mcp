@@ -14,15 +14,16 @@ make run        # Start MCP server on port 4103
 | Variable | Description |
 |----------|-------------|
 | `FCA_HANDBOOK_PORT` | Server port (default: 4103) |
-| `FCA_HANDBOOK_GIT_TOKEN` | GitHub token for downloading KB release assets |
-| `FCA_HANDBOOK_KB_REPO` | KB repo (default: itsbigspark/the-one-fca-handbook-kb) |
+| `FCA_HANDBOOK_KB_URI` | Base URI of the KB tree (default: `https://raw.githubusercontent.com/itsbigspark/the-one-fca-handbook-kb/main`). Override to point at a different branch, fork, or git host (GitLab, gitea, etc.) |
+| `FCA_HANDBOOK_KB_EMBEDDINGS_URI` | Override URI for `embeddings.json` (default: GitHub release asset — `embeddings.json` is too large for git). Set to your own URL to use a fork or alternate location |
+| `FCA_HANDBOOK_GIT_TOKEN` | GitHub token with read access to the KB repo (required for private KB repos) |
 | `OPENAI_API_KEY` | For semantic search query embedding |
 
 ## How It Works
 
-1. On first request, downloads `index.json` + `embeddings.json` from the KB repo's latest GitHub release
-2. If local files already exist in `data/`, uses those directly (for local dev)
-3. Serves hybrid search (semantic 60% + keyword 40%) over the content
+1. On first request, fetches `index.json` and `embeddings.json` from `{KB_URI}/data/...` (override `KB_URI` to point at a different branch/host)
+2. Cached locally on first fetch; subsequent requests are served from the cache
+3. Serves hybrid search (semantic 60% + keyword 40%) over the content; falls back to keyword-only when embeddings are unavailable
 
 ## Tools
 
