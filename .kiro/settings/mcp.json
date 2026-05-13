@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "fca-handbook": {
+      "url": "http://localhost:4103/mcp"
+    },
+    "citizens-advice": {
+      "url": "http://localhost:4104/mcp"
+    },
+    "fca-register": {
+      "url": "http://localhost:4101/mcp"
+    }
+  }
+}
