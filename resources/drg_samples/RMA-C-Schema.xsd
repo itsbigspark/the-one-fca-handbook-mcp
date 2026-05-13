@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    ************************************************************************
+    *
+    *    Schema for: Data Item RMA-C-ClientMoneyAndAssets
+    *
+    *    Version:    4
+    *    Date:       1 May 2017 
+    *
+    *    History:    Version 4 is subject to consultation 
+    *
+    *                Version 3 follows publication of Handbook Instrument 
+    *                SUPERVISION MANUAL (AMENDMENT NO 21) - Reporting Changes
+    *                
+    *                Version 2 corrects IssuesRaised to be minOccurs="0"
+    *
+    *                Version 1 follows publication of CP07/17
+    *
+    ************************************************************************
+-->
+
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault=  "qualified" 
+    attributeFormDefault="unqualified" 
+    
+    targetNamespace="urn:fsa-gov-uk:MER:RMA-C:4" 
+    xmlns=          "urn:fsa-gov-uk:MER:RMA-C:4" 
+    xmlns:mer-meta= "urn:fsa-gov-uk:MER:Meta-Data:1" 
+    
+    version="4" 
+    id="MER-RMA-C">
+    
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>RMA-C</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>ClientMoneyAndAssets</mer-meta:DataItemName>
+        </xs:documentation>
+    </xs:annotation>
+    <xs:include schemaLocation="../../CommonTypes/v11/CommonTypes-Schema.xsd"/>
+    
+    <xs:element name="RMA-C-ClientMoneyAndAssets">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="InsDistributionActivity"  type="YesNoType"    minOccurs="0"/>
+                <xs:element name="CASS7"                    type="YesNoType"    minOccurs="0"/>
+                <xs:element name="HoldingType"                                  minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="CASS5"            type="YesNoType"    minOccurs="0"/>
+                            <xs:element name="AgentOfInsurer"   type="YesNoType"    minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="ClientMoneyHeld" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Statutory"    type="YesNoType"    minOccurs="0"/>
+                            <xs:element name="NonStatutory" type="YesNoType"    minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="AuditorsConfirmation" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="NonStatutory" type="YesNoType" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="MoneyInvested" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="NonStatutory" type="YesNoType" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="ClientMoneyReqDuringPeriod"   type="StatutoryMonetaryStructure"     minOccurs="0"/>
+                <xs:element name="AcctBalFirmRecords"           type="StatutoryMonetaryStructure"     minOccurs="0"/>
+                <xs:element name="AcctBalAsAgent" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="AgentOfInsurerBalance" type="MonetaryType" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="ClientMoneyReqEndPeriod"  type="StatutoryMonetaryStructure"     minOccurs="0"/>
+                <xs:element name="ClientMoneyResource"      type="StatutoryMonetaryStructure"     minOccurs="0"/>
+                <xs:element name="SurplusDeficit"           type="StatutoryMonetaryStructure"     minOccurs="0"/>
+                <xs:element name="Adjustments"              type="StatutoryMonetaryStructure"     minOccurs="0"/>
+                <xs:element name="ClientMoneyAudit" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="AuditExemption"   type="YesNoType"        minOccurs="0"/>
+                            <xs:element name="ObtainedAudit"    type="YesNoType"        minOccurs="0"/>
+                            <xs:element name="AuditorsName"     type="String100Type"    minOccurs="0"/>
+                            <xs:element name="AuditorsOpinion"                          minOccurs="0">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Clean"/>
+                                        <xs:enumeration value="Qualified"/>
+                                        <xs:enumeration value="Adverse"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="IssuesRaised"         type="YesNoType" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                    <xs:element name="ClientAssets" minOccurs="1">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="ClientDocuments"  type="YesNoType" minOccurs="1"/>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+            </xs:sequence>
+            <xs:attributeGroup ref="CurrencyAndUnitsAttrGroup"/>
+        </xs:complexType>
+    </xs:element>  
+    
+                <xs:complexType name="StatutoryMonetaryStructure">
+                    <xs:sequence>
+                        <xs:element name="StatutoryDuringPeriod"        type="MonetaryType" minOccurs="0"/>
+                        <xs:element name="NonStatutoryDuringPeriod"     type="MonetaryType" minOccurs="0"/>
+                    </xs:sequence>
+                </xs:complexType>
+
+</xs:schema>

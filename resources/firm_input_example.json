@@ -1,0 +1,343 @@
+{
+    "AccountID": "001260000127m4kAAA",
+    "FirmReferenceNumber": 213761,
+    "FirmName": "East Renfrewshire Credit Union Ltd",
+    "LastModifiedDate": "2021-01-15T02:06:56Z",
+    "AccountingReferenceDate": "2004-09-30",
+    "AccountingRefDateFrom": "2021-01-15",
+    "FirmNameEffectiveDate": "2004-08-09",
+    "CountryOfIncorporation": "SCOTLAND",
+    "IncorporatedInEEAInd": true,
+    "ExemptBIPRUCommoditiesInd": false,
+    "ExemptCADFirmInd": false,
+    "ISDInd": false,
+    "SecuritiesAndFuturesID": null,
+    "SecuritiesAndFuturesName": null,
+    "InvestmentManagementID": null,
+    "InvestmentManagementName": null,
+    "PersonalInvestmentID": null,
+    "PersonalInvestmentName": null,
+    "AppointedREPInd": false,
+    "AnnualRegulatedRevenue": 0,
+    "MarineMutualInd": false,
+    "BusinessTypeId": 1,
+    "BusinessTypeName": "Regulated",
+    "RegisteredAddressLine1": null,
+    "RegisteredAddressLine2": null,
+    "RegisteredAddressLine3": null,
+    "RegisteredAddressLine4": null,
+    "RegisteredAddressLine5": null,
+    "RegisteredAddressLine6": null,
+    "RegisteredAddressPostOut": null,
+    "RegisteredAddressPostIn": null,
+    "AuthtyToHCM": "X",
+    "AccountsPreparedInIFRS": null,
+    "ConsolidatedAccountsPrep": null,
+    "SECListEUExchange": null,
+    "ExemptIFPRUCommodity": null,
+    "FINREPSubmitReq": null,
+    "NonEEASubGrpConsScope": null,
+    "ConsumerCreditID": null,
+    "ConsumerCreditStatus": null,
+    "NotForProfitInd": "N",
+    "SourceSystemApplicableID": null,
+    "AIFMCategoryID": null,
+    "AIFMCategoryName": null,
+    "LegalEntityID": null,
+    "ChargeMortgage": null,
+    "FirmStatusID": 4,
+    "FirmStatusName": "Authorised",
+    "FirmStatusEffectiveDate": "2002-07-02",
+    "LegalStatusID": 43,
+    "LegalStatusName": "Registered under I&PS Act 1965 and CU Act 1979",
+    "LegalStatusEffectiveDate": "2021-01-15",
+    "PsdFirmStatusID": null,
+    "PsdFirmStatusName": null,
+    "PsdFirmStatusEffectiveDate": null,
+    "MifidClassification": "N",
+    "PhoneNumber": null,
+    "CityOrTown": null,
+    "CustomerCategoryReference": "Intact_Customer_PaperInvoice",
+    "Customer_Group_Reference": null,
+    "RegisteredAddressCountry": null,
+    "AddressEffectiveDate": null,
+    "CountryCode": null,
+    "WorkDayFirmReferenceNumber": null,
+    "ISOCountryCode": null,
+    "TaxCode": null,
+    "Contact": [],
+    "Exemption": [],
+    "ReportingTypes": [],
+    "FirmGroups": [
+        {
+            "GroupReferenceNumber": "939090UC",
+            "FirmGroupID": 939090,
+            "FirmGroupType": "UK Consolidation",
+            "FirmGroupName": "RegData_UKConsolidated",
+            "EffectiveFrom": "2017-01-01T00:00:00Z",
+            "EffectiveTo": null,
+            "AccountID": "00126000013bA3vAAE",
+            "OtherGroupFRN": [
+                210410,
+                213290,
+                213700,
+                209569,
+                929821,
+                926634,
+                926536
+            ]
+        },
+        {
+            "GroupReferenceNumber": "939114RF",
+            "FirmGroupID": 939114,
+            "FirmGroupType": "Ring-fenced Group",
+            "FirmGroupName": "RegData_Ring-fenced",
+            "EffectiveFrom": "2019-01-13T00:00:00Z",
+            "EffectiveTo": "2021-01-13T00:00:00Z",
+            "AccountID": "00126000013e218AAA",
+            "OtherGroupFRN": [
+                990100,
+                939048,
+                966555
+            ]
+        }
+    ],
+    "FirmLiquidity": [],
+    "FirmCRD": [],
+    "RegulatoryBody": [],
+    "Permissions": [
+        {
+            "OrgPermissionID": "B27201054000000000000000000000",
+            "StatusID": 4,
+            "AccountID": "001260000127m4kAAA",
+            "ApprovedDate": "2016-04-06",
+            "WithdrawnDate": null,
+            "CountryName": "UNITED KINGDOM",
+            "EEAIndicator": true,
+            "Directive": "UK Permission",
+            "PassportDirection": "UK Only",
+            "BranchServiceInd": null,
+            "Activity": {
+                "ActivitiesID": 6322486,
+                "OrgPermissionID": "6322486",
+                "CategoryID": 3,
+                "AccountID": "001260000127m4kAAA",
+                "CategoryName": "Designated Investment Business",
+                "ActivityTypeID": 212,
+                "ActivityTypeName": "Advising on P2P agreements",
+                "EffectiveFrom": "2016-04-06T00:00:00Z",
+                "EffectiveTo": null,
+                "CustomerTypes": [
+                    {
+                        "CustomerID": "3",
+                        "CustomerTypeID": 5,
+                        "CustomerTypeName": "Retail (Non-Investment Insurance)",
+                        "EffectiveFrom": "2016-04-06T00:00:00Z",
+                        "OrgPermissionID": "a2N2600000EMmSEAW"
+                    }
+                ],
+                "InvestmentTypes": []
+            }
+        },
+        {
+            "OrgPermissionID": "B27201054000000000000000000000080514_103_770329",
+            "StatusID": 4,
+            "AccountID": "001260000127m4kAAA",
+            "ApprovedDate": "2007-01-17",
+            "WithdrawnDate": null,
+            "CountryName": "UNITED KINGDOM",
+            "EEAIndicator": true,
+            "Directive": "UK Permission",
+            "PassportDirection": "UK Only",
+            "BranchServiceInd": null,
+            "Activity": {
+                "ActivitiesID": 770329,
+                "OrgPermissionID": "770329",
+                "CategoryID": 13,
+                "AccountID": "001260000127m4kAAA",
+                "CategoryName": "Insurance Distribution",
+                "ActivityTypeID": 103,
+                "ActivityTypeName": "Arranging (bringing about) deals in investments",
+                "EffectiveFrom": "2007-01-17T00:00:00Z",
+                "EffectiveTo": null,
+                "CustomerTypes": [
+                    {
+                        "CustomerID": "3",
+                        "CustomerTypeID": 5,
+                        "CustomerTypeName": "Retail (Non-Investment Insurance)",
+                        "EffectiveFrom": "2007-01-17T00:00:00Z",
+                        "OrgPermissionID": "a2N2600000EMmTEAW"
+                    }
+                ],
+                "InvestmentTypes": [
+                    {
+                        "InvestmentID": "B27201054000000000000000000000080514_2777326_770329_73_103_2",
+                        "InvestmentTypeID": 73,
+                        "InvestmentTypeName": "Non-investment insurance contracts",
+                        "InvestmentCategoryID": "7",
+                        "InvestmentCategoryName": "OTHER FIRM",
+                        "EffectiveFrom": "2007-01-17T00:00:00Z",
+                        "OrgPermissionID": "a2N2600000EMmTEAW"
+                    }
+                ]
+            }
+        },
+        {
+            "OrgPermissionID": "B27201054000000000000000000000080514_106_770330",
+            "StatusID": 4,
+            "AccountID": "001260000127m4kAAA",
+            "ApprovedDate": "2007-01-17",
+            "WithdrawnDate": null,
+            "CountryName": "UNITED KINGDOM",
+            "EEAIndicator": true,
+            "Directive": "UK Permission",
+            "PassportDirection": "UK Only",
+            "BranchServiceInd": null,
+            "Activity": {
+                "ActivitiesID": 770330,
+                "OrgPermissionID": "770330",
+                "CategoryID": 13,
+                "AccountID": "001260000127m4kAAA",
+                "CategoryName": "Insurance Distribution",
+                "ActivityTypeID": 106,
+                "ActivityTypeName": "Making arrangements with a view to transactions in investments",
+                "EffectiveFrom": "2007-01-17T00:00:00Z",
+                "EffectiveTo": null,
+                "CustomerTypes": [
+                    {
+                        "CustomerID": "3",
+                        "CustomerTypeID": 5,
+                        "CustomerTypeName": "Retail (Non-Investment Insurance)",
+                        "EffectiveFrom": "2007-01-17T00:00:00Z",
+                        "OrgPermissionID": "a2N2600000EMmUEAW"
+                    }
+                ],
+                "InvestmentTypes": [
+                    {
+                        "InvestmentID": "B27201054000000000000000000000080514_2777324_770330_73_106_2",
+                        "InvestmentTypeID": 73,
+                        "InvestmentTypeName": "Non-investment insurance contracts",
+                        "InvestmentCategoryID": "7",
+                        "InvestmentCategoryName": "OTHER FIRM",
+                        "EffectiveFrom": "2007-01-17T00:00:00Z",
+                        "OrgPermissionID": "a2N2600000EMmUEAW"
+                    }
+                ]
+            }
+        },
+        {
+            "OrgPermissionID": "B27201054000000000000000000000080514_102_770328",
+            "StatusID": 4,
+            "AccountID": "001260000127m4kAAA",
+            "ApprovedDate": "2007-01-17",
+            "WithdrawnDate": null,
+            "CountryName": "UNITED KINGDOM",
+            "EEAIndicator": true,
+            "Directive": "UK Permission",
+            "PassportDirection": "UK Only",
+            "BranchServiceInd": null,
+            "Activity": {
+                "ActivitiesID": 770328,
+                "OrgPermissionID": "770328",
+                "CategoryID": 13,
+                "AccountID": "001260000127m4kAAA",
+                "CategoryName": "Insurance Distribution",
+                "ActivityTypeID": 102,
+                "ActivityTypeName": "Advising on investments (except on Pension Transfers and Pension Opt Outs)",
+                "EffectiveFrom": "2007-01-17T00:00:00Z",
+                "EffectiveTo": null,
+                "CustomerTypes": [
+                    {
+                        "CustomerID": "3",
+                        "CustomerTypeID": 5,
+                        "CustomerTypeName": "Retail (Non-Investment Insurance)",
+                        "EffectiveFrom": "2007-01-17T00:00:00Z",
+                        "OrgPermissionID": "a2N2600000EMmVEAW"
+                    }
+                ],
+                "InvestmentTypes": [
+                    {
+                        "InvestmentID": "B27201054000000000000000000000080514_2777329_770328_73_102_2",
+                        "InvestmentTypeID": 73,
+                        "InvestmentTypeName": "Non-investment insurance contracts",
+                        "InvestmentCategoryID": "7",
+                        "InvestmentCategoryName": "OTHER FIRM",
+                        "EffectiveFrom": "2007-01-17T00:00:00Z",
+                        "OrgPermissionID": "a2N2600000EMmVEAW"
+                    }
+                ]
+            }
+        },
+        {
+            "OrgPermissionID": "B27201054000000000000000000000080514_1_483730",
+            "StatusID": 4,
+            "AccountID": "001260000127m4kAAA",
+            "ApprovedDate": "2002-07-02",
+            "WithdrawnDate": null,
+            "CountryName": "UNITED KINGDOM",
+            "EEAIndicator": true,
+            "Directive": "UK Permission",
+            "PassportDirection": "UK Only",
+            "BranchServiceInd": null,
+            "Activity": {
+                "ActivitiesID": 483730,
+                "OrgPermissionID": "483730",
+                "CategoryID": 1,
+                "AccountID": "001260000127m4kAAA",
+                "CategoryName": "Accepting deposits",
+                "ActivityTypeID": 1,
+                "ActivityTypeName": "Accepting Deposits",
+                "EffectiveFrom": "2002-07-02T00:00:00Z",
+                "EffectiveTo": null,
+                "CustomerTypes": [
+                    {
+                        "CustomerID": "3",
+                        "CustomerTypeID": 8,
+                        "CustomerTypeName": "Retail (Investment)",
+                        "EffectiveFrom": "2007-11-01T00:00:00Z",
+                        "OrgPermissionID": "a2N2600000EMmWEAW"
+                    }
+                ],
+                "InvestmentTypes": [
+                    {
+                        "InvestmentID": "B27201054000000000000000000000080514_2150602_483730_1_1_2",
+                        "InvestmentTypeID": 1,
+                        "InvestmentTypeName": "Deposit",
+                        "InvestmentCategoryID": "7",
+                        "InvestmentCategoryName": "OTHER FIRM",
+                        "EffectiveFrom": "2002-07-02T00:00:00Z",
+                        "OrgPermissionID": "a2N2600000EMmWEAW"
+                    }
+                ]
+            }
+        },
+        {
+            "OrgPermissionID": "A2720101000000000000207541_175_7487586",
+            "StatusID": 4,
+            "AccountID": "001260000127m4kAAA",
+            "ApprovedDate": "2015-11-01T00:00:00Z",
+            "WithdrawnDate": null,
+            "CountryName": "AUSTRIA",
+            "EEAIndicator": true,
+            "Directive": "Alternative Investment Fund Managers Directive",
+            "PassportDirection": "Outward",
+            "BranchServiceInd": "S",
+            "Activity": {
+                "ActivitiesID": 7487586,
+                "OrgPermissionID": "7487586",
+                "CategoryID": 23,
+                "AccountID": "001260000127m4kAAA",
+                "CategoryName": "Alternative Investment Fund Managers Directive",
+                "ActivityTypeID": 175,
+                "ActivityTypeName": "Management of AIFs",
+                "EffectiveFrom": "2015-11-01T00:00:00Z",
+                "EffectiveTo": null,
+                "CustomerTypes": [],
+                "InvestmentTypes": []
+            }
+        }
+    ],
+    "Involvements": [],
+    "Products": [],
+    "Waivers": []
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    *******************************************************************
+    *
+    *    Schema for: Data Item CCR008 Consumer Credit data: Lenders
+    *
+    *    Version:    1
+    *    Date:       1st February 2015 
+    *                
+    *******************************************************************
+-->
+<xs:schema    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified" 
+    
+    targetNamespace=    "urn:fsa-gov-uk:MER:CCR008:1"
+    xmlns=              "urn:fsa-gov-uk:MER:CCR008:1" 
+    xmlns:mer-meta=     "urn:fsa-gov-uk:MER:Meta-Data:1" 
+    
+    version="1"
+    id="MER-CCR008"> 
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>CCR008</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>Consumer Credit data: Credit Broking</mer-meta:DataItemName>
+        </xs:documentation>
+    </xs:annotation>
+    
+    <xs:include schemaLocation="../../CommonTypes/v8/CommonTypes-Schema.xsd"/>
+    <xs:element name="CCR008-CreditBroking">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="MainDetails" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="DomainName"                   type="String400Type" minOccurs="0" />
+                        <xs:element name="DateAcquiredOrFirstUsed"      type="xs:date" minOccurs="0" />
+                        <xs:element name="DateDisposedOrCeased"         type="xs:date" minOccurs="0"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element> 
+        </xs:sequence>
+    </xs:complexType>
+    </xs:element>
+</xs:schema>

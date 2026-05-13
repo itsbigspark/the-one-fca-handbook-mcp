@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+    *******************************************************************
+    *                                                                 
+    *    Schema for: Data Item FSA038-VolumesTypeOfBusiness                    
+    *                                                                 
+    *    Version:    1 
+    *    Date:       12 October 2007                                 
+    *                                                                 
+    *    History:    
+    *                Version 1 follows publication of legal 
+    *                instrument 2007/10 and CP 07/17
+    *                                                                 
+    *                                                                 
+    *******************************************************************
+-->
+
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified" 
+    attributeFormDefault="unqualified" 
+    
+    targetNamespace="urn:fsa-gov-uk:MER:FSA038:1"
+    xmlns=          "urn:fsa-gov-uk:MER:FSA038:1" 
+    xmlns:mer-meta= "urn:fsa-gov-uk:MER:Meta-Data:1" 
+    
+    version="1" 
+    id="MER-FSA038">
+    
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>FSA038</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>Volumes and Type of Business</mer-meta:DataItemName>
+        </xs:documentation>
+    </xs:annotation>
+    
+    <xs:include schemaLocation="../../CommonTypes/v2/CommonTypes-Schema.xsd"/>
+    
+    <xs:element name="FSA038-VolumesTypeOfBusiness">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="FundsUnderManagement" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="TotalFUM" type="NonNegativeMonetaryType" minOccurs="1"/>
+                            <xs:element name="DrawnDownFUM"    type="NonNegativeMonetaryType" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="CustomerInformation" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="DesignatedInvestmentBusiness" type="YesNoType" minOccurs="1"/>
+                            <xs:element name="RetailPercentage" minOccurs="0">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Below 25%"/>
+                                        <xs:enumeration value="25% to under 50%"/>                                        
+                                        <xs:enumeration value="50% to under 75%"/>
+                                        <xs:enumeration value="75% and over"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attributeGroup ref="CurrencyAndUnitsAttrGroup"/>
+        </xs:complexType>
+    </xs:element>
+    
+    
+</xs:schema>

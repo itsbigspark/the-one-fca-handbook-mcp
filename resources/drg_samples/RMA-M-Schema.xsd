@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    *******************************************************************
+    *
+    *    Schema for: Data Item RMA-M-Pension Transfer Specialist Advice
+    *
+    *    Version:    1
+    *    Date:       9 January 2020
+    *
+    *    History:    Version 1 follows the publication of PSXX/XX
+    *
+    *******************************************************************
+-->
+<xs:schema    
+    
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified" 
+    
+    targetNamespace=    "urn:fsa-gov-uk:MER:RMA-M:1"
+    xmlns=              "urn:fsa-gov-uk:MER:RMA-M:1" 
+    xmlns:mer-meta=     "urn:fsa-gov-uk:MER:Meta-Data:1" 
+    
+    version="1"
+    id="MER-RMA-M"> 
+    
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>RMA-M</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>Pension Transfer Specialist Advice</mer-meta:DataItemName>
+        </xs:documentation>
+    </xs:annotation>
+    
+    <xs:include schemaLocation="../../CommonTypes/v12/CommonTypes-Schema.xsd"/>
+<xs:element name="RMA-M-PensionTransferSpecialistAdvice">
+    <xs:complexType>
+        <xs:sequence>
+            
+            <xs:element name="QualifyingQuestion" minOccurs="1">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="ProvidedAdvice"   type="YesNoType" minOccurs="1"/>             
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            
+            <xs:element name="BusinessModel" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="FullPensionTransferConversionAdvice"  type="NonNegativeIntegerType"   minOccurs="0"/>
+                        <xs:element name="AbridgedAdvice"                       type="NonNegativeIntegerType"   minOccurs="0"/>
+                        <xs:element name="PensionTransferSpecialists"           type="NonNegativeFloat2Type"    minOccurs="0"/>
+                        <xs:element name="OtherAuthorisedFirms"                 type="NonNegativeIntegerType"   minOccurs="0"/>
+                        <xs:element name="NonAuthorisedFirms"                   type="NonNegativeIntegerType"   minOccurs="0"/>
+                        <xs:element name="ProceedsOfTransferConversion"         type="NonNegativeIntegerType"   minOccurs="0"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            
+            <xs:element name="AppointedRepresentative" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="AppointedRepresentative"          type="NonNegativeIntegerType" minOccurs="0"/>
+                        <xs:element name="AbridgedAppointedRepresentative"  type="NonNegativeIntegerType" minOccurs="0"/>
+                        <xs:element name="FullAppointedRepresentative"      type="NonNegativeIntegerType" minOccurs="0"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            
+            <xs:element name="RecommendationToTransfer" minOccurs="1">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="PersonalTransfer"     type="NonNegativeIntegerType"           minOccurs="0"/>
+                        <xs:element name="TotalTransferValue"   type="NonNegativeMonetaryFloat2Type"    minOccurs="0"/>
+                        <xs:element name="TotalRevenue"         type="NonNegativeMonetaryFloat2Type"    minOccurs="0"/>
+			<xs:element name="CarveOut"		type="NonNegativeIntegerType"           minOccurs="0"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            
+            <xs:element name="RecommendationNotToTransfer" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="PersonalNotTransfer"          type="NonNegativeIntegerType"           minOccurs="0"/>
+                        <xs:element name="NotToTransferAbridged"        type="NonNegativeIntegerType"           minOccurs="0"/>
+                        <xs:element name="NotToTransferValue"           type="NonNegativeMonetaryFloat2Type"    minOccurs="0"/>
+                        <xs:element name="NotToTransferInitial"         type="NonNegativeMonetaryFloat2Type"    minOccurs="0"/>
+                        <xs:element name="NotToTransferRevenue"         type="NonNegativeMonetaryFloat2Type"    minOccurs="0"/>
+                        <xs:element name="FullPensionTransferAdvice"    type="NonNegativeIntegerType"           minOccurs="0"/>
+                        <xs:element name="NonInsistentClientBasis"      type="NonNegativeMonetaryFloat2Type"    minOccurs="0"/>
+			<xs:element name="InsistentClientBasis"         type="NonNegativeMonetaryFloat2Type"    minOccurs="0"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            
+            <xs:element name="OngoingServices" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="ArrangePensionTransfer"   type="NonNegativeIntegerType" minOccurs="0"/>
+                        <xs:element name="AgreedOngoingService"     type="NonNegativeIntegerType" minOccurs="0"/>         
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            
+            <xs:element name="ChargingStructures" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="EntirePartialAdvisoryCharge"     type="NonNegativeIntegerType" minOccurs="0"/>
+                        <xs:element name="AdvisoryChargeRemain"            type="NonNegativeIntegerType" minOccurs="0"/>    
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            
+            <xs:element name="ProductAndInvestmentSolutions" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="OngoingProductChargesLess"    type="NonNegativeIntegerType" minOccurs="0"/>
+                        <xs:element name="OngoingProductChargesBetween" type="NonNegativeIntegerType" minOccurs="0"/>
+                        <xs:element name="OngoingProductChargesMore"    type="NonNegativeIntegerType" minOccurs="0"/>
+                        <xs:element name="HigherOngoingWorkPlace"       type="NonNegativeIntegerType" minOccurs="0"/>
+                        <xs:element name="TransferToWorkPlacePension"   type="NonNegativeIntegerType" minOccurs="0"/>
+                        <xs:element name="RegulatoryRestrictions"       type="NonNegativeIntegerType" minOccurs="0"/>
+                        <xs:element name="RecognisedOverseasPension"    type="NonNegativeIntegerType" minOccurs="0"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            
+            <xs:element name="Guidance" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="RetailClientsTriage"  type="NonNegativeIntegerType" minOccurs="0"/>
+                        <xs:element name="RetailClientsProceed" type="NonNegativeIntegerType" minOccurs="0"/>    
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+        </xs:sequence>
+        <xs:attribute name="currency"   fixed="GBP"     use="required"/>
+        <xs:attribute name="units"      fixed="single"  use="required"/>
+    </xs:complexType>
+</xs:element>
+</xs:schema>
+        
+            
+
+ 

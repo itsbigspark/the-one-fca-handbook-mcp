@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    *******************************************************************
+    *                                                                 
+    *    Schema for: Data Item FIN-A-AnnualReportAndAccounts                  
+    *                                                                 
+    *    Version:    2
+    *    Date:       1 July 2017 
+    *                                                                 
+    *    History:    
+    *                
+    *                Version 2 adds five new elements under AnnualAccounts
+    *                Version 1 follows publication of CP14/8
+    *
+    *******************************************************************
+-->
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified"
+    
+    targetNamespace="urn:fsa-gov-uk:MER:FIN-A:2"
+    xmlns=          "urn:fsa-gov-uk:MER:FIN-A:2"
+    xmlns:mer-meta= "urn:fsa-gov-uk:MER:Meta-Data:1"
+    
+    version="2"
+    id="MER-FIN-A">
+    
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>FIN-A</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>Annual Report and Accounts</mer-meta:DataItemName>
+        </xs:documentation>  
+    </xs:annotation>
+    
+    <xs:include schemaLocation="../../CommonTypes/v11/CommonTypes-Schema.xsd"/>
+    
+    <xs:element name="FIN-A-AnnualReportAndAccounts">
+        <xs:complexType>
+           <xs:sequence>
+               <xs:element name="AnnualAccounts" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="AccountsBasis" minOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="IFRS"/>
+                                        <xs:enumeration value="UK GAAP"/>
+                                        <xs:enumeration value="Other"/>
+                                        <xs:enumeration value="NA"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="GeneratedIncome" type="YesNoNAType" minOccurs="1"/>
+                            <xs:element name="PositiveNetAssets" type="YesNoNAType" minOccurs="1"/>
+                            <xs:element name="FinancialStatementsOngoingConcernBasis" type="YesNoNAType" minOccurs="1"/>
+                            <xs:element name="ContingentLiabilities" type="YesNoNAType" minOccurs="1"/>
+                            <xs:element name="AuditQualified" type="YesNoNAType" minOccurs="1"/>
+                        </xs:sequence>   
+                    </xs:complexType>  
+               </xs:element>    
+               <xs:element name="ImmigrationAct" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ImmigrationActCompliance" type="YesNoNAType" minOccurs="1"/>                             
+                        </xs:sequence>
+                    </xs:complexType>
+               </xs:element>
+           </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

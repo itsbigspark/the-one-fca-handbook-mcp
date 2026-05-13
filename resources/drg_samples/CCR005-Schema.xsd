@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    *******************************************************************
+    *
+    *    Schema for: Data Item CCR005 Consumer Credit data: Client Money and Assets
+    *
+    *    Version:    1
+    *    Date:       31 October 2013 
+    *
+    *    History:    Version  1 follows publication of CP13/10
+    *                
+    *
+    *******************************************************************
+-->
+<xs:schema    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified" 
+    
+    targetNamespace=    "urn:fsa-gov-uk:MER:CCR005:1"
+    xmlns=              "urn:fsa-gov-uk:MER:CCR005:1" 
+    xmlns:mer-meta=     "urn:fsa-gov-uk:MER:Meta-Data:1" 
+    
+    version="1"
+    id="MER-CCR005"> 
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>CCR005</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>Consumer Credit data: Client Money and Assets</mer-meta:DataItemName>
+        </xs:documentation>
+    </xs:annotation>
+    
+    <xs:include schemaLocation="../../CommonTypes/v7/CommonTypes-Schema.xsd"/>
+    <xs:element name="CCR005-ClientMoneyAndAssets">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="HighestBalance"           type="MonetaryType" minOccurs="1"/>
+            <xs:element name="HigherNumber"             type="NonNegativeIntegerType" minOccurs="1"/>
+            <xs:element name="HeldOver5BusinessDays"    type="MonetaryType" minOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="BasisCurrencyAndUnitsAttrGroup"/>
+    </xs:complexType>
+</xs:element>
+
+
+</xs:schema>

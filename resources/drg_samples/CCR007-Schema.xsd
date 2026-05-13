@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    *******************************************************************
+    *
+    *    Schema for: Data Item CCR007 Consumer Credit data: Key data for credit firms with limited permissions
+    *
+    *    Version:    2
+    *    Date:       1 September 2014 
+    *
+    *    History:    Version  2 follows publication of CP14/6
+    *                Version  1 follows publication of CP13/10
+    *
+    *******************************************************************
+-->
+<xs:schema    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified" 
+    
+    targetNamespace=    "urn:fsa-gov-uk:MER:CCR007:2"
+    xmlns=              "urn:fsa-gov-uk:MER:CCR007:2" 
+    xmlns:mer-meta=     "urn:fsa-gov-uk:MER:Meta-Data:1" 
+    
+    version="2"
+    id="MER-CCR007"> 
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>CCR007</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>Consumer Credit data: Key data for credit firms with limited permissions</mer-meta:DataItemName>
+        </xs:documentation>
+    </xs:annotation>
+    
+    <xs:include schemaLocation="../../CommonTypes/v7/CommonTypes-Schema.xsd"/>
+    <xs:element name="CCR007-KeyData">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="Activities" minOccurs="1">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Revenue" type="MonetaryType" minOccurs="1"/>
+                        <xs:element name="TotalRevenue" type="MonetaryType" minOccurs="1"/>          
+                        <xs:element name="Transactions" type="NonNegativeIntegerType" minOccurs="1"/>
+                        <xs:element name="Complaints" type="NonNegativeIntegerType" minOccurs="1"/>
+                        <xs:element name="PredominantActivity" minOccurs="1">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Lending"/>
+                                    <xs:enumeration value="Consumer hire"/>
+                                    <xs:enumeration value="Not-for-profit debt counselling"/>
+                                    <xs:enumeration value="Secondary credit broking"/>
+                                    <xs:enumeration value="Other"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="Fees" minOccurs="1">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="TotalAnnualIncome"                    type="NonNegativeMonetaryType"  minOccurs="1"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element> 
+        </xs:sequence>
+        <xs:attributeGroup ref="BasisCurrencyAndUnitsAttrGroup"/>
+    </xs:complexType>
+</xs:element>
+
+
+</xs:schema>

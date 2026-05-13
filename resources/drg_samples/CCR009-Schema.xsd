@@ -1,0 +1,1660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    **************************************************************************************
+    *
+    *    Schema for: Data Item CCR009-Consumer Credit Data: Relevant Ancillary Credit Firm
+    *
+    *    Version:    1.0
+    *    Date:       2 December 2025
+    *
+    *    History:    Version 1 issued following publication of PS25/3           
+    *
+    **************************************************************************************
+-->
+
+<xs:schema 
+    xmlns:xs=               "http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault=     "qualified"
+    attributeFormDefault=   "unqualified" 
+    
+    targetNamespace=    "urn:fsa-gov-uk:MER:CCR009:1"
+    xmlns=              "urn:fsa-gov-uk:MER:CCR009:1" 
+    xmlns:mer-meta=     "urn:fsa-gov-uk:MER:Meta-Data:1" 
+    
+    version="1"
+    id="MER-CCR009">
+
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>CCR009</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>Consumer Credit Data: Relevant Ancillary Credit Firm</mer-meta:DataItemName>
+        </xs:documentation>
+    </xs:annotation>
+
+    <xs:include schemaLocation="../../CommonTypes/v18/CommonTypes-Schema.xsd"/>
+
+    <xs:element name="CCR009-RelevantAncillaryCreditFirm">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="CreditBroking"                        minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Permissions"       minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ActivitiesUndertaken"                         minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="ActivityType"      minOccurs="0"  maxOccurs="3">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                                <xs:enumeration value="D"/>
+                                                                <xs:enumeration value="E"/>
+                                                                <xs:enumeration value="X"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="WhyHoldPermission"                            minOccurs="0">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                  <xs:enumeration value="A"/>
+                                                  <xs:enumeration value="B"/>
+                                                  <xs:enumeration value="C"/>
+                                                  <xs:enumeration value="D"/>
+                                                  <xs:enumeration value="W"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="WhyNotUsedPermission" type="String2000Type"   minOccurs="0"/>
+                                        <xs:element name="BusinessPurposes"                             minOccurs="0">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                  <xs:enumeration value="A"/>
+                                                  <xs:enumeration value="B"/>
+                                                  <xs:enumeration value="C"/>
+                                                  <xs:enumeration value="D"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="FinancialProducts"                            minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="ProductType"      minOccurs="0"  maxOccurs="7">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                                <xs:enumeration value="D"/>
+                                                                <xs:enumeration value="E"/>
+                                                                <xs:enumeration value="F"/>
+                                                                <xs:enumeration value="W"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="CreditAgreements"  minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="IntroductionsByFirm"  type="FinancialProductStructure"    minOccurs="0"/>
+                                        <xs:element name="IntroductionsByAR"    type="FinancialProductStructure"    minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="GoodsAndServices"  minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="WhichGoodsAndServices"                    minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="GoodsAndServicesType"      minOccurs="0"  maxOccurs="19">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                                <xs:enumeration value="D"/>
+                                                                <xs:enumeration value="E"/>
+                                                                <xs:enumeration value="F"/>
+                                                                <xs:enumeration value="G"/>
+                                                                <xs:enumeration value="H"/>
+                                                                <xs:enumeration value="I"/>
+                                                                <xs:enumeration value="J"/>
+                                                                <xs:enumeration value="K"/>
+                                                                <xs:enumeration value="L"/>
+                                                                <xs:enumeration value="M"/>
+                                                                <xs:enumeration value="N"/>
+                                                                <xs:enumeration value="O"/>
+                                                                <xs:enumeration value="P"/>
+                                                                <xs:enumeration value="Q"/>
+                                                                <xs:enumeration value="R"/>
+                                                                <xs:enumeration value="S"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>                              
+                                        <xs:element name="SupplyGoodsToIndividuals"                 minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="GoodsType"      minOccurs="0"  maxOccurs="14">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                                <xs:enumeration value="D"/>
+                                                                <xs:enumeration value="E"/>
+                                                                <xs:enumeration value="F"/>
+                                                                <xs:enumeration value="G"/>
+                                                                <xs:enumeration value="H"/>
+                                                                <xs:enumeration value="I"/>
+                                                                <xs:enumeration value="J"/>
+                                                                <xs:enumeration value="K"/>
+                                                                <xs:enumeration value="L"/>
+                                                                <xs:enumeration value="M"/>
+                                                                <xs:enumeration value="W"/>
+                                                                <xs:enumeration value="X"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="SupplyServicesToIndividuals"              minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="ServicesType"      minOccurs="0"  maxOccurs="5">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                                <xs:enumeration value="D"/>
+                                                                <xs:enumeration value="W"/>
+                                                                <xs:enumeration value="X"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="MotorVehicles"                            minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="WhichVehicles"          minOccurs="0">
+                                                      <xs:complexType>
+                                                          <xs:sequence>
+                                                              <xs:element name="VehicleType"      minOccurs="0"  maxOccurs="10">
+                                                                  <xs:simpleType>
+                                                                      <xs:restriction base="xs:string">
+                                                                          <xs:enumeration value="A"/>
+                                                                          <xs:enumeration value="B"/>
+                                                                          <xs:enumeration value="C"/>
+                                                                          <xs:enumeration value="D"/>
+                                                                          <xs:enumeration value="E"/>
+                                                                          <xs:enumeration value="F"/>
+                                                                          <xs:enumeration value="G"/>
+                                                                          <xs:enumeration value="H"/>
+                                                                          <xs:enumeration value="I"/>
+                                                                          <xs:enumeration value="W"/>
+                                                                      </xs:restriction>
+                                                                  </xs:simpleType>
+                                                              </xs:element>
+                                                          </xs:sequence>
+                                                      </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="VehicleCondition"       minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="ConditionType"      minOccurs="0"  maxOccurs="3">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                            <xs:enumeration value="A"/>
+                                                                            <xs:enumeration value="B"/>
+                                                                            <xs:enumeration value="Z"/>
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="FinanceAvailable"       minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="FinanceType"      minOccurs="0"  maxOccurs="5">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                            <xs:enumeration value="A"/>
+                                                                            <xs:enumeration value="B"/>
+                                                                            <xs:enumeration value="C"/>
+                                                                            <xs:enumeration value="D"/>
+                                                                            <xs:enumeration value="E"/>
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="MotorVehiclesOnCreditAgreements"          minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="IntroductionsByFirm"  type="VehicleStructure"  minOccurs="0"/>
+                                                    <xs:element name="IntroductionsByAR"    type="VehicleStructure"  minOccurs="0"/>
+                                                  </xs:sequence>
+                                              </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="MotorVehiclesOnConsumerHireAgreements"    minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="IntroductionsByFirm"  type="VehicleStructure"    minOccurs="0"/>
+                                                    <xs:element name="IntroductionsByAR"    type="VehicleStructure"    minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="GeneralGoodsAndServices"                  minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="FinanceAvailable"         minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="FinanceType"      minOccurs="0"  maxOccurs="5">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                            <xs:enumeration value="A"/>
+                                                                            <xs:enumeration value="B"/>
+                                                                            <xs:enumeration value="C"/>
+                                                                            <xs:enumeration value="D"/>
+                                                                            <xs:enumeration value="E"/>
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="CreditAgreements"         minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="IntroductionsByFirm"  type="GoodsAndServicesStructure"    minOccurs="0"/>
+                                                                <xs:element name="IntroductionsByAR"    type="GoodsAndServicesStructure"    minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="ConsumerHireAgreements"   minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="IntroductionsByFirm"  type="GoodsAndServicesStructure"    minOccurs="0"/>
+                                                                <xs:element name="IntroductionsByAR"    type="GoodsAndServicesStructure"    minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Supplementary"     minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ExtrasAddOnsNotIncluded"        minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="ExtrasAddOnsType"      minOccurs="0"  maxOccurs="3">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                                <xs:enumeration value="X"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="ExtrasAddOnsIncluded"           minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="ExtrasAddOnsType"      minOccurs="0"  maxOccurs="3">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                                <xs:enumeration value="X"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Relationships"     minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="FirmEngagement"       minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="EngagementType"      minOccurs="0"  maxOccurs="6">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                                <xs:enumeration value="D"/>
+                                                                <xs:enumeration value="E"/>
+                                                                <xs:enumeration value="F"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>   
+                                        <xs:element name="Introductions"        minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="FirmOnly"     minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="LendersUnrelated" type="IntroductionStructure"    minOccurs="0"/>
+                                                                <xs:element name="LendersSameGroup" type="IntroductionStructure"    minOccurs="0"/>
+                                                                <xs:element name="BrokersUnrelated" type="IntroductionStructure"    minOccurs="0"/>
+                                                                <xs:element name="BrokersSameGroup" type="IntroductionStructure"    minOccurs="0"/>
+                                                                <xs:element name="OwnersUnrelated"  type="IntroductionStructure"    minOccurs="0"/>
+                                                                <xs:element name="OwnersSameGroup"  type="IntroductionStructure"    minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="AROnly"       minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="LendersUnrelated" type="IntroductionStructure"    minOccurs="0"/>
+                                                                <xs:element name="LendersSameGroup" type="IntroductionStructure"    minOccurs="0"/>
+                                                                <xs:element name="BrokersUnrelated" type="IntroductionStructure"    minOccurs="0"/>
+                                                                <xs:element name="BrokersSameGroup" type="IntroductionStructure"    minOccurs="0"/>
+                                                                <xs:element name="OwnersUnrelated"  type="IntroductionStructure"    minOccurs="0"/>
+                                                                <xs:element name="OwnersSameGroup"  type="IntroductionStructure"    minOccurs="0"/>
+                                                                </xs:sequence>
+                                                            </xs:complexType>
+                                                        </xs:element>
+                                                    </xs:sequence>
+                                                </xs:complexType>
+                                            </xs:element>
+                                        <xs:element name="Lenders"              minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="FirmOnly" minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="Lender1" type="RelationshipStructure"  minOccurs="0"/>
+                                                                <xs:element name="Lender2" type="RelationshipStructure"  minOccurs="0"/>
+                                                                <xs:element name="Lender3" type="RelationshipStructure"  minOccurs="0"/>
+                                                                <xs:element name="Lender4" type="RelationshipStructure"  minOccurs="0"/>
+                                                                <xs:element name="Lender5" type="RelationshipStructure"  minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="AROnly"   minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="Lender1" type="RelationshipStructure"  minOccurs="0"/>
+                                                                <xs:element name="Lender2" type="RelationshipStructure"  minOccurs="0"/>
+                                                                <xs:element name="Lender3" type="RelationshipStructure"  minOccurs="0"/>
+                                                                <xs:element name="Lender4" type="RelationshipStructure"  minOccurs="0"/>
+                                                                <xs:element name="Lender5" type="RelationshipStructure"  minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Brokers"              minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="FirmOnly"   minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="Broker1" type="RelationshipStructure" minOccurs="0"/>
+                                                                <xs:element name="Broker2" type="RelationshipStructure" minOccurs="0"/>
+                                                                <xs:element name="Broker3" type="RelationshipStructure" minOccurs="0"/>
+                                                                <xs:element name="Broker4" type="RelationshipStructure" minOccurs="0"/>
+                                                                <xs:element name="Broker5" type="RelationshipStructure" minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="AROnly"     minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="Broker1" type="RelationshipStructure" minOccurs="0"/>
+                                                                <xs:element name="Broker2" type="RelationshipStructure" minOccurs="0"/>
+                                                                <xs:element name="Broker3" type="RelationshipStructure" minOccurs="0"/>
+                                                                <xs:element name="Broker4" type="RelationshipStructure" minOccurs="0"/>
+                                                                <xs:element name="Broker5" type="RelationshipStructure" minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Owners"               minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="FirmOnly" minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="Owner1" type="RelationshipStructure"  minOccurs="0"/>
+                                                                <xs:element name="Owner2" type="RelationshipStructure"  minOccurs="0"/>
+                                                                <xs:element name="Owner3" type="RelationshipStructure"  minOccurs="0"/>
+                                                                <xs:element name="Owner4" type="RelationshipStructure"  minOccurs="0"/>
+                                                                <xs:element name="Owner5" type="RelationshipStructure"  minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="AROnly"   minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="Owner1" type="RelationshipStructure"  minOccurs="0"/>
+                                                                <xs:element name="Owner2" type="RelationshipStructure"  minOccurs="0"/>
+                                                                <xs:element name="Owner3" type="RelationshipStructure"  minOccurs="0"/>
+                                                                <xs:element name="Owner4" type="RelationshipStructure"  minOccurs="0"/>
+                                                                <xs:element name="Owner5" type="RelationshipStructure"  minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>       
+                            <xs:element name="Declines"          minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="IntroduceDeclinedIndividuals"         type="YesNoType"        minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="FirmRemuneration"  minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="HowFirmRemunerated"                       minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="RemunerationType"      minOccurs="0"  maxOccurs="6">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                                <xs:enumeration value="D"/>
+                                                                <xs:enumeration value="E"/>
+                                                                <xs:enumeration value="W"/>
+                                                                <xs:enumeration value="X"/>
+                                                                <xs:enumeration value="Z"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="RevenuePerChannel"                        minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="FirmOnly" type="FirmRemunerationStructure"    minOccurs="0"/>
+                                                    <xs:element name="AROnly"   type="FirmRemunerationStructure"    minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="NotifyIndividualsReceiveCommission"       minOccurs="0">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="A"/>
+                                                    <xs:enumeration value="B"/>
+                                                    <xs:enumeration value="C"/>
+                                                    <xs:enumeration value="D"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="TellIndividualsValueOfCommission"         minOccurs="0">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="A"/>
+                                                    <xs:enumeration value="B"/>
+                                                    <xs:enumeration value="C"/>
+                                                    <xs:enumeration value="D"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="ChargeIndividualFees"                     minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="ChargeType"      minOccurs="0"  maxOccurs="7">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                                <xs:enumeration value="D"/>
+                                                                <xs:enumeration value="E"/>
+                                                                <xs:enumeration value="F"/>
+                                                                <xs:enumeration value="W"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>             
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="SalesChannels"     minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ChannelsUsed"             minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="ChannelType"      minOccurs="0"  maxOccurs="8">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                                <xs:enumeration value="D"/>
+                                                                <xs:enumeration value="E"/>
+                                                                <xs:enumeration value="F"/>
+                                                                <xs:enumeration value="G"/>
+                                                                <xs:enumeration value="W"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>  
+                                        <xs:element name="ComparisonTool"           minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="OfferComparisonTools"     type="YesNoType"         minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="InsideIndividualsHome"    minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="DemonstrateGoodsServices"     type="YesNoType"        minOccurs="0"/>
+                                                    <xs:element name="ProvideQuote"                 type="YesNoType"        minOccurs="0"/>
+                                                    <xs:element name="SalesTakePlace"               type="YesNoType"        minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="StaffRemuneration" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="AnyStaffSelling"                          type="YesNoType"                minOccurs="0"/>
+                                        <xs:element name="HowSalesStaffRemunerated"                                                 minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="StaffRemunerationType"      minOccurs="0"  maxOccurs="3">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="StaffRemunerationSalaryCommissionSplit"                                   minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Salary"       type="PercentDP2Type"           minOccurs="0"/>
+                                                    <xs:element name="Commission"   type="PercentDP2Type"           minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="SalesStaffReceiveCommission"              type="NonNegativeFloat2Type"    minOccurs="0"/>
+                                        <xs:element name="SalesStaffCommissionModel"                                                minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="CommissionType"      minOccurs="0"  maxOccurs="6">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                                <xs:enumeration value="D"/>
+                                                                <xs:enumeration value="E"/>
+                                                                <xs:enumeration value="W"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element> 
+                                        <xs:element name="SalesStaffCommissionOnGoodsServices"      type="YesNoType"                minOccurs="0"/> 
+                                        <xs:element name="SalesStaffCommissionOnFinanceAgreements"  type="YesNoType"                minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="DebtAdjustingDebtCounselling"         minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="PermissionsAndBusinessModel"  minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ActivitiesUndertaken"                                 minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="ActivityType"      minOccurs="0"  maxOccurs="4">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                                <xs:enumeration value="D"/>
+                                                                <xs:enumeration value="E"/>
+                                                                <xs:enumeration value="F"/>
+                                                                <xs:enumeration value="G"/>
+                                                                <xs:enumeration value="X"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="OfferMoneyDebtAdviceDebtSolutions"                    minOccurs="0">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="A"/>
+                                                    <xs:enumeration value="B"/>
+                                                    <xs:enumeration value="C"/>
+                                                    <xs:enumeration value="D"/>
+                                                    <xs:enumeration value="X"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="WhyHoldPermission"                                    minOccurs="0">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="A"/>
+                                                    <xs:enumeration value="W"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="WhyNotUsedPermission"     type="String2000Type"       minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="FeesAndRevenues"              minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="MoneyDebtAdviceOffered"                               minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="MoneyDebtAdviceType"      minOccurs="0"  maxOccurs="6">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                                <xs:enumeration value="D"/>
+                                                                <xs:enumeration value="E"/>
+                                                                <xs:enumeration value="W"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="ChargedFeeForMoneyDebtAdvice" type="YesNoType"        minOccurs="0"/>
+                                        <xs:element name="ChargeStandaloneFee"          type="YesNoType"        minOccurs="0"/>
+                                        <xs:element name="ChargeSubscriptionFee"        type="YesNoType"        minOccurs="0"/>
+                                        <xs:element name="RevenueOfFeesCommission"                              minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="FirmOnly" type="MoneyDebtAdviceStructure" minOccurs="0"/>
+                                                    <xs:element name="AROnly"   type="MoneyDebtAdviceStructure" minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="DebtAdviceSolutions"          minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="NumberOfCustomers"                        minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="FirmOnly" type="DebtSolutionCustomerStructure"    minOccurs="0"/>
+                                                    <xs:element name="AROnly"   type="DebtSolutionCustomerStructure"    minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="OfferedAndAdministeredByFirm"             minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="DebtSolutionsOffered"     minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="DebtSolutionType"      minOccurs="0"  maxOccurs="13">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                            <xs:enumeration value="A"/>
+                                                                            <xs:enumeration value="B"/>
+                                                                            <xs:enumeration value="C"/>
+                                                                            <xs:enumeration value="D"/>
+                                                                            <xs:enumeration value="E"/>
+                                                                            <xs:enumeration value="F"/>
+                                                                            <xs:enumeration value="G"/>
+                                                                            <xs:enumeration value="H"/>
+                                                                            <xs:enumeration value="I"/>
+                                                                            <xs:enumeration value="J"/>
+                                                                            <xs:enumeration value="K"/>
+                                                                            <xs:enumeration value="L"/>
+                                                                            <xs:enumeration value="M"/>
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="FirmOnly"                 minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="Revenue"                  type="DebtSolutionMonetaryStructure"    minOccurs="0"/>
+                                                                <xs:element name="UpfrontFees"              type="DebtSolutionMonetaryStructure"    minOccurs="0"/>
+                                                                <xs:element name="OngoingFees"              type="DebtSolutionMonetaryStructure"    minOccurs="0"/>
+                                                                <xs:element name="NumberOfDebtSolutions"    type="DebtSolutionIntegerStructure"     minOccurs="0"/>                                                            
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="AROnly"                   minOccurs="0">
+                                                         <xs:complexType>
+                                                             <xs:sequence>
+                                                                 <xs:element name="Revenue"                  type="DebtSolutionMonetaryStructure"    minOccurs="0"/>
+                                                                 <xs:element name="UpfrontFees"              type="DebtSolutionMonetaryStructure"    minOccurs="0"/>
+                                                                 <xs:element name="OngoingFees"              type="DebtSolutionMonetaryStructure"    minOccurs="0"/>
+                                                                 <xs:element name="NumberOfDebtSolutions"    type="DebtSolutionIntegerStructure"     minOccurs="0"/>  
+                                                             </xs:sequence>
+                                                         </xs:complexType>
+                                                     </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>                    
+                                        <xs:element name="OfferedByFirmAdministeredByAnotherFirm"   minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="DebtSolutionsOffered"     minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="DebtSolutionType"      minOccurs="0"  maxOccurs="13">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                            <xs:enumeration value="A"/>
+                                                                            <xs:enumeration value="B"/>
+                                                                            <xs:enumeration value="C"/>
+                                                                            <xs:enumeration value="D"/>
+                                                                            <xs:enumeration value="E"/>
+                                                                            <xs:enumeration value="F"/>
+                                                                            <xs:enumeration value="G"/>
+                                                                            <xs:enumeration value="H"/>
+                                                                            <xs:enumeration value="I"/>
+                                                                            <xs:enumeration value="J"/>
+                                                                            <xs:enumeration value="K"/>
+                                                                            <xs:enumeration value="L"/>
+                                                                            <xs:enumeration value="M"/>
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="FirmOnly"                 minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="Revenue"                  type="DebtSolutionMonetaryStructure"    minOccurs="0"/>
+                                                                <xs:element name="NumberOfDebtSolutions"    type="DebtSolutionIntegerStructure"     minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="AROnly"                   minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="Revenue"                  type="DebtSolutionMonetaryStructure"    minOccurs="0"/>
+                                                                <xs:element name="NumberOfDebtSolutions"    type="DebtSolutionIntegerStructure"     minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="DebtManagementPlans"                      minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="FirmOnly"     minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="BrokenWithin6Months"          type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                                <xs:element name="BrokenBetween6And12Months"    type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                                <xs:element name="AdministeredAtEndOfPeriod"    type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="AROnly"       minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="BrokenWithin6Months"          type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                                <xs:element name="BrokenBetween6And12Months"    type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                                <xs:element name="AdministeredAtEndOfPeriod"    type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="CharityAndNotForProfitBody"   minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="AreYouACharityOrNotForProfitBody"     type="YesNoType"    minOccurs="0"/>
+                                        <xs:element name="ReceiveFundingFrom"                                       minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="FundingType"      minOccurs="0"  maxOccurs="10">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                                <xs:enumeration value="D"/>
+                                                                <xs:enumeration value="E"/>
+                                                                <xs:enumeration value="F"/>
+                                                                <xs:enumeration value="G"/>
+                                                                <xs:enumeration value="H"/>
+                                                                <xs:enumeration value="I"/>
+                                                                <xs:enumeration value="W"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="FundingReceived"                                          minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="GovernmentDept"               type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+                                                    <xs:element name="MoneyAndPensionsService"      type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+                                                    <xs:element name="GovernmentSponsoredBody"      type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+                                                    <xs:element name="PrivateCompanies"             type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+                                                    <xs:element name="FairshareContributions"       type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+                                                    <xs:element name="GeneralPublicDonations"       type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+                                                    <xs:element name="OtherCharities"               type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+                                                    <xs:element name="InternalRevenueGeneration"    type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+                                                    <xs:element name="Network"                      type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+                                                    <xs:element name="Other"                        type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Network"                      minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="PartOfANetwork"   minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="NetworkType"      minOccurs="0"  maxOccurs="5">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                                <xs:enumeration value="D"/>
+                                                                <xs:enumeration value="W"/>
+                                                                <xs:enumeration value="X"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="EngagementWithIndividuals"    minOccurs="0">
+                                 <xs:complexType>
+                                     <xs:sequence>
+                                         <xs:element name="EngageWithIndividuals"       minOccurs="0">
+                                             <xs:complexType>
+                                                 <xs:sequence>
+                                                     <xs:element name="EngagementType"      minOccurs="0"  maxOccurs="12">
+                                                         <xs:simpleType>
+                                                             <xs:restriction base="xs:string">
+                                                                 <xs:enumeration value="A"/>
+                                                                 <xs:enumeration value="B"/>
+                                                                 <xs:enumeration value="C"/>
+                                                                 <xs:enumeration value="D"/>
+                                                                 <xs:enumeration value="E"/>
+                                                                 <xs:enumeration value="F"/>
+                                                                 <xs:enumeration value="G"/>
+                                                                 <xs:enumeration value="H"/>
+                                                                 <xs:enumeration value="I"/>
+                                                                 <xs:enumeration value="J"/>
+                                                                 <xs:enumeration value="K"/>
+                                                                 <xs:enumeration value="L"/>
+                                                             </xs:restriction>
+                                                         </xs:simpleType>
+                                                     </xs:element>
+                                                 </xs:sequence>
+                                             </xs:complexType>
+                                         </xs:element>
+                                         <xs:element name="ContactCentre"               minOccurs="0">
+                                             <xs:complexType>
+                                                 <xs:sequence>
+                                                     <xs:element name="DoYouHaveContactCentre"                                          minOccurs="0">
+                                                         <xs:simpleType>
+                                                             <xs:restriction base="xs:string">
+                                                                 <xs:enumeration value="A"/>
+                                                                 <xs:enumeration value="B"/>
+                                                                 <xs:enumeration value="C"/>
+                                                             </xs:restriction>
+                                                         </xs:simpleType>
+                                                     </xs:element>
+                                                     <xs:element name="InboundCallsReceived"     type="NonNegativeIntegerType"          minOccurs="0"/>
+                                                     <xs:element name="InboundCallsDropped"      type="NonNegativeIntegerType"          minOccurs="0"/>
+                                                     <xs:element name="InboundCallsAnswered"     type="NonNegativeIntegerType"          minOccurs="0"/>
+                                                     <xs:element name="TotalWaitTime"            type="NonNegativeIntegerType"          minOccurs="0"/>
+                                                     <xs:element name="AvgWaitTime"              type="NonNegativeFloat2Type"           minOccurs="0"/>
+                                                 </xs:sequence>
+                                             </xs:complexType>
+                                         </xs:element>
+                                         <xs:element name="WebChat"                     minOccurs="0">
+                                             <xs:complexType>
+                                                 <xs:sequence>
+                                                     <xs:element name="NumberOfEnquiries"        type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                     <xs:element name="EnquiriesResolved"        type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                     <xs:element name="EnquiriesAbandoned"       type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                 </xs:sequence>
+                                             </xs:complexType>
+                                         </xs:element>
+                                         <xs:element name="ChatBot"                     minOccurs="0">
+                                             <xs:complexType>
+                                                 <xs:sequence>
+                                                     <xs:element name="WithHumanAgentInvolvement"        type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                     <xs:element name="WithoutHumanAgentInvolvement"     type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                     <xs:element name="EnquiriesAbandoned"               type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                 </xs:sequence>
+                                             </xs:complexType>
+                                         </xs:element>
+                                     </xs:sequence>
+                                 </xs:complexType>
+                             </xs:element>
+                            <xs:element name="Referrals"                    minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ReferredToFirm"           minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="ReferralType"      minOccurs="0"  maxOccurs="9">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                                <xs:enumeration value="D"/>
+                                                                <xs:enumeration value="E"/>
+                                                                <xs:enumeration value="F"/>
+                                                                <xs:enumeration value="G"/>
+                                                                <xs:enumeration value="H"/>
+                                                                <xs:enumeration value="W"/>
+                                                                <xs:enumeration value="Z"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="TotalReferralsToFirm"     minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="GovernmentBody"       type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                    <xs:element name="LocalCouncil"         type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                    <xs:element name="CreditCardProvider"   type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                    <xs:element name="UtilityProvider"      type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                    <xs:element name="ReferalFromAR"        type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                    <xs:element name="InternalReferral"     type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                    <xs:element name="OtherRegulatedFirms"  type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                    <xs:element name="SelfReferral"         type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                    <xs:element name="Other"                type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                    <xs:element name="Unknown"              type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="ReferredToAR"             minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="ReferralType"      minOccurs="0"  maxOccurs="8">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                                <xs:enumeration value="D"/>
+                                                                <xs:enumeration value="F"/>
+                                                                <xs:enumeration value="G"/>
+                                                                <xs:enumeration value="H"/>
+                                                                <xs:enumeration value="W"/>
+                                                                <xs:enumeration value="Z"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="TotalReferralsToAR"       minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="GovernmentBody"       type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                    <xs:element name="LocalCouncil"         type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                    <xs:element name="CreditCardProvider"   type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                    <xs:element name="UtilityProvider"      type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                    <xs:element name="InternalReferral"     type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                    <xs:element name="OtherRegulatedFirms"  type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                    <xs:element name="SelfReferral"         type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                    <xs:element name="Other"                type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                    <xs:element name="Unknown"              type="NonNegativeIntegerType"        minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Staff"                        minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="CustomerAdvisors"                             type="YesNoType"                minOccurs="0"/>
+                                        <xs:element name="CustomerAdvisorsEmploymentStatus"                                             minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="EmploymentType"      minOccurs="0"  maxOccurs="4">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                                <xs:enumeration value="W"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="CustomerAdvisorsFTE"                          type="NonNegativeFloat2Type"    minOccurs="0"/>
+                                        <xs:element name="HowCustomerAdvisorsRemunerated"                                               minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="RemunerationType"      minOccurs="0"  maxOccurs="3">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="CustomerAdvisorsSalaryCommissionSplit"                                        minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Salary"       type="PercentDP2Type"       minOccurs="0"/>
+                                                    <xs:element name="Commission"   type="PercentDP2Type"       minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="CustomerAdvisorsCommissionForDebtSolution"    type="YesNoType"                minOccurs="0"/>
+                                        <xs:element name="CustomerAdvisorsVolunteer"                    type="NonNegativeIntegerType"   minOccurs="0"/>     
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Settlements"                  minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="FirmOnly"     minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="NumberOfSettlements"  type="NonNegativeIntegerType"                   minOccurs="0"/>
+                                                    <xs:element name="ValueOfSettlements"   type="NonNegativeMonetaryFloat2Type"            minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="AROnly"       minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="NumberOfSettlements"  type="NonNegativeIntegerType"                   minOccurs="0"/>
+                                                    <xs:element name="ValueOfSettlements"   type="NonNegativeMonetaryFloat2Type"            minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Prudential"                   minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ValueOfRelevantDebts"                 type="NonNegativeMonetaryFloat2Type"        minOccurs="0"/>
+                                        <xs:element name="PrudentialResourcesRequirement"       type="NonNegativeMonetaryFloat2Type"        minOccurs="0"/>
+                                        <xs:element name="TotalPrudentialResources"             type="NonNegativeMonetaryFloat2Type"        minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="ClientMoney"                  minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="RegulatedActivity"                                                        minOccurs="0">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="A"/>
+                                                    <xs:enumeration value="B"/>
+                                                    <xs:enumeration value="C"/>
+                                                    <xs:enumeration value="D"/>
+                                                    <xs:enumeration value="E"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="BalanceOfClientMoney"             type="NonNegativeMonetaryFloat2Type"    minOccurs="0"/>
+                                        <xs:element name="HighestClientMoneyHeld"           type="NonNegativeMonetaryFloat2Type"    minOccurs="0"/>
+                                        <xs:element name="ProjectedToHold"                  type="NonNegativeMonetaryFloat2Type"    minOccurs="0"/>
+                                        <xs:element name="CASSFirmClassificationType"                                               minOccurs="0">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="A"/>
+                                                    <xs:enumeration value="B"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="HighestNumberOfClients"           type="NonNegativeIntegerType"           minOccurs="0"/>
+                                        <xs:element name="BalanceOfUnallocatedClientMoney"                                          minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Between6To29Days"     type="NonNegativeMonetaryFloat2Type"   minOccurs="0"/>
+                                                    <xs:element name="Between30To59Days"    type="NonNegativeMonetaryFloat2Type"   minOccurs="0"/>
+                                                    <xs:element name="Between60To90Days"    type="NonNegativeMonetaryFloat2Type"   minOccurs="0"/>
+                                                    <xs:element name="Plus90Days"           type="NonNegativeMonetaryFloat2Type"   minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="ProvidingCreditInformationServices"   minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Permissions"      minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ActivitiesUndertaken"                             minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="ActivityType"      minOccurs="0"  maxOccurs="5">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                                <xs:enumeration value="D"/>
+                                                                <xs:enumeration value="E"/>
+                                                                <xs:enumeration value="X"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="WhyHoldPermission"                                minOccurs="0">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                  <xs:enumeration value="A"/>
+                                                  <xs:enumeration value="B"/>
+                                                  <xs:enumeration value="C"/>
+                                                  <xs:enumeration value="D"/>
+                                                  <xs:enumeration value="W"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="WhyNotUsedPermission"     type="String2000Type"   minOccurs="0"/>
+                                        <xs:element name="CreditInformationSource"                          minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="SourceType"      minOccurs="0"  maxOccurs="7">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                                <xs:enumeration value="D"/>
+                                                                <xs:enumeration value="E"/>
+                                                                <xs:enumeration value="F"/>
+                                                                <xs:enumeration value="G"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="FeeModel"         minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ChargeFeeForCreditInformation"    minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="FeeType"      minOccurs="0"  maxOccurs="2">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="StandaloneFees"                   minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="FirmOnly"     minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="FeePerIndividual"             type="NonNegativeMonetaryFloat2Type"                     minOccurs="0"/>
+                                                                <xs:element name="IndividualsChargedFee"        type="NonNegativeIntegerType"                            minOccurs="0"/>
+                                                                <xs:element name="RevenueFromFees"              type="NonNegativeMonetaryFloat2Type"                     minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="AROnly"       minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="FeePerIndividual"             type="NonNegativeMonetaryFloat2Type"                     minOccurs="0"/>
+                                                                <xs:element name="IndividualsChargedFee"        type="NonNegativeIntegerType"                            minOccurs="0"/>
+                                                                <xs:element name="RevenueFromFees"              type="NonNegativeMonetaryFloat2Type"                     minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="SubscriptionFees"                 minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="FirmOnly" minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="SubscriptionTermsOffered"                                     minOccurs="0">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="SubscriptionType"      minOccurs="0"  maxOccurs="4">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:enumeration value="A"/>
+                                                                                        <xs:enumeration value="B"/>
+                                                                                        <xs:enumeration value="C"/>
+                                                                                        <xs:enumeration value="W"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="SubscriptionFeeAmount" type="SubscriptionFeeStructure"        minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="AROnly"   minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="SubscriptionTermsOffered"                                     minOccurs="0">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="SubscriptionType"      minOccurs="0"  maxOccurs="4">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:enumeration value="A"/>
+                                                                                        <xs:enumeration value="B"/>
+                                                                                        <xs:enumeration value="C"/>
+                                                                                        <xs:enumeration value="W"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="SubscriptionFeeAmount" type="SubscriptionFeeStructure"        minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Subscriptions"    minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="FirmOnly"         type="SubscriptionStructure"    minOccurs="0"/>
+                                        <xs:element name="AROnly"           type="SubscriptionStructure"    minOccurs="0"/>
+                                        <xs:element name="Cancellations"                                    minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="AbleToCancelEarly"        type="YesNoType"                        minOccurs="0"/>
+                                                    <xs:element name="ChargeCancellationFee"    type="YesNoType"                        minOccurs="0"/>
+                                                    <xs:element name="CancellationFee"          type="NonNegativeMonetaryFloat2Type"    minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="BusinessModel"    minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="InfoForWiderFinancialAdvice"      type="YesNoType"        minOccurs="0"/>
+                                        <xs:element name="InfoForDebtAdvice"                type="YesNoType"        minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="CreditScore"      minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="InfoForGeneralAdvice"                     type="YesNoType"                            minOccurs="0"/>
+                                        <xs:element name="InfoForTailoredAdvice"                    type="YesNoType"                            minOccurs="0"/>
+                                        <xs:element name="MarketingImproveCreditScore"              type="YesNoType"                            minOccurs="0"/>
+                                        <xs:element name="IndividualsTrackCreditScoresFirmOnly"     type="NonNegativeIntegerType"               minOccurs="0"/>
+                                        <xs:element name="IndividualsTrackCreditScoresAROnly"       type="NonNegativeIntegerType"               minOccurs="0"/>
+                                        <xs:element name="IndividualsImprovedScoreFirmOnly"         type="NonNegativeIntegerType"               minOccurs="0"/>
+                                        <xs:element name="IndividualsImprovedScoreAROnly"           type="NonNegativeIntegerType"               minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="TailoringAdvice"  minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="TailoredAdvice"                               type="YesNoType"                minOccurs="0"/>
+                                        <xs:element name="TailoredBasedOnCreditScore"                   type="YesNoType"                minOccurs="0"/>
+                                        <xs:element name="TailoredInstructionsToLenders"                type="YesNoType"                minOccurs="0"/>
+                                        <xs:element name="TailoredListOfLendersBrokers"                 type="YesNoType"                minOccurs="0"/>
+                                        <xs:element name="RankCreditFacilities"                         type="YesNoType"                minOccurs="0"/>
+                                        <xs:element name="IndividualsTakeCreditOnReferralFirmOnly"      type="NonNegativeIntegerType"   minOccurs="0"/>
+                                        <xs:element name="IndividualsTakeCreditOnReferralAROnly"        type="NonNegativeIntegerType"   minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="RelevantAncillaryCreditFirm"          minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Marketing"        minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ChannelsUsed"    minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="ChannelType"      minOccurs="0"  maxOccurs="7">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="A"/>
+                                                                <xs:enumeration value="B"/>
+                                                                <xs:enumeration value="C"/>
+                                                                <xs:enumeration value="D"/>
+                                                                <xs:enumeration value="E"/>
+                                                                <xs:enumeration value="F"/>
+                                                                <xs:enumeration value="G"/>
+                                                                <xs:enumeration value="X"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Revenue"          minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="FirmOnly"     minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="CreditBroking"                          type="NonNegativeMonetaryFloat2Type"     minOccurs="0"/>
+                                                    <xs:element name="DebtAdjustingAndDebtCounselling"        type="NonNegativeMonetaryFloat2Type"     minOccurs="0"/>
+                                                    <xs:element name="ProvidingCreditInformationServices"     type="NonNegativeMonetaryFloat2Type"     minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="AROnly"       minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="CreditBroking"                        type="NonNegativeMonetaryFloat2Type"     minOccurs="0"/>
+                                                    <xs:element name="DebtAdjustingAndDebtCounselling"      type="NonNegativeMonetaryFloat2Type"     minOccurs="0"/>
+                                                    <xs:element name="ProvidingCreditInformationServices"   type="NonNegativeMonetaryFloat2Type"     minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Miscellaneous"    minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="MemberOfTradeBody"        type="YesNoType"        minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="currency"   fixed="GBP"     use="required"/>
+            <xs:attribute name="units"      fixed="single"  use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="FinancialProductStructure">
+        <xs:sequence>
+            <xs:element name="FinanceForInsurancePremiums"    type="NonNegativeIntegerType"   minOccurs="0"/>
+            <xs:element name="CashLoans"                      type="NonNegativeIntegerType"   minOccurs="0"/>
+            <xs:element name="CreditCards"                    type="NonNegativeIntegerType"   minOccurs="0"/>
+            <xs:element name="Overdrafts"                     type="NonNegativeIntegerType"   minOccurs="0"/>
+            <xs:element name="Other"                          type="NonNegativeIntegerType"   minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="VehicleStructure">
+        <xs:sequence>
+            <xs:element name="Cars"                       type="NonNegativeIntegerType"       minOccurs="0"/>
+            <xs:element name="MopedsOrMotorbikes"         type="NonNegativeIntegerType"       minOccurs="0"/>
+            <xs:element name="VansOrLGV"                  type="NonNegativeIntegerType"       minOccurs="0"/>
+            <xs:element name="GoodsVehicles"              type="NonNegativeIntegerType"       minOccurs="0"/>
+            <xs:element name="HGV"                        type="NonNegativeIntegerType"       minOccurs="0"/>
+            <xs:element name="MotorhomesAndCampervans"    type="NonNegativeIntegerType"       minOccurs="0"/>
+            <xs:element name="Buses"                      type="NonNegativeIntegerType"       minOccurs="0"/>
+            <xs:element name="Agricultural"               type="NonNegativeIntegerType"       minOccurs="0"/>
+            <xs:element name="Construction"               type="NonNegativeIntegerType"       minOccurs="0"/>
+            <xs:element name="Other"                      type="NonNegativeIntegerType"       minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="GoodsAndServicesStructure">
+        <xs:sequence>
+            <xs:element name="GoodsMobilityAids"                      type="NonNegativeIntegerType"        minOccurs="0"/>
+            <xs:element name="GoodsHomeImprovement"                   type="NonNegativeIntegerType"        minOccurs="0"/>
+            <xs:element name="GoodsMobilePhones"                      type="NonNegativeIntegerType"        minOccurs="0"/>
+            <xs:element name="GoodsJewelleryWatches"                  type="NonNegativeIntegerType"        minOccurs="0"/>
+            <xs:element name="GoodsHousehold"                         type="NonNegativeIntegerType"        minOccurs="0"/>
+            <xs:element name="GoodsSportsLeisure"                     type="NonNegativeIntegerType"        minOccurs="0"/>
+            <xs:element name="GoodsMobileHomes"                       type="NonNegativeIntegerType"        minOccurs="0"/>
+            <xs:element name="GoodsTools"                             type="NonNegativeIntegerType"        minOccurs="0"/>
+            <xs:element name="GoodsAgricultureEquipmentSupplies"      type="NonNegativeIntegerType"        minOccurs="0"/>
+            <xs:element name="GoodsOtherPlantMachinery"               type="NonNegativeIntegerType"        minOccurs="0"/>
+            <xs:element name="GoodsOfficeEquipment"                   type="NonNegativeIntegerType"        minOccurs="0"/>
+            <xs:element name="GoodsHealthMedicalCareEquipment"        type="NonNegativeIntegerType"        minOccurs="0"/>
+            <xs:element name="GoodsOther"                             type="NonNegativeIntegerType"        minOccurs="0"/>
+            <xs:element name="ServicesHealthMedicalCare"              type="NonNegativeIntegerType"        minOccurs="0"/>
+            <xs:element name="ServicesEducationTraining"              type="NonNegativeIntegerType"        minOccurs="0"/>
+            <xs:element name="ServicesTravel"                         type="NonNegativeIntegerType"        minOccurs="0"/>
+            <xs:element name="ServicesMembershipSubscriptionFees"     type="NonNegativeIntegerType"        minOccurs="0"/>
+            <xs:element name="ServicesOther"                          type="NonNegativeIntegerType"        minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="IntroductionStructure">
+        <xs:sequence>
+            <xs:element name="TotalRevenue"                      type="NonNegativeMonetaryFloat2Type"                     minOccurs="0"/>
+            <xs:element name="TotalCommissionEarned"             type="NonNegativeMonetaryFloat2Type"                     minOccurs="0"/>
+            <xs:element name="TotalFeesFromIndividuals"          type="NonNegativeMonetaryFloat2Type"                     minOccurs="0"/>
+            <xs:element name="OtherRevenueReceived"              type="NonNegativeMonetaryFloat2Type"                     minOccurs="0"/>
+            <xs:element name="TotalCommissionMerchantFeesPaid"   type="NonNegativeMonetaryFloat2Type"                     minOccurs="0"/>
+            <xs:element name="TotalIntroductions"                type="NonNegativeIntegerType"                            minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="RelationshipStructure">
+        <xs:sequence>
+            <xs:element name="Name"                         type="String100Type"                            minOccurs="0"/>
+            <xs:element name="FRN"                          type="FRNType"                                  minOccurs="0"/>
+            <xs:element name="TotalIntroductions"           type="NonNegativeIntegerType"                   minOccurs="0"/>
+            <xs:element name="Revenue"                      type="NonNegativeMonetaryFloat2Type"            minOccurs="0"/>
+            <xs:element name="CommissionMerchantFeesPaid"   type="NonNegativeMonetaryFloat2Type"            minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="FirmRemunerationStructure">
+        <xs:sequence>
+            <xs:element name="FlatFeeClickthrough"          type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+            <xs:element name="FlatFeeIntroduction"          type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+            <xs:element name="FlatFeeAgreementEntered"      type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+            <xs:element name="PercentOfTransactionValue"    type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+            <xs:element name="FeeReceivedFromIndividual"    type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+            <xs:element name="Other"                        type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="MoneyDebtAdviceStructure">
+        <xs:sequence>
+            <xs:element name="AdviceOnExpenditure"      type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+            <xs:element name="AdviceOnIncome"           type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+            <xs:element name="UnregulatedDebts"         type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+            <xs:element name="RegulatedDebts"           type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/> 
+            <xs:element name="AdviceOnDebtSolution"     type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+            <xs:element name="Other"                    type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="DebtSolutionCustomerStructure">
+        <xs:sequence>
+            <xs:element name="Total"                            type="NonNegativeIntegerType"        minOccurs="0"/>
+            <xs:element name="DidNotTakeDebtSolution"           type="NonNegativeIntegerType"        minOccurs="0"/>
+            <xs:element name="TookUpDebtSolution"               type="NonNegativeIntegerType"        minOccurs="0"/>
+            <xs:element name="NotOfferedDebtSolution"           type="NonNegativeIntegerType"        minOccurs="0"/>
+            <xs:element name="DebtSolutionOfferedByAnotherFirm" type="NonNegativeIntegerType"        minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="DebtSolutionMonetaryStructure">
+        <xs:sequence>
+            <xs:element name="DebtManagementPlans"                  type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+            <xs:element name="IVA"                                  type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+            <xs:element name="DebtConsolidationLoan"                type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+            <xs:element name="TokenPaymentPlans"                    type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+            <xs:element name="EquityRelease"                        type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+            <xs:element name="BudgetingArrangements"                type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+            <xs:element name="DebtReliefOrder"                      type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+            <xs:element name="Other"                                type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+            <xs:element name="ScotlandDebtArrangementScheme"        type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+            <xs:element name="ScotlandMinimalAssetsProcess"         type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+            <xs:element name="ScotlandProtectedTrustDeed"           type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+            <xs:element name="ScotlandSequestration"                type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+            <xs:element name="ScotlandOther"                        type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="DebtSolutionIntegerStructure">
+        <xs:sequence>
+            <xs:element name="DebtManagementPlans"                  type="NonNegativeIntegerType"         minOccurs="0"/>
+            <xs:element name="IVA"                                  type="NonNegativeIntegerType"         minOccurs="0"/>
+            <xs:element name="DebtConsolidationLoan"                type="NonNegativeIntegerType"         minOccurs="0"/>
+            <xs:element name="TokenPaymentPlans"                    type="NonNegativeIntegerType"         minOccurs="0"/>
+            <xs:element name="EquityRelease"                        type="NonNegativeIntegerType"         minOccurs="0"/>
+            <xs:element name="BudgetingArrangements"                type="NonNegativeIntegerType"         minOccurs="0"/>
+            <xs:element name="DebtReliefOrder"                      type="NonNegativeIntegerType"         minOccurs="0"/>
+            <xs:element name="Other"                                type="NonNegativeIntegerType"         minOccurs="0"/>
+            <xs:element name="ScotlandDebtArrangementScheme"        type="NonNegativeIntegerType"         minOccurs="0"/>
+            <xs:element name="ScotlandMinimalAssetsProcess"         type="NonNegativeIntegerType"         minOccurs="0"/>
+            <xs:element name="ScotlandProtectedTrustDeed"           type="NonNegativeIntegerType"         minOccurs="0"/>
+            <xs:element name="ScotlandSequestration"                type="NonNegativeIntegerType"         minOccurs="0"/>
+            <xs:element name="ScotlandOther"                        type="NonNegativeIntegerType"         minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="SubscriptionFeeStructure">
+        <xs:sequence>
+            <xs:element name="Weekly"       type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+            <xs:element name="Monthly"      type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>                                                                            
+            <xs:element name="Annually"     type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+            <xs:element name="Other"        type="NonNegativeMonetaryFloat2Type"         minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="SubscriptionStructure">
+        <xs:sequence>
+            <xs:element name="SignedSubscriptions"        type="NonNegativeIntegerType"                 minOccurs="0"/>
+            <xs:element name="CancelledSubscriptions"     type="NonNegativeIntegerType"                 minOccurs="0"/>
+            <xs:element name="RevenueFromSubscriptions"   type="NonNegativeMonetaryFloat2Type"          minOccurs="0"/>
+            <xs:element name="AvgDurationOfSubscription"  type="NonNegativeFloat2Type"                  minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

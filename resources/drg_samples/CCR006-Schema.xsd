@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    *******************************************************************
+    *
+    *    Schema for: Data Item CCR006 Consumer Credit data: Debt Collection
+    *
+    *    Version:    1
+    *    Date:       31 October 2013 
+    *
+    *    History:    Version  1 follows publication of CP13/10
+    *                
+    *
+    *******************************************************************
+-->
+<xs:schema    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified" 
+    
+    targetNamespace=    "urn:fsa-gov-uk:MER:CCR006:1"
+    xmlns=              "urn:fsa-gov-uk:MER:CCR006:1" 
+    xmlns:mer-meta=     "urn:fsa-gov-uk:MER:Meta-Data:1" 
+    
+    version="1"
+    id="MER-CCR006"> 
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>CCR006</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>Consumer Credit data: Debt Collection</mer-meta:DataItemName>
+        </xs:documentation>
+    </xs:annotation>
+    
+    <xs:include schemaLocation="../../CommonTypes/v7/CommonTypes-Schema.xsd"/>
+    <xs:element name="CCR006-DebtCollection">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="UndertakenDebtCollection" type="YesNoType" minOccurs="0" ></xs:element>
+            
+            <xs:element name="AllFirmsExceptNoTo1A" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="TotalValueDebtPursuedForCollection" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="StageOfDebtPlacement" type="MonetaryStructure" minOccurs="0"/>
+                                    </xs:sequence>  
+                                </xs:complexType>
+                            </xs:element>
+                        <xs:element name="TotalValueDebtUnderCollection" minOccurs="0">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="StageOfDebtPlacement" type="MonetaryStructure" minOccurs="0" />
+                                </xs:sequence>  
+                            </xs:complexType>
+                        </xs:element>          
+                        <xs:element name="TotalNumberDebtPursuedForCollection" minOccurs="0">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="StageOfDebtPlacement" type="NumberStructure" minOccurs="0" />
+                                </xs:sequence>  
+                            </xs:complexType>
+                        </xs:element>                                     
+                        <xs:element name="TotalNumberDebtUnderCollection" minOccurs="0">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="StageOfDebtPlacement" type="NumberStructure" minOccurs="0" />
+                                </xs:sequence>  
+                            </xs:complexType>
+                        </xs:element> 
+                        <xs:element name="NumberDebtUnderCollectionMissedRepayments" minOccurs="0">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="StageOfDebtPlacement" type="NumberStructure" minOccurs="0" />
+                                </xs:sequence>  
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="TotalIncomePerPlacement" minOccurs="0">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="StageOfDebtPlacement" type="MonetaryStructure" minOccurs="0" />
+                                </xs:sequence>  
+                            </xs:complexType>
+                        </xs:element> 
+                    </xs:sequence>            
+                </xs:complexType>  
+            </xs:element>
+        </xs:sequence>
+            <xs:attributeGroup ref="BasisCurrencyAndUnitsAttrGroup"/>
+    </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="MonetaryStructure">
+        <xs:sequence>
+            <xs:element name="First" type="MonetaryType" minOccurs="0" />                       
+            <xs:element name="Second" type="MonetaryType" minOccurs="0"/>
+            <xs:element name="Third" type="MonetaryType" minOccurs="0"/>
+            <xs:element name="Fourth" type="MonetaryType" minOccurs="0"/>
+            <xs:element name="Fifth" type="MonetaryType" minOccurs="0"/>
+            <xs:element name="Subsequent" type="MonetaryType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType> 
+    <xs:complexType name="NumberStructure">
+        <xs:sequence>
+            <xs:element name="First" type="NonNegativeIntegerType" minOccurs="0" />                       
+            <xs:element name="Second" type="NonNegativeIntegerType" minOccurs="0"/>
+            <xs:element name="Third" type="NonNegativeIntegerType" minOccurs="0"/>
+            <xs:element name="Fourth" type="NonNegativeIntegerType" minOccurs="0"/>
+            <xs:element name="Fifth" type="NonNegativeIntegerType" minOccurs="0"/>
+            <xs:element name="Subsequent" type="NonNegativeIntegerType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType> 
+</xs:schema>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    ********************************************************************************
+    *
+    *    Schema for: Data Item RMA-G-TrainingAndCompetence
+    *
+    *    Version:    6
+    *    Date:       15 Nov 2017       
+    *
+    *    History:    Version 6 follows publication of  CP17/14
+                     
+                     Version 5 follows publication of CP15/42
+    *                
+    *                Version 4 follows publication of PS15/9
+    *                Advising on second (and subsequent) charge mortgages now included
+    *                Change to data type for 3D from IntPos to NonNegativeFloat2Type 
+    *
+    *                Version 3 follows publication of PS11/13
+    *                Boolean type replaced by YesNo Type
+    *                Xml name changes for Retail Investment Products/Restricted
+    *                Removed all minOccurs=1 and replaced with 0 
+    *
+    *                Version 2 follows publication of LI 2007/70.
+    *                TypesOfAdvice and ClawedBackCommission and hence
+    *                attributeGroup CurrencyAndUnitsAttrGroup now included
+    *                - copied in from different data item (RMA-H).
+    *
+    *                Version 1 follows publication of CP07/17
+    *
+    ********************************************************************************
+-->
+
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified" 
+    attributeFormDefault="unqualified" 
+    
+    targetNamespace="urn:fsa-gov-uk:MER:RMA-G:6" 
+    xmlns=          "urn:fsa-gov-uk:MER:RMA-G:6" 
+    xmlns:mer-meta= "urn:fsa-gov-uk:MER:Meta-Data:1" 
+    
+    version="6" 
+    id="MER-RMA-G">
+    
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>RMA-G</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>TrainingAndCompetence</mer-meta:DataItemName>
+        </xs:documentation>
+    </xs:annotation>
+    
+    <xs:include schemaLocation="../../CommonTypes/v11/CommonTypes-Schema.xsd"/>
+    
+    <xs:element name="RMA-G-TrainingAndCompetence">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="GeneralInfo" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="RegulatedActivities" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="MortgageAdvising"                 type="YesNoType"    minOccurs="0"/>
+                                        <xs:element name="NonInvestmentInsuranceAdvising"   type="YesNoType"    minOccurs="0"/>
+                                        <xs:element name="RIProductsAdvising"               type="YesNoType"    minOccurs="0"/>
+                                        <xs:element name="SecondChargeAdvising"             type="YesNoType"    minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="TotalStaffNumber"                 type="NonNegativeIntegerType"   minOccurs="0"/>
+                            <xs:element name="OfWhich" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="StaffThatAdvise"                  type="RMAAdviceStructure"       minOccurs="0"/>
+                                        <xs:element name="TotalEmployed"                    type="NonNegativeIntegerType"   minOccurs="0"/>
+                                        <xs:element name="TotalFullTimeEquivalent"          type="NonNegativeFloat2Type"    minOccurs="0"/>
+                                        <xs:element name="StaffSupervisingAdvisors"         type="RMAAdviceStructure"       minOccurs="0"/>
+                                        <xs:element name="TotalSupervisoryResponsibilities" type="NonNegativeIntegerType"   minOccurs="0"/>
+                                        <xs:element name="AssessedAdvisors"                 type="RMAAdviceStructure"       minOccurs="0"/>
+                                        <xs:element name="TotalAssessedAdvisors"            type="NonNegativeIntegerType"   minOccurs="0"/>
+                                        <xs:element name="FullyQualified"   minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="RIProductsAdvising"   type="NonNegativeIntegerType"    minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="ValidSPS"         minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="RIProductsAdvising"   type="NonNegativeIntegerType"    minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="ExaminedAdvisors" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="MortgageAdvising"     type="NonNegativeIntegerType"    minOccurs="0"/>
+                                                    <xs:element name="SecondChargeAdvising" type="NonNegativeIntegerType"    minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="TotalHoldingQualification"        type="NonNegativeIntegerType" minOccurs="0"/>       
+                                        <xs:element name="TotalEmployeesWhoHaveLeft"        type="NonNegativeIntegerType" minOccurs="0"/>
+                                        <xs:element name="AdvisorsWhoHaveLeft" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="MortgageAdvising"                 type="NonNegativeIntegerType" minOccurs="0"/>
+                                                    <xs:element name="NonInvestmentInsuranceAdvising"   type="NonNegativeIntegerType" minOccurs="0"/>
+                                                    <xs:element name="RIProductsAdvising"               type="NonNegativeIntegerType" minOccurs="0"/>
+                                                    <xs:element name="SecondChargeAdvising"             type="NonNegativeIntegerType" minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="TotalAdvisorsWhoHaveLeft" type="NonNegativeIntegerType" minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                              
+                <xs:element name="NonInvestmentInsurance" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="TypesofAdvice" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="FairAnalysis"         type="YesNoType"    minOccurs="0"/>
+                                        <xs:element name="RestrictedMultiTie"   type="YesNoType"    minOccurs="0"/>
+                                        <xs:element name="RestrictedSingleTie"  type="YesNoType"    minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                    </xs:element>
+                    
+                <xs:element name="MortgagesAndSecondCharge" minOccurs="0">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="TypesofMortgageAdvice"        type="MortgageAdviceStructure"  minOccurs="0"/>
+                                <xs:element name="TypesofSecondChargeAdvice"    type="MortgageAdviceStructure"  minOccurs="0"/>
+                            </xs:sequence>
+                        </xs:complexType>
+                        </xs:element>
+
+                <xs:element name="RIProducts" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="TypesofAdvice" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Independent"          type="YesNoType"    minOccurs="0"/>
+                                        <xs:element name="RestrictedMultiTie"   type="YesNoType"    minOccurs="0"/>
+                                        <xs:element name="RestrictedSingleTie"  type="YesNoType"    minOccurs="0"/>
+                                        <xs:element name="RestrictedLimited"    type="YesNoType"    minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="ClawedBackCommission" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Number"   type="NonNegativeIntegerType"       minOccurs="0"/>
+                                        <xs:element name="Value"    type="NonNegativeMonetaryType"      minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element> 
+                            <xs:element name="ProfessionalStandardsData"    minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="RIAInformation"   minOccurs="0" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="AdviserID"    minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="LastName"         type="String100Type"        minOccurs="0"/>
+                                                                <xs:element name="FirstName"        type="String100Type"        minOccurs="0"/>
+                                                                <xs:element name="IRN"              type="IRNType"              minOccurs="0"/>
+                                                                <xs:element name="NINumber"         type="NIType"               minOccurs="0"/>
+                                                                <xs:element name="DateOfBirth"      type="DateAgeRestriction"   minOccurs="0"/>
+                                                                <xs:element name="PassportNumber"   type="PassportType"         minOccurs="0"/>
+                                                                <xs:element name="Nationality"      type="CountryCodeType3"     minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="AdviserQualification"     minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="PartQualified"    type="YesNoType"    minOccurs="0"/>
+                                                                <xs:element name="FullyQualified"   type="YesNoType"    minOccurs="0"/>
+                                                                <xs:element name="AccreditedBody"                       minOccurs="0">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                            <xs:enumeration value="CFA Society of the UK"/>
+                                                                            <xs:enumeration value="The Chartered Insurance Institute"/>
+                                                                            <xs:enumeration value="The Chartered Institute for Securities and Investment"/>
+                                                                            <xs:enumeration value="The Chartered Institute of Bankers in Scotland"/>
+                                                                            <xs:enumeration value="The Institute of Chartered Accountants in England and Wales"/>
+                                                                            <xs:enumeration value="The Pensions Management Institute"/>
+                                                                            <xs:enumeration value="The London Institute of Banking and Finance"/>
+                                                                            <xs:enumeration value="Other"/>
+                                                                            <xs:enumeration value="No SPS"/>                                                                            
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="ActivityStartDate"    type="DateRestriction"  minOccurs="0"/>
+                                                                <xs:element name="SPSStartDate"         type="DateRestriction"  minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>              
+            </xs:sequence>
+            <xs:attributeGroup ref="CurrencyAndUnitsAttrGroup"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:group name="RMAAdviceGroup">
+        <xs:sequence>
+            <xs:element name="MortgageAdvising"                 type="NonNegativeIntegerType" minOccurs="0"/>
+            <xs:element name="NonInvestmentInsuranceAdvising"   type="NonNegativeIntegerType" minOccurs="0"/>
+            <xs:element name="RIProductsAdvising"               type="NonNegativeIntegerType" minOccurs="0"/>
+            <xs:element name="SecondChargeAdvising"             type="NonNegativeIntegerType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:complexType name="RMAAdviceStructure">
+        <xs:sequence>
+            <xs:group ref="RMAAdviceGroup"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:group name="MortgageAdviceGroup">
+        <xs:sequence>
+            <xs:element name="Limited"      type="YesNoType"    minOccurs="0"/>
+            <xs:element name="Unlimited"    type="YesNoType"    minOccurs="0"/> 
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:complexType name="MortgageAdviceStructure">
+        <xs:sequence>
+            <xs:group ref="MortgageAdviceGroup"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+</xs:schema>
+        
+        
+
+
+    
+
+

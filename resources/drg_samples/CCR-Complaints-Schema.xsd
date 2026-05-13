@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    *******************************************************************
+    *
+    *    Schema for: CCR-Complaints
+    *
+    *    Version:    3.0
+    *    Date:       27 May 2022
+    *
+    *    History:   Version 3 changes the CommonTypes-Schema to Version 14 
+    *               Version 2 issued following publication of CP14/10
+    *               Version 1 issued following publication of CP13/10              
+    *
+    *******************************************************************
+-->
+
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified" 
+    attributeFormDefault="unqualified" 
+    
+    targetNamespace="urn:fsa-gov-uk:MER:CCR-Complaints:3"
+    xmlns=          "urn:fsa-gov-uk:MER:CCR-Complaints:3" 
+    xmlns:mer-meta= "urn:fsa-gov-uk:MER:Meta-Data:1" 
+    
+    version="3" 
+    id="MER-CCR-Complaints">
+    
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>CCR-Complaints</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>Complaints Return</mer-meta:DataItemName>
+        </xs:documentation>
+    </xs:annotation>
+    
+    <xs:include schemaLocation="../../CommonTypes/v14/CommonTypes-Schema.xsd"/>
+    
+    <xs:element name="CCR-Complaints">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="GroupData"   minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MoreOneEntity" type="YesNoType" minOccurs="1"/>
+                            <xs:element name="OtherGroupFirms" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="FirmReferenceNumber" type="FRNType" minOccurs="0" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>                          
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Declaration" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="NilReturn"     type="YesNoType" minOccurs="1"/>             
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>              
+                <xs:element name="ConsumerCreditActivities" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Lending" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="DebtPurchasing" type="CCFirmStructure" minOccurs="0"/>
+                                        <xs:element name="HirePurchaseConditionalSale" type="CCFirmStructure" minOccurs="0" />
+                                        <xs:element name="HomeCreditLoanAgreement" type="CCFirmStructure" minOccurs="0" />
+                                        <xs:element name="BillOfSaleLoanAgreement" type="CCFirmStructure" minOccurs="0" />
+                                        <xs:element name="Pawnbroking" type="CCFirmStructure" minOccurs="0" />
+                                        <xs:element name="HighCostShortTermCredit" type="CCFirmStructure" minOccurs="0" />
+                                        <xs:element name="OtherLending" type="CCFirmStructure" minOccurs="0" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="CreditBroking" type="CCFirmStructure" minOccurs="0" />
+                            <xs:element name="DebtManagement" type="CCFirmStructure" minOccurs="0" />
+                            <xs:element name="DebtCollecting" type="CCFirmStructure" minOccurs="0" />
+                            <xs:element name="AllOtherCreditRelatedActivity" type="CCFirmStructure" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>                  
+                </xs:element>
+                <xs:element name="ComplaintsDataPublication" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ConsentToPublish"                     type="YesNoType" minOccurs="0" />
+                            <xs:element name="FirmPublication"                      type="YesNoType" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attributeGroup ref="CurrencyAndUnitsAttrGroup"/>
+        </xs:complexType>
+    </xs:element>
+              
+
+    <xs:complexType name="CCFirmStructure">
+        <xs:sequence>
+            <xs:element name="Outstanding"              type="NonNegativeIntegerType" minOccurs="0"/>
+            <xs:element name="ComplaintsReceived"       type="NonNegativeIntegerType" minOccurs="0"/>
+            <xs:element name="ComplaintsClosed"         type="NonNegativeIntegerType" minOccurs="0"/>
+            <xs:element name="ComplaintsUpheld"         type="NonNegativeIntegerType" minOccurs="0"/>
+            <xs:element name="RedressPaid"              type="NonNegativeMonetaryType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+</xs:schema>

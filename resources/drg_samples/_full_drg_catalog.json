@@ -1,0 +1,6478 @@
+[
+  {
+    "code": "*Common",
+    "name": "DRG Change Log",
+    "version": "52",
+    "status": "Latest",
+    "applicable_from": "06/05/2026",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/*Common/52/DRG%20Change%20Log.xlsx",
+        "text": "Change Log"
+      }
+    ]
+  },
+  {
+    "code": "AIF001",
+    "name": "AIFMD Manager Report",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "01/04/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/AIF001/2/AIF001-Data-Definition%20V2.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/AIF001/2/AIFMD_DATMAN_V2.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/AIF001/2/AIF001%20Sample%20V2.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "AIF001",
+    "name": "AIFMD Manager Report",
+    "version": "1.2",
+    "status": "Previous",
+    "applicable_from": "01/10/2014",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/AIF001/1.2/AIF001-Data-Definition%20V1.2.1.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/AIF001/1.2/AIFMD_DATMAN_V1.2.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "AIF002",
+    "name": "Fund Transparency Report",
+    "version": "2.1",
+    "status": "Latest",
+    "applicable_from": "06/07/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/AIF002/2.1/AIF002-Data-Definition%20V2.1.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/AIF002/2.1/AIFMD_DATAIF_V2.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/AIF002/2.1/AIF002%20Sample%20V2.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "AIF002",
+    "name": "Fund Transparency Report",
+    "version": "1.2",
+    "status": "Previous",
+    "applicable_from": "01/10/2014",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/AIF002/1.2/AIF002-Data-Definition%20V1.2.1.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/AIF002/1.2/AIFMD_DATAIF_V1.2.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "AIFMD",
+    "name": "AIFMD Data Types",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "01/04/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/AIFMD/2/AIFMD_REPORTING_DataTypes_V2.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "AIFMD",
+    "name": "AIFMD Data Types",
+    "version": "1.2",
+    "status": "Previous",
+    "applicable_from": "01/10/2014",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/AIFMD/1.2/AIFMD_REPORTING_DataTypes_V1.2.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "CCR-Complaints",
+    "name": "CCR-Complaints Return",
+    "version": "3",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR-Complaints/3/CCR-Complaints-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR-Complaints/3/CCR-Complaints-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR-Complaints/3/CCR-Complaints-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR-Complaints/3/CCR-Complaints-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "CCR-Complaints",
+    "name": "CCR-Complaints Return",
+    "version": "2.1",
+    "status": "Previous",
+    "applicable_from": "30/12/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR-Complaints/2.1/CCR-Complaints-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR-Complaints/2.1/CCR-Complaints-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR-Complaints/2.1/CCR-Complaints-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "CCR-Complaints",
+    "name": "CCR-Complaints Return",
+    "version": "1",
+    "status": "Previous",
+    "applicable_from": "01/10/2014",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR-Complaints/1/CCR-Complaints-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR-Complaints/1/CCR-Complaints-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR-Complaints/1/CCR-Complaints-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "CCR001",
+    "name": "Consumer credit data: financial data",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "01/10/2014",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR001/v1/CCR001-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR001/v1/CCR001-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR001/v1/CCR001-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR001/v1/CCR001-Map-Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "CCR002",
+    "name": "Consumer credit data: volumes",
+    "version": "4.1",
+    "status": "Latest",
+    "applicable_from": "01/12/2017",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR002/v4.1/CCR002-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR002/v4.1/CCR002-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR002/v4.1/CCR002-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR002/v4.1/CCR002_MapTemplate_v4.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "CCR002",
+    "name": "Consumer credit data: volumes",
+    "version": "4",
+    "status": "Previous",
+    "applicable_from": "31/10/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR002/v4/CCR002-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR002/v4/CCR002-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR002/v4/CCR002-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR002/v4/CCR002_MapTemplate_v4.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "CCR003",
+    "name": "Consumer credit data: lenders",
+    "version": "2.1",
+    "status": "Latest",
+    "applicable_from": "21/11/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR003/v2.1/CCR003-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR003/v2.1/CCR003-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR003/v2.1/CCR003-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR003/v2.1/CCR003_MapTemplate_v2.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "CCR003",
+    "name": "Consumer credit data: lenders",
+    "version": "1",
+    "status": "Previous",
+    "applicable_from": "01/10/2014",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR003/v1/CCR003-Data-Defiition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR003/v1/CCR003-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR003/v1/CCR003-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "CCR004",
+    "name": "Consumer credit data: debt management firms",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "31/12/2014",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR004/v2/CCR004-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR004/v2/CCR004-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR004/v2/CCR004-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "CCR004",
+    "name": "Consumer credit data: debt management firms",
+    "version": "1",
+    "status": "Previous",
+    "applicable_from": "01/10/2014",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR004/v1/CCR004-Data-Defiition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR004/v1/CCR004-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR004/v1/CCR004-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "CCR005",
+    "name": "Consumer credit data: client money and assets",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "01/10/2014",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR005/v1/CCR005-Data-Defiition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR005/v1/CCR005-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR005/v1/CCR005-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "CCR006",
+    "name": "Consumer credit data: debt collection",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "01/10/2014",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR006/v1/CCR006-Data-Defiition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR006/v1/CCR006-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR006/v1/CCR006-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "CCR007",
+    "name": "Consumer credit data: key data for credit firms with limited permissions",
+    "version": "2.4",
+    "status": "Latest",
+    "applicable_from": "03/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR007/2.4/CCR007-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR007/2.4/CCR007-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR007/2.4/CCR007-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "CCR008",
+    "name": "Consumer credit data: credit broking",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "30/06/2015",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR008/v1/CCR008-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR008/v1/CCR008-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR008/v1/CCR008-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR008/v1/ccr008-map-template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "CCR009",
+    "name": "Consumer credit data: relevant ancillary credit firm",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "31/12/2025",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR009/1/CCR009-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR009/1/CCR009-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CCR009/1/CCR009_v1_Samples.zip",
+        "text": "Zip"
+      }
+    ]
+  },
+  {
+    "code": "CMAR",
+    "name": "Client Money and Asset Return",
+    "version": "5.1",
+    "status": "Latest",
+    "applicable_from": "01/07/2021",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CMAR/v5.1/CMAR%20v%205.1%20-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CMAR/v5.1/CMAR%20v%205.1%20-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CMAR/v5.1/CMAR%20v%205.1%20-Sample-Valid-And-Full-.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "CMAR",
+    "name": "Client Money and Asset Return",
+    "version": "5",
+    "status": "Previous",
+    "applicable_from": "30/06/2015",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CMAR/v5/CMAR-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CMAR/v5/CMAR-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CMAR/v5/CMAR-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CMAR/v5/CMAR-v5-MapTemplate.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "CMAR",
+    "name": "Client Money and Asset Return",
+    "version": "4.2",
+    "status": "Previous",
+    "applicable_from": "22/04/2013",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CMAR/v4.2/CMAR-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CMAR/v4.2/CMAR-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CMAR/v4.2/CMAR-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "CMC-Complaints",
+    "name": "Claims Management Complaints Return",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "01/04/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CMC-Complaints/1/CMC-Complaints%20Data%20Definition%20v1.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CMC-Complaints/1/CMC-Complaints%20Schema%20v1.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CMC-Complaints/1/CMC-Complaints%20Sample%20Full%20and%20Valid%20v1.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "CMC001",
+    "name": "Key Data for Claims Management",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "01/04/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CMC001/1/CMC001%20Data%20Definition%20v1.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CMC001/1/CMC001%20Schema%20v1.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CMC001/1/CMC001%20Sample%20Full%20and%20Valid%20v1.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "Common",
+    "name": "Common Data Types (referenced by all data items)",
+    "version": "9",
+    "status": "Previous",
+    "applicable_from": "30/06/2015",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CommonTypes/v9/CommonTypes-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CommonTypes/v9/CommonTypes-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "Common",
+    "name": "Common Data Types (referenced by all data items)",
+    "version": "8",
+    "status": "Previous",
+    "applicable_from": "01/09/2014",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CommonTypes/v8/CommonTypes-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CommonTypes/v8/CommonTypes-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "Common",
+    "name": "Common Data Types (referenced by all data items)",
+    "version": "7",
+    "status": "Previous",
+    "applicable_from": "31/10/2013",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CommonTypes/v7/CommonTypes-Data-Definition-INTERNAL.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CommonTypes/v7/CommonTypes-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "Common",
+    "name": "Common Data Types (referenced by all data items)",
+    "version": "6.1",
+    "status": "Previous",
+    "applicable_from": "01/03/2012",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CommonTypes/v6.1/CommonTypes-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CommonTypes/v6.1/CommonTypes-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "Common",
+    "name": "Common Data Types (referenced by all data items)",
+    "version": "5.2",
+    "status": "Previous",
+    "applicable_from": "20/12/2010",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CommonTypes/v5.2/CommonTypes-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CommonTypes/v5.2/CommonTypes-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "Common",
+    "name": "Common Data Types (referenced by all data items)",
+    "version": "4",
+    "status": "Previous",
+    "applicable_from": "25/01/2008",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CommonTypes/v4/CommonTypes-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CommonTypes/v4/CommonTypes-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "Common",
+    "name": "Common Data Types (referenced by all data items)",
+    "version": "3",
+    "status": "Previous",
+    "applicable_from": "16/11/2007",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CommonTypes/v3/CommonTypes-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CommonTypes/v3/CommonTypes-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "Common",
+    "name": "Common Data Types (referenced by all data items)",
+    "version": "18",
+    "status": "Latest",
+    "applicable_from": "24/07/2024",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/Common/18/CommonTypes-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/Common/18/CommonTypes-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "Common",
+    "name": "Common Data Types (referenced by all data items)",
+    "version": "17",
+    "status": "Previous",
+    "applicable_from": "12/09/2024",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/Common/17/CommonTypes-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/Common/17/CommonTypes-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "Common",
+    "name": "Common Data Types (referenced by all data items)",
+    "version": "15",
+    "status": "Previous",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/Common/15/CommonTypes-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/Common/15/CommonTypes-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "Common",
+    "name": "Common Data Types (referenced by all data items)",
+    "version": "14",
+    "status": "Previous",
+    "applicable_from": "30/09/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/Common/14/CommonTypes-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/Common/14/CommonTypes-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "Common",
+    "name": "Common Data Types (referenced by all data items)",
+    "version": "13",
+    "status": "Previous",
+    "applicable_from": "01/01/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/Common/13/CommonTypes-Data-Definition_v13.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/Common/13/CommonTypes-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "Common",
+    "name": "Common Data Types (referenced by all data items)",
+    "version": "12",
+    "status": "Previous",
+    "applicable_from": "31/03/2018",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CommonTypes/v12/CommonTypes-Data-Definition_v12.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CommonTypes/v12/CommonTypes-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "Common",
+    "name": "Common Data Types (referenced by all data items)",
+    "version": "11",
+    "status": "Previous",
+    "applicable_from": "31/05/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CommonTypes/v11/CommonTypes-Data-Definition_v11.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CommonTypes/v11/CommonTypes-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "Common",
+    "name": "Common Data Types (referenced by all data items)",
+    "version": "10",
+    "status": "Previous",
+    "applicable_from": "30/11/2015",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CommonTypes/v10/CommonTypes-Data-Definition-v10.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/CommonTypes/v10/CommonTypes-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "Common",
+    "name": "Cross Validation Rules",
+    "version": "16",
+    "status": "Latest",
+    "applicable_from": "08/01/2026",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/Common/16/Cross%20Data%20Item%20Validation%20Rules.pdf",
+        "text": "PDF"
+      }
+    ]
+  },
+  {
+    "code": "Complaints",
+    "name": "Complaints DISP 1 Ann 1R",
+    "version": "6.2",
+    "status": "Latest",
+    "applicable_from": "22/03/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/Complaints/6.2/Complaints-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/Complaints/6.2/Complaints-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/Complaints/6.2/Complaints-v6-Samples.zip",
+        "text": "Zip"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/Complaints/6.2/Complaints-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "Complaints",
+    "name": "Complaints DISP 1 Ann 1R",
+    "version": "5.3",
+    "status": "Previous",
+    "applicable_from": "20/08/2018",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/Complaints/5.3/Complaints-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/Complaints/5.3/Complaints-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/Complaints/5.3/Complaints-v5.2-samples.zip",
+        "text": "Zip"
+      }
+    ]
+  },
+  {
+    "code": "Complaints",
+    "name": "Complaints DISP 1 Ann 1R",
+    "version": "3",
+    "status": "Previous",
+    "applicable_from": "01/10/2014",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/Complaints/v3/Complaints-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/Complaints/v3/Complaints-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/Complaints/v3/Complaints-v3-samples.zip",
+        "text": "ZIP"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/Complaints/v3/complaints-v3maptemplate.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "FIN-A",
+    "name": "Annual report and accounts",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "31/12/2017",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN-A/2/FIN-A-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN-A/2/FIN-A-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN-A/2/FIN-A-Sample-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN-A/2/FIN-A%20Mapped%20Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "FIN-APF",
+    "name": "Authorised Professional Firms Questionnaire",
+    "version": "4",
+    "status": "Latest",
+    "applicable_from": "01/10/2020",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN-APF/v4/FIN-APF-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN-APF/v4/FIN-APF-Schema%20new.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN-APF/v4/FIN-APF-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FIN-APF",
+    "name": "Authorised Professional Firms Questionnaire",
+    "version": "3",
+    "status": "Previous",
+    "applicable_from": "01/10/2018",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN-APF/v3/FIN-APF-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN-APF/v3/FIN-APF-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN-APF/v3/FIN-APF-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FIN-APF",
+    "name": "Authorised Professional Firms Questionnaire",
+    "version": "2.1",
+    "status": "Previous",
+    "applicable_from": "01/12/2015",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN-APF/v2.1/FIN-APF-Data-Definition.xlsx",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN-APF/v2.1/FIN-APF-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN-APF/v2.1/FIN-APF-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FIN-CAP",
+    "name": "Capital adequacy",
+    "version": "3",
+    "status": "Latest",
+    "applicable_from": "31/03/2017",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN-CAP/v3/FIN-CAP-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN-CAP/v3/FIN-CAP-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN-CAP/v3/FIN-CAP-v3-samples.zip",
+        "text": "ZIP"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN-CAP/v3/FIN-CAP-MapTemplate.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "FIN060a",
+    "name": "Authorised Electronic Money Institution Questionnaire",
+    "version": "3",
+    "status": "Latest",
+    "applicable_from": "01/05/2026",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN060a/3/FIN060a%20Data%20Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN060a/3/FIN060a%20Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN060a/3/FIN060a%20sample%20full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FIN060a",
+    "name": "Authorised Electronic Money Institution Questionnaire",
+    "version": "2",
+    "status": "Previous",
+    "applicable_from": "31/10/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN060a/2/FIN060a%20Data%20Definition%20v2.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN060a/2/FIN060a%20Schema%20v2.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN060a/2/FIN060a%20Sample%20Full%20and%20Valid%20v2.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FIN060a",
+    "name": "Authorised Electronic Money Institution Questionnaire",
+    "version": "1.1",
+    "status": "Previous",
+    "applicable_from": "01/07/2021",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN060a/1.1/FIN060a%20v1.1%20-Data%20Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN060a/1.1/FIN060a%20%20v1.1-Schema%20.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN060a/1.1/FIN060a%20%20v1.1-Sample-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FIN060b",
+    "name": "Small Electronic Money Institution Questionnaire",
+    "version": "3",
+    "status": "Latest",
+    "applicable_from": "01/05/2026",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN060b/3/FIN060b-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN060b/3/FIN060b%20Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN060b/3/FIN060b%20sample%20full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FIN060b",
+    "name": "Small Electronic Money Institution Questionnaire",
+    "version": "2.1",
+    "status": "Previous",
+    "applicable_from": "31/10/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN060b/2.1/FIN060b-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN060b/2.1/FIN060b%20Schema%20v2.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN060b/2.1/FIN060b-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FIN060b",
+    "name": "Small Electronic Money Institution Questionnaire",
+    "version": "1",
+    "status": "Previous",
+    "applicable_from": "31/07/2020",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN060b/1/FIN060b-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN060b/1/FIN060b-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN060b/1/FIN060b-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FIN066",
+    "name": "Capital adequacy (for collective portfolio management firms)",
+    "version": "1.1",
+    "status": "Latest",
+    "applicable_from": "01/12/2015",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN066/v1.1/FIN066-Data-Definition.xlsx",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN066/v1.1/FIN066-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN066/v1.1/FIN066-Sample-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FIN067",
+    "name": "Additional Reporting for Collective Portfolio Management Investment Firms",
+    "version": "2.0",
+    "status": "Latest",
+    "applicable_from": "01/01/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN067/2.0/FIN067-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN067/2.0/FIN067-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN067/2.0/FIN067-Samples.zip",
+        "text": "Zip"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN067/2.0/FIN067-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "FIN067",
+    "name": "Capital adequacy: supplemental (for collective portfolio management investment firms subject to IFPRU)",
+    "version": "1.1",
+    "status": "Previous",
+    "applicable_from": "01/12/2015",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN067/v1.1/FIN067-Data-Definition.xlsx",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN067/v1.1/FIN067-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN067/v1.1/FIN067-Sample_Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FIN068",
+    "name": "Capital adequacy (for collective portfolio management firms subject to BIPRU)",
+    "version": "1.2",
+    "status": "Latest",
+    "applicable_from": "01/12/2015",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN068/v1.2/FIN068-Data-Definition.xlsx",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN068/v1.2/FIN068-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN068/v1.2/FIN068-Sample-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FIN069",
+    "name": "Financial resources requirements for operators of an electronic system in relation to lending",
+    "version": "1.1",
+    "status": "Latest",
+    "applicable_from": "22/05/2017",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN069/v1.1/FIN069-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN069/v1.1/FIN069-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN069/v1.1/FIN069-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FIN070",
+    "name": "Information on Peer to Peer agreements",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "01/10/2014",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN070/v1/FIN070-Data-Definition.xlsx",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN070/v1/FIN070-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN070/v1/FIN070-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FIN073",
+    "name": "Baseline Financial Resilience Report",
+    "version": "1.1",
+    "status": "Latest",
+    "applicable_from": "01/01/2024",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN073/1.1/FIN073-Data%20Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN073/1.1/FIN073%20Schema%20v1.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN073/1.1/FIN073%20Sample%20Full%20and%20Valid%20v1.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FIN074",
+    "name": "Economic Crime Levy",
+    "version": "1.1",
+    "status": "Latest",
+    "applicable_from": "31/03/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN074/1.1/FIN074%20-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN074/1.1/FIN074%20Schema%20v1.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FIN074/1.1/FIN074%20Sample%20Full%20and%20Valid%20v1.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FPR-Complaints",
+    "name": "Funeral Plans Complaints Return",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FPR-Complaints/2/FPR-Complaints-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FPR-Complaints/2/FPR-Complaints-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FPR-Complaints/2/FPR-Complaints-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FPR-Complaints/2/FPR-Complaints-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "FPR-Complaints",
+    "name": "Funeral Plans Complaints Return",
+    "version": "1",
+    "status": "Previous",
+    "applicable_from": "29/07/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FPR-Complaints/1/FPR-Complaints%20-%20Data%20Definition%20v1.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FPR-Complaints/1/FPR-Complaints%20Schema%20v1.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FPR-Complaints/1/Sample%20Full%20and%20Valid%20v1.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FPR001",
+    "name": "Funeral Plan Providers - Quarterly Conduct Return",
+    "version": "2.1",
+    "status": "Latest",
+    "applicable_from": "15/11/2021",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FPR001/2.1/FPR001-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FPR001/2.1/FPR001-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FPR001/2.1/FPR001-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FPR001/2.1/FPR001-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "FPR001",
+    "name": "Funeral Plan Providers - Quarterly Conduct Return",
+    "version": "1",
+    "status": "Previous",
+    "applicable_from": "29/07/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FPR001/1/FPR001%20Data%20Definition%20v1.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FPR001/1/FPR001%20Schema%20v1.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FPR001/1/FPR001%20Sample%20Full%20and%20Valid%20v1.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FPR003a",
+    "name": "Funeral Plan Providers - Half-Yearly Prudential Return",
+    "version": "1.2",
+    "status": "Latest",
+    "applicable_from": "29/07/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FPR003a/1.2/FPR003a%20Data%20Definition%20v1.2.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FPR003a/1.2/FPR003a-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FPR003a/1.2/FPR003a%20v1%20samples.zip",
+        "text": "Zip"
+      }
+    ]
+  },
+  {
+    "code": "FPR003b",
+    "name": "Funeral Plan Intermediaries - Half-Yearly Prudential Return",
+    "version": "1.1",
+    "status": "Latest",
+    "applicable_from": "29/07/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FPR003b/1.1/FPR003b%20Data%20Definition%20v1.1.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FPR003b/1.1/FPR003b%20Schema%20v1.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FPR003b/1.1/FPR003b%20v1%20sample%20files.zip",
+        "text": "Zip"
+      }
+    ]
+  },
+  {
+    "code": "FSA001",
+    "name": "Balance sheet",
+    "version": "4.2",
+    "status": "Latest",
+    "applicable_from": "22/04/2013",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA001/v4.2/FSA001-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA001/v4.2/FSA001-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA001/v4.2/FSA001-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA001/v4.2/fsa001-map-template_v4.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "FSA002",
+    "name": "Income statement",
+    "version": "3.2",
+    "status": "Latest",
+    "applicable_from": "01/10/2010",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA002/v3.2/FSA002-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA002/v3.2/FSA002-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA002/v3.2/FSA002-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA003",
+    "name": "Capital adequacy",
+    "version": "7",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA003/7/FSA003-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA003/7/FSA003-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA003/7/FSA003-v7-Samples.zip",
+        "text": "Zip"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA003/7/FSA003-Map-Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "FSA003",
+    "name": "Capital adequacy",
+    "version": "6.2",
+    "status": "Previous",
+    "applicable_from": "22/04/2013",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA003/6.2/FSA003-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA003/6.2/FSA003-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA003/6.2/FSA003-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA003/6.2/fsa003-map-template_v6.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "FSA004",
+    "name": "Further breakdown of certain credit risk data",
+    "version": "5.1",
+    "status": "Latest",
+    "applicable_from": "30/06/2011",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA004/v5.1/FSA004-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA004/v5.1/FSA004-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA004/v5.1/FSA004-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA005",
+    "name": "Market risk",
+    "version": "9",
+    "status": "Previous",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA005/9/FSA005-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA005/9/FSA005-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA005/9/FSA005-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA005/9/FSA005-Map-Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "FSA005",
+    "name": "Market risk",
+    "version": "8",
+    "status": "Previous",
+    "applicable_from": "31/01/2019",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA005/8/FSA005-Data-Definition_INTERNAL.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA005/8/FSA005-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA005/8/FSA005-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA005",
+    "name": "Market risk",
+    "version": "7.1",
+    "status": "Previous",
+    "applicable_from": "31/12/2011",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA005/7.1/FSA005-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA005/7.1/FSA005-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA005/7.1/FSA005-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA005",
+    "name": "Market risk",
+    "version": "10",
+    "status": "Latest",
+    "applicable_from": "01/10/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA005/10/FSA005-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA005/10/FSA005-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA005/10/FSA005-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA005/10/FSA005-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "FSA007",
+    "name": "Operational risk",
+    "version": "2.1",
+    "status": "Latest",
+    "applicable_from": "29/01/2009",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA007/v2.1/FSA007-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA007/v2.1/FSA007-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA007/v2.1/FSA007-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA008",
+    "name": "Large exposures",
+    "version": "5.1",
+    "status": "Latest",
+    "applicable_from": "22/04/2013",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA008/v5.1/FSA008-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA008/v5.1/FSA008-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA008/v5.1/FSA008-v5-samples.zip",
+        "text": "ZIP"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA008/v5.1/fsa008-map-template_v5.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "FSA011",
+    "name": "Building society liquidity",
+    "version": "4",
+    "status": "Latest",
+    "applicable_from": "07/10/2009",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA011/v4/FSA011-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA011/v4/FSA011-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA011/v4/FSA011-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA014",
+    "name": "Forecast Data from Firms",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "16/11/2007",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA014/2/FSA014-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA014/2/FSA014-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA014/2/FSA014-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA015",
+    "name": "Sectoral information, including arrears and impairment",
+    "version": "5",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA015/5/FSA015-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA015/5/FSA015-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA015/5/FSA015-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA015/5/FSA015-Map-Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "FSA015",
+    "name": "Sectoral information, including arrears and impairment",
+    "version": "4.4",
+    "status": "Previous",
+    "applicable_from": "01/03/2011",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA015/4.4/FSA015-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA015/4.4/FSA015-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA015/4.4/FSA015-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA016",
+    "name": "Solo consolidated data",
+    "version": "3",
+    "status": "Latest",
+    "applicable_from": "01/07/2021",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA016/v3/FSA016%20v3-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA016/v3/FSA016%20v3-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA016/v3/FSA016%20v3-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA016",
+    "name": "Solo consolidated data",
+    "version": "2",
+    "status": "Previous",
+    "applicable_from": "16/11/2007",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA016/v2/FSA016-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA016/v2/FSA016-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA016/v2/FSA016-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA017",
+    "name": "Interest rate gap",
+    "version": "7",
+    "status": "Latest",
+    "applicable_from": "01/10/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA017/7/FSA017-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA017/7/FSA017-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA017/7/FSA017-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA017/7/FSA017-Map-Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "FSA017",
+    "name": "Interest rate gap",
+    "version": "6",
+    "status": "Previous",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA017/6/FSA017-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA017/6/FSA017-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA017/6/FSA017-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA017/6/FSA017-Map-Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "FSA017",
+    "name": "Interest rate gap",
+    "version": "5.1",
+    "status": "Previous",
+    "applicable_from": "01/07/2021",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA017/5.1/FSA017%20v5.1%20Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA017/5.1/FSA017%20v5.1-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA017/5.1/FSA017%20v5.1-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA017",
+    "name": "Interest rate gap",
+    "version": "5",
+    "status": "Previous",
+    "applicable_from": "31/01/2019",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA017/v5/FSA017-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA017/v5/FSA017-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA017/v5/FSA017-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA018",
+    "name": "UK integrated groups: large exposures",
+    "version": "5",
+    "status": "Latest",
+    "applicable_from": "31/03/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA018/v5/FSA018-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA018/v5/FSA018-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA018/v5/FSA018-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA018/v5/FSA018-v5-Map%20Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "FSA019",
+    "name": "Pillar 2 information",
+    "version": "7",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA019/7/FSA019-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA019/7/FSA019-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA019/7/FSA019-Samples.zip",
+        "text": "Zip"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA019/7/FSA019-Map-Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "FSA019",
+    "name": "Pillar 2 information",
+    "version": "6.1",
+    "status": "Previous",
+    "applicable_from": "22/11/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA019/6.1/FSA019-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA019/6.1/FSA019-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA019/6.1/FSA019-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA028",
+    "name": "Non-EEA sub groups",
+    "version": "5",
+    "status": "Latest",
+    "applicable_from": "31/10/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA028/v5/FSA028-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA028/v5/FSA028-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA028/v5/FSA028-v5-Samples.zip",
+        "text": "ZIP"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA028/v5/FSA028_MapTemplate_v5.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "FSA029",
+    "name": "Balance sheet",
+    "version": "4",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA029/4/FSA029-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA029/4/FSA029-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA029/4/FSA029-v4-Samples.zip",
+        "text": "Zip"
+      }
+    ]
+  },
+  {
+    "code": "FSA029",
+    "name": "Balance sheet",
+    "version": "3",
+    "status": "Previous",
+    "applicable_from": "01/01/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA029/3/FSA029-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA029/3/FSA029-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA029/3/FSA029-v3-Samples.zip",
+        "text": "Zip"
+      }
+    ]
+  },
+  {
+    "code": "FSA029",
+    "name": "Balance sheet",
+    "version": "2",
+    "status": "Previous",
+    "applicable_from": "01/11/2010",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA029/v2/FSA029-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA029/v2/FSA029-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA029/v2/FSA029-v2-samples.zip",
+        "text": "ZIP"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA029/v2/FSA029-Version-2-Map-Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "FSA030",
+    "name": "Income statement",
+    "version": "3",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA030/3/FSA030-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA030/3/FSA030-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA030/3/FSA030-v3-Samples.zip",
+        "text": "Zip"
+      }
+    ]
+  },
+  {
+    "code": "FSA030",
+    "name": "Income statement",
+    "version": "2",
+    "status": "Previous",
+    "applicable_from": "01/01/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA030/2/FSA030-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA030/2/FSA030-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA030/2/FSA030-v2-Samples.zip",
+        "text": "Zip"
+      }
+    ]
+  },
+  {
+    "code": "FSA030",
+    "name": "Income statement",
+    "version": "1.1",
+    "status": "Previous",
+    "applicable_from": "23/06/2014",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA030/v1.1/FSA030-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA030/v1.1/FSA030-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA030/v1.1/FSA030-v1.1-samples.zip",
+        "text": "ZIP"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA030/v1.1/FSA030-Map-Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "FSA031",
+    "name": "Capital adequacy (for exempt CAD firms subject to IPRU (INV) Chapter 9)",
+    "version": "8",
+    "status": "Latest",
+    "applicable_from": "01/10/2020",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA031/v8/FSA031-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA031/v8/FSA031-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA031/v8/FSA031-v8-samples.zip",
+        "text": "ZIP"
+      }
+    ]
+  },
+  {
+    "code": "FSA031",
+    "name": "Capital adequacy (for exempt CAD firms subject to IPRU (INV) Chapter 9)",
+    "version": "7",
+    "status": "Previous",
+    "applicable_from": "01/10/2018",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA031/v7/FSA031-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA031/v7/FSA031-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/.zip",
+        "text": "ZIP"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA031/v7/FSA031%20Mapped%20Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "FSA032",
+    "name": "Capital adequacy (for exempt CAD firms subject to IPRU (INV) Chapter 13)",
+    "version": "9",
+    "status": "Latest",
+    "applicable_from": "01/10/2020",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA032/v9/FSA032-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA032/v9/FSA032-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA032/v9/FSA032%20-v9-samples.zip",
+        "text": "ZIP"
+      }
+    ]
+  },
+  {
+    "code": "FSA032",
+    "name": "Capital adequacy for exempt CAD personal investment firms subject to IPRU (INV) Ch 13 choosing to carry out activities under MiFID Article 67(3)",
+    "version": "8",
+    "status": "Previous",
+    "applicable_from": "01/10/2018",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA032/v8/FSA032-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA032/v8/FSA032-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA032/v8/FSA032-v8-samples.zip",
+        "text": "ZIP"
+      }
+    ]
+  },
+  {
+    "code": "FSA033",
+    "name": "Capital adequacy for firms subject to IPRU (INV) Ch 3",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "30/04/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA033/2/FSA033-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA033/2/FSA033-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA033/2/FSA033-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA033/2/FSA033-Map-Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "FSA033",
+    "name": "Capital adequacy for firms subject to IPRU (INV) Ch 3",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "12/10/2007",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA033/v1/FSA033-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA033/v1/FSA033-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA034",
+    "name": "Capital Adequacy (for firms subject to IPRU(INV) Chapter 5 that do not fall within any of the exceptions listed in IPRU(INV) 5.4.2R)",
+    "version": "2.2",
+    "status": "Latest",
+    "applicable_from": "01/11/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA034/2.2/FSA034-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA034/2.2/FSA034-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA034/2.2/FSA034-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA035",
+    "name": "Capital Adequacy (for firms subject to IPRU(INV) Chapter 5 that fall within one of the exceptions in 5.4.2R)",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "31/12/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA035/2/FSA035-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA035/2/FSA035-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA035/2/FSA035-Sample-Full-and-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA035",
+    "name": "Capital Adequacy (for firms subject to IPRU(INV) Chapter 5 that fall within one of the exceptions in 5.4.2R)",
+    "version": "1.5",
+    "status": "Previous",
+    "applicable_from": "24/09/2010",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA035/1.5/FSA035-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA035/1.5/FSA035-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA035/1.5/FSA035-v1.5-samples.zip",
+        "text": "Zip"
+      }
+    ]
+  },
+  {
+    "code": "FSA038",
+    "name": "Volumes and type of business",
+    "version": "1.1",
+    "status": "Latest",
+    "applicable_from": "12/10/2007",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA038/1.1/FSA038-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA038/1.1/FSA038-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA038/1.1/FSA038-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA039",
+    "name": "Client Money and Client Assets",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "12/10/2007",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA039/v1/FSA039-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA039/v1/FSA039-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA039/v1/FSA039-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA040",
+    "name": "CFTC data: Specialist data for firms subject to CFTC part 30 exemption order in respect of open positions for LME transactions of US customers",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "05/06/2008",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA040/v2/FSA040-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA040/v2/FSA040-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA040/v2/FSA040-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA042",
+    "name": "UCITS",
+    "version": "3.1",
+    "status": "Latest",
+    "applicable_from": "30/09/2017",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA042/3.1/FSA042-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA042/3.1/FSA042-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA042/3.1/FSA042-v2-samples.zip",
+        "text": "Zip"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA042/3.1/FSA042-Mapped%20Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "FSA045",
+    "name": "IRB portfolio risk",
+    "version": "9",
+    "status": "Latest",
+    "applicable_from": "01/10/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA045/9/FSA045-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA045/9/FSA045-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA045/9/FSA045-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA045/9/FSA045-Map-Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "FSA045",
+    "name": "IRB portfolio risk",
+    "version": "8",
+    "status": "Previous",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA045/8/FSA045-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA045/8/FSA045-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA045/8/FSA045-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA045/8/FSA045-Map-Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "FSA045",
+    "name": "IRB portfolio risk",
+    "version": "7",
+    "status": "Previous",
+    "applicable_from": "31/01/2019",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA045/7/FSA045-Data-Definition_INTERNAL.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA045/7/FSA045-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA045/7/FSA045-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA045",
+    "name": "IRB portfolio risk",
+    "version": "6",
+    "status": "Previous",
+    "applicable_from": "04/03/2011",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA045/v6/FSA045-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA045/v6/FSA045-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA045/v6/FSA045-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA046",
+    "name": "Securitisation: Non-Trading Book",
+    "version": "8",
+    "status": "Latest",
+    "applicable_from": "04/11/2011",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA046/v8/FSA046-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA046/v8/FSA046-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA046/v8/FSA046-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA047",
+    "name": "Daily Flows",
+    "version": "2.3",
+    "status": "Latest",
+    "applicable_from": "04/03/2011",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA047/v2.3/FSA047-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA047/v2.3/FSA047-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA047/v2.3/FSA047-v4.3-samples.zip",
+        "text": "ZIP"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA047/v2.3/FSA047-Map-Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "FSA048",
+    "name": "Enhanced Mismatch Report",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "06/09/2010",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA048/v1/FSA048-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA048/v1/FSA048-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA048/v1/FSA048-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA048/v1/FSA048-Map-Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "FSA050",
+    "name": "Liquidity Buffer Qualifying Securities",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "31/10/2012",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA050/v2/FSA050-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA050/v2/FSA050-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA050/v2/FSA050-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA051",
+    "name": "Funding Concentration",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "30/11/2010",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA051/v1/FSA051-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA051/v1/FSA051-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA051/v1/FSA051-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA052",
+    "name": "Pricing Data",
+    "version": "1.1",
+    "status": "Latest",
+    "applicable_from": "30/09/2012",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA052/v1.1/FSA052-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA052/v1.1/FSA052-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA052/v1.1/FSA052-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA053",
+    "name": "Retail, SME and large enterprises Type B Funding",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "31/12/2010",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA053/v1/FSA053-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA053/v1/FSA053-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA053/v1/FSA053-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA054",
+    "name": "Currency analysis",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "31/12/2010",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA054/v1/FSA054-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA054/v1/FSA054-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA054/v1/FSA054-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA055",
+    "name": "Systems and Controls Questionnaire",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "31/12/2010",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA055/v1/FSA055-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA055/v1/FSA055-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA055/v1/FSA055-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA056",
+    "name": "Authorised Payment Institution Capital Adequacy Return",
+    "version": "6",
+    "status": "Latest",
+    "applicable_from": "01/05/2026",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA056/6/FSA056-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA056/6/FSA056-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA056/6/FSA056-Valid-And-Full.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA056/6/FSA056-Mapped-template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "FSA056",
+    "name": "Authorised Payment Institution Capital Adequacy Return",
+    "version": "5",
+    "status": "Previous",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA056/5/FSA056-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA056/5/FSA056-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA056/5/FSA056-v5-Samples.zip",
+        "text": "Zip"
+      }
+    ]
+  },
+  {
+    "code": "FSA056",
+    "name": "Authorised Payment Institution Capital Adequacy Return",
+    "version": "4.1",
+    "status": "Previous",
+    "applicable_from": "19/11/2018",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA056/4.1/FSA056_Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA056/4.1/FSA056-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA056/4.1/FSA056-v4.1-samples.zip",
+        "text": "Zip"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA056/4.1/FSA056_v4_Mapped%20Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "FSA057",
+    "name": "Payment Services Directive Transactions",
+    "version": "3",
+    "status": "Latest",
+    "applicable_from": "01/05/2026",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA057/3/FSA057-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA057/3/FSA057-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA057/3/FSA057-Valid-And-Full.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA057/3/FSA057-Mapped-template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "FSA057",
+    "name": "Payment Services Directive Transactions",
+    "version": "2",
+    "status": "Previous",
+    "applicable_from": "13/01/2018",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA057/2/FSA057-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA057/2/FSA057-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA057/2/FSA057-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA057/2/FSA057_v2_Mapped%20Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "FSA058",
+    "name": "Securitisation: Trading Book",
+    "version": "3",
+    "status": "Latest",
+    "applicable_from": "04/11/2011",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA058/v3/FSA058-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA058/v3/FSA058-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA058/v3/FSA058-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "FSA065",
+    "name": "Small Electronic Money Institution -Total Electronic Money Outstanding",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "31/07/2020",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA065/v1/FSA065-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA065/v1/FSA065-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/FSA065/v1/FSA065-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "MIF001",
+    "name": "Own Funds",
+    "version": "3.1",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF001/3.1/MIF001-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF001/3.1/MIF001-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF001/3.1/MIF001-v3-Samples.zip",
+        "text": "Zip"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF001/3.1/MIF001-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "MIF001",
+    "name": "Own Funds",
+    "version": "2",
+    "status": "Previous",
+    "applicable_from": "30/06/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF001/2/MIF001-Data%20Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF001/2/MIF001-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF001/2/MIF001-Samples.zip",
+        "text": "Zip"
+      }
+    ]
+  },
+  {
+    "code": "MIF001",
+    "name": "Own Funds",
+    "version": "1.1",
+    "status": "Previous",
+    "applicable_from": "01/01/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF001/1.1/MIF001-Data%20Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF001/1.1/MIF001-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF001/1.1/MIF001-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF001/1.1/MIF001-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "MIF002",
+    "name": "Liquid Assets",
+    "version": "3",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF002/3/MIF002%20Data%20Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF002/3/MIF002-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF002/3/MIF002-v3-Samples.zip",
+        "text": "Zip"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF002/3/MIF002-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "MIF002",
+    "name": "Liquid Assets",
+    "version": "2",
+    "status": "Previous",
+    "applicable_from": "30/06/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF002/2/MIF002%20Data%20Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF002/2/MIF002-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF002/2/MIF002-Samples.zip",
+        "text": "Zip"
+      }
+    ]
+  },
+  {
+    "code": "MIF002",
+    "name": "Liquid Assets",
+    "version": "1.1",
+    "status": "Previous",
+    "applicable_from": "01/01/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF002/1.1/MIF002%20Data%20Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF002/1.1/MIF002-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF002/1.1/MIF002-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF002/1.1/MIF002-Map%20Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "MIF003",
+    "name": "Monitoring Metrics",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF003/2/MIF003%20Data%20Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF003/2/MIF003-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF003/2/MIF003-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF003/2/MIF003-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "MIF003",
+    "name": "Monitoring Metrics",
+    "version": "1.1",
+    "status": "Previous",
+    "applicable_from": "01/01/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF003/1.1/MIF003%20Data%20Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF003/1.1/MIF003-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF003/1.1/MIF003-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF003/1.1/MIF003-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "MIF004",
+    "name": "Non-K-CON Concentration Risk",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF004/2/MIF004-Data%20Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF004/2/MIF004-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF004/2/MIF004-v2-Samples.zip",
+        "text": "Zip"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF004/2/MIF004-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "MIF004",
+    "name": "Non-K-CON Concentration Risk",
+    "version": "1.1",
+    "status": "Previous",
+    "applicable_from": "01/01/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF004/1.1/MIF004-Data%20Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF004/1.1/MIF004-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF004/1.1/MIF004-Samples.zip",
+        "text": "Zip"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF004/1.1/MIF004-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "MIF005",
+    "name": "K-CON Concentration Risk",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF005/2/MIF005-Data%20Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF005/2/MIF005-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF005/2/MIF005-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF005/2/MIF005-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "MIF005",
+    "name": "K-CON Concentration Risk",
+    "version": "1.1",
+    "status": "Previous",
+    "applicable_from": "26/06/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF005/1.1/MIF005-Data%20Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF005/1.1/MIF005-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF005/1.1/MIF005-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF005/1.1/MIF005-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "MIF006",
+    "name": "Group Capital Test",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "30/09/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF006/2/MIF006-Data%20Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF006/2/MIF006-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF006/2/MIF006-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF006/2/MIF006-Map-Template.xlsm",
+        "text": "XLSM"
+      }
+    ]
+  },
+  {
+    "code": "MIF006",
+    "name": "Group Capital Test",
+    "version": "1.1",
+    "status": "Previous",
+    "applicable_from": "01/01/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF006/1.1/MIF006-Data%20Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF006/1.1/MIF006-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF006/1.1/MIF006-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "MIF007",
+    "name": "ICARA Questionnaire",
+    "version": "3.2",
+    "status": "Latest",
+    "applicable_from": "30/09/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF007/3.2/MIF007-Data%20Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF007/3.2/MIF007-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF007/3.2/MIF007-v3-Samples.zip",
+        "text": "Zip"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF007/3.2/MIF007-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "MIF007",
+    "name": "ICARA Questionnaire",
+    "version": "2",
+    "status": "Previous",
+    "applicable_from": "10/10/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF007/2/MIF007-Data%20Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF007/2/MIF007-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF007/2/MIF007-v2-Samples.zip",
+        "text": "Zip"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF007/2/MIF007-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "MIF007",
+    "name": "ICARA Questionnaire",
+    "version": "1.1",
+    "status": "Previous",
+    "applicable_from": "26/06/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF007/1.1/MIF007-Data%20Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF007/1.1/MIF007-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF007/1.1/MIF007-Samples.zip",
+        "text": "Zip"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF007/1.1/MIF007-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "MIF008",
+    "name": "Remuneration",
+    "version": "3",
+    "status": "Latest",
+    "applicable_from": "31/12/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF008/3/MIF008-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF008/3/MIF008-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF008/3/MIF008-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF008/3/MIF008-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "MIF008",
+    "name": "Remuneration",
+    "version": "2",
+    "status": "Previous",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF008/2/MIF008%20Data%20Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF008/2/MIF008-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF008/2/MIF008-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF008/2/MIF008-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "MIF008",
+    "name": "Remuneration",
+    "version": "1",
+    "status": "Previous",
+    "applicable_from": "01/01/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF008/1/MIF008%20Data%20Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF008/1/MIF008-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF008/1/MIF008-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MIF008/1/MIF008-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "MLA-A1-A2",
+    "name": "Balance sheet",
+    "version": "1.1",
+    "status": "Latest",
+    "applicable_from": "20/09/2010",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-A1-A2/v1.1/MLA-A1-A2-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-A1-A2/v1.1/MLA-A1-A2-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-A1-A2/v1.1/MLA-A1-A2-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "MLA-A3",
+    "name": "Analysis of loans to customers",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "12/10/2007",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-A3/v1/MLA-A3-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-A3/v1/MLA-A3-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-A3/v1/MLA-A3-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "MLA-A4",
+    "name": "Analysis of second-charge loans to customers",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "21/03/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-A4/v1/MLA-A4-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-A4/v1/MLA-A4-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-A4/v1/MLA-A4-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "MLA-B1",
+    "name": "Income statement",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "12/10/2007",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-B1/v1/MLA-B1-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-B1/v1/MLA-B1-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-B1/v1/MLA-B1-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "MLA-B2",
+    "name": "Provisions analysis",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "12/10/2007",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-B2/v1/MLA-B2-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-B2/v1/MLA-B2-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-B2/v1/MLA-B2-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "MLA-C",
+    "name": "Capital",
+    "version": "2.4",
+    "status": "Latest",
+    "applicable_from": "14/03/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-C/v2.4/MLA-C-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-C/v2.4/MLA-C-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-C/v2.4/MLA-C-Full-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-C/v2.4/MLA-C-v2.4-Map%20Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "MLA-D",
+    "name": "Lending - business flows and rates",
+    "version": "2.2",
+    "status": "Latest",
+    "applicable_from": "01/07/2021",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-D/v2.2/MLA-D%20v2.2-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-D/v2.2/MLA-D%20v2.2-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-D/v2.2/MLA-D%20v2.2-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "MLA-D",
+    "name": "Lending - business flows and rates",
+    "version": "2.1",
+    "status": "Previous",
+    "applicable_from": "31/05/2013",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-D/v2.1/MLA-D-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-D/v2.1/MLA-D-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-D/v2.1/MLA-D-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-D/v2.1/mla-d-map-template_1.0.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "MLA-D1",
+    "name": "Second-charge lending \u2013 business flow and rates",
+    "version": "2.1",
+    "status": "Latest",
+    "applicable_from": "01/07/2021",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-D1/2.1/MLA-D1%20v2.1%20Data-Definition_.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-D1/2.1/MLA-D1%20v2.1-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-D1/2.1/MLA-D1-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "MLA-D1",
+    "name": "Second-charge lending \u2013 business flow and rates",
+    "version": "2",
+    "status": "Previous",
+    "applicable_from": "31/10/2017",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-D1/v2/MLA-D1-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-D1/v2/MLA-D1-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-D1/v2/MLA-D1-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "MLA-E",
+    "name": "Residential lending to individuals - new business profile",
+    "version": "3",
+    "status": "Latest",
+    "applicable_from": "01/04/2021",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-E/v3/MLA-E-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-E/v3/MLA-E-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-E/v3/MLA-E-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "MLA-E",
+    "name": "Residential lending to individuals - new business profile",
+    "version": "2",
+    "status": "Previous",
+    "applicable_from": "25/01/2008",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-E/v2/MLA-E-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-E/v2/MLA-E-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-E/v2/MLA-E-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "MLA-E1",
+    "name": "Second-charge lending \u2013 loans to individuals",
+    "version": "1.1",
+    "status": "Latest",
+    "applicable_from": "09/07/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-E1/v1.1/MLA-E1-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-E1/v1.1/MLA-E1-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-E1/v1.1/MLA-E1-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "MLA-F",
+    "name": "Mortgage lending \u2013 arrears analysis",
+    "version": "3",
+    "status": "Latest",
+    "applicable_from": "31/12/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-F/v3/MLA-F-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-F/v3/MLA-F-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-F/v3/MLA-F-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "MLA-F1",
+    "name": "Second-charge lending \u2013 arrears analysis",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "31/12/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-F1/v2/MLA-F1-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-F1/v2/MLA-F1-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-F1/v2/MLA-F1-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "MLA-G",
+    "name": "Mortgage administration - business profile",
+    "version": "3",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-G/3/MLA-G-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-G/3/MLA-G-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-G/3/MLA-G-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-G/3/MLA-G-Map-Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "MLA-G",
+    "name": "Mortgage administration - business profile",
+    "version": "2",
+    "status": "Previous",
+    "applicable_from": "31/12/2020",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-G/2/MLA-G-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-G/2/MLA-G-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-G/2/MLA-G-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "MLA-G",
+    "name": "Mortgage administration - business profile",
+    "version": "1.1",
+    "status": "Previous",
+    "applicable_from": "22/04/2013",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-G/v1/MLA-G-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-G/v1/MLA-G-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-G/v1/MLA-G-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-G/v1/mla-g-map-template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "MLA-G1",
+    "name": "Second-charge mortgage administration \u2013 business profile",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "31/12/2020",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-G1/v1/MLA-G1-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-G1/v1/MLA-G1-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-G1/v1/MLA-G1-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-G1/v1/MLA-G1-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "MLA-H",
+    "name": "Mortgage administration \u2013 arrears analysis",
+    "version": "3",
+    "status": "Latest",
+    "applicable_from": "31/12/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-H/v3/MLA-H-Data-Definition_INTERNAL.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-H/v3/MLA-H-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-H/v3/MLA-H-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "MLA-H1",
+    "name": "Second-charge mortgage administration \u2013 arrears analysis",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "31/12/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-H1/v2/MLA-H1-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-H1/v2/MLA-H1-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-H1/v2/MLA-H1-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "MLA-J",
+    "name": "Fee tariff measures",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "22/04/2013",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-J/v2/MLA-J-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-J/v2/MLA-J-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-J/v2/MLA-J-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "MLA-L",
+    "name": "Credit risk",
+    "version": "1.2",
+    "status": "Latest",
+    "applicable_from": "01/10/2014",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-L/v1.2/MLA-L_Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-L/v1.2/MLA-L-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-L/v1.2/MLA-L-Full-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-L/v1.2/MLA-L%20Map%20Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "MLA-M",
+    "name": "Liquidity questionnaire",
+    "version": "1.1",
+    "status": "Latest",
+    "applicable_from": "01/10/2014",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-M/v1.1/MLA-M_Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-M/v1.1/MLA-M-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-M/v1.1/MLA-M-v1.1-samples.zip",
+        "text": "ZIP"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/MLA-M/v1.1/MLA-M%20Map%20Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "Meta",
+    "name": "Meta Data (supports individual data item schemas)",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "23/03/2007",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/Meta%20Data/MetaData-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/Meta%20Data/MetaData-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "PS-Complaints",
+    "name": "Electronic Money and Payment Service Complaints Return",
+    "version": "2",
+    "status": "Previous",
+    "applicable_from": "01/07/2019",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PS-Complaints/2/PS-Complaints-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PS-Complaints/2/PS-Complaints-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PS-Complaints/2/PS-Complaints-v2.zip",
+        "text": "Zip"
+      }
+    ]
+  },
+  {
+    "code": "PS-Complaints",
+    "name": "Electronic Money and Payment Services Complaints Return",
+    "version": "3",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PS-Complaints/3/PS-Complaints-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PS-Complaints/3/PS-Complaints-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PS-Complaints/3/PS-Complaints-Samples.zip",
+        "text": "Zip"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PS-Complaints/3/PS-Complaints-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "PS-Complaints",
+    "name": "Electronic Money and Payment Services Complaints Return",
+    "version": "1",
+    "status": "Previous",
+    "applicable_from": "01/12/2018",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PS-Complaints/v1/PS-Complaints-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PS-Complaints/v1/PS-Complaints-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PS-Complaints/v1/PS-Complaints-v1-samples.zip",
+        "text": "ZIP"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PS-Complaints/v1/PS-Complaints-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "PSD",
+    "name": "PSD Common Data Types (referenced by Product Sales Data (PSD) items)",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "22/11/2010",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD-CommonTypes/v1.2/FSAFeedCommon-v1-2.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "PSD001",
+    "name": "Product Sales Data - Mortgage (accounts opened before 1 January 2015)",
+    "version": "1.3",
+    "status": "Previous",
+    "applicable_from": "22/04/2013",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD001/1.3/PSD001-Data-Definition_1.3.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD001/1.3/fsahsffeedmg-full-and-valid_1.3.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "PSD001",
+    "name": "Product Sales Data - Mortgage (accounts opened between 1 January 2015 and 31 March 2017)",
+    "version": "1.7.8",
+    "status": "Previous",
+    "applicable_from": "14/03/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD001/v1.7.8/PSD001-Data-Definition_1.7.8.xlsx",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD001/v1.7.8/PSD001-v1.7.8-samples.zip",
+        "text": "ZIP"
+      }
+    ]
+  },
+  {
+    "code": "PSD001",
+    "name": "Product Sales Data - Mortgage (accounts opened from 1 April 2021)",
+    "version": "3.2",
+    "status": "Latest",
+    "applicable_from": "01/04/2021",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD001/v3.2/PSD001%20v3.2-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD001/v3.2/PSD001%20v3.2-Schema-.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD001/v3.2/PSD001%20v3.2-Sample-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "PSD001",
+    "name": "Product Sales Data \u2013 Mortgage (accounts opened between 1 April 2017 and 31 March 2021)",
+    "version": "2.2",
+    "status": "Previous",
+    "applicable_from": "23/03/2020",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD001/v2/PSD001-Data-Definition_2.2.xlsx",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD001/v2/psd001-schema-v2-2.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD001/v2/PSD001-v2.1-samples.zip",
+        "text": "ZIP"
+      }
+    ]
+  },
+  {
+    "code": "PSD002",
+    "name": "Product Sales Data - Retail Investments",
+    "version": "1.6",
+    "status": "Latest",
+    "applicable_from": "22/04/2013",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD002/1.6/PSD002-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD002/1.6/FSAHSFFeedRI-v1-3.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD002/1.6/FSAHSFFeedRI-full-and-valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "PSD003",
+    "name": "Product Sales Data - Pure Protection",
+    "version": "1.3",
+    "status": "Latest",
+    "applicable_from": "22/04/2013",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD003/v1.3/PSD003-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD003/v1.3/FSAHSFFeedPP-v1-2.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD003/v1.3/FSAHSFFeedPP-full-and-valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "PSD004",
+    "name": "Product Sales Data - Home Reversion Plans",
+    "version": "2.1",
+    "status": "Latest",
+    "applicable_from": "22/04/2013",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD004/v2.1/PSD004-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD004/v2.1/FSAHSFFeedHR-v2-0.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD004/v2.1/FSAHSFFeedHR-full-and-valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "PSD005",
+    "name": "Product Sales Data - Home Purchase Plans",
+    "version": "2.1",
+    "status": "Latest",
+    "applicable_from": "01/09/2012",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD005/v2.1/PSD005-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD005/v2.1/FSAHSFFeedHP-v2-0.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD005/v2.1/FSAHSFFeedHP-full-and-valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "PSD006",
+    "name": "Product Sales Data - Short Term Loans",
+    "version": "1.2",
+    "status": "Latest",
+    "applicable_from": "05/11/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD006/1.2/PSD006-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD006/1.2/PSD006-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD006/1.2/PSD006-Sample-Full-and-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "PSD007",
+    "name": "Product Sales Data - Mortgage Performance Data (date of balance before 1 April 2017)",
+    "version": "1.5",
+    "status": "Previous",
+    "applicable_from": "14/03/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD007/v1.5/PSD007-Data-Definition%201.5.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD007/v1.5/PSD007-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD007/v1.5/PSD007-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "PSD007",
+    "name": "Product Sales Data - Mortgage Performance Data (date of balance between 1 April 2017 and 31 December 2020)",
+    "version": "2",
+    "status": "Previous",
+    "applicable_from": "01/04/2017",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD007/2/PSD007-Data-Definition%20v2%200.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD007/2/PSD007-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD007/2/PSD007-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "PSD007",
+    "name": "Product Sales Data - Mortgage Performance Data (date of balance from 1 January 2021)",
+    "version": "3.2",
+    "status": "Latest",
+    "applicable_from": "09/10/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD007/3.2/PSD007-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD007/3.2/PSD007-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD007/3.2/PSD007-v3-Samples.zip",
+        "text": "Zip"
+      }
+    ]
+  },
+  {
+    "code": "PSD008",
+    "name": "Product Sales Data - Credit Agreement Sales",
+    "version": "1.3",
+    "status": "Latest",
+    "applicable_from": "01/07/2025",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD008/1.3/PSD008-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD008/1.3/PSD008-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD008/1.3/PSD008-v1-Samples.zip",
+        "text": "Zip"
+      }
+    ]
+  },
+  {
+    "code": "PSD008a",
+    "name": "Product Sales Data - Credit Agreement Back-book",
+    "version": "1.2",
+    "status": "Latest",
+    "applicable_from": "01/07/2025",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD008a/1.2/PSD008a-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD008a/1.2/PSD008a-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD008a/1.2/PSD008a-V1-Samples.zip",
+        "text": "Zip"
+      }
+    ]
+  },
+  {
+    "code": "PSD009",
+    "name": "Product Sales Data - Credit Agreement Performance",
+    "version": "1.3",
+    "status": "Latest",
+    "applicable_from": "01/07/2025",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD009/1.3/PSD009-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD009/1.3/PSD009-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/PSD009/1.3/PSD009-V1-Samples.zip",
+        "text": "Zip"
+      }
+    ]
+  },
+  {
+    "code": "REP-CRIM",
+    "name": "Financial Crime Report",
+    "version": "3",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP-CRIM/3/REP-CRIM-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP-CRIM/3/REP-CRIM-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP-CRIM/3/REP-CRIM-Samples.zip",
+        "text": "Zip"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP-CRIM/3/REP-CRIM-Map-Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "REP-CRIM",
+    "name": "Financial Crime Report",
+    "version": "2",
+    "status": "Previous",
+    "applicable_from": "31/03/2018",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP-CRIM/2/REP-CRIM-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP-CRIM/2/REP-CRIM-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP-CRIM/2/REP-CRIM-v2-samples.zip",
+        "text": "Zip"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP-CRIM/2/REP-CRIM_v2_Mapped%20Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "REP001",
+    "name": "Close Links Report",
+    "version": "3",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP001/3/REP001-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP001/3/REP001-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP001/3/REP001-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP001/3/REP001-Map-Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "REP001",
+    "name": "Close Links Report",
+    "version": "2",
+    "status": "Previous",
+    "applicable_from": "01/11/2014",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP001/2/REP001-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP001/2/REP001-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP001/2/REP001-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP001/2/REP001-v2-Map_Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "REP001a",
+    "name": "Close Links Notification",
+    "version": "3",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP001a/3/REP001a-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP001a/3/REP001a-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP001a/3/REP001a-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP001a/3/REP001a-Map-Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "REP001a",
+    "name": "Close Links Notification",
+    "version": "2",
+    "status": "Previous",
+    "applicable_from": "01/11/2014",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP001a/2/REP001a-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP001a/2/REP001a-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP001a/2/REP001a-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP001a/2/REP001a-v2-Map_Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "REP002",
+    "name": "Controllers Report",
+    "version": "3",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP002/3/REP002-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP002/3/REP002-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP002/3/REP002-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP002/3/REP002-Map-Template.xlsm",
+        "text": "XLSM"
+      }
+    ]
+  },
+  {
+    "code": "REP002",
+    "name": "Controllers Report",
+    "version": "2.1",
+    "status": "Previous",
+    "applicable_from": "01/11/2014",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP002/2.1/REP002-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP002/2.1/REP002-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP002/2.1/REP002-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP003",
+    "name": "Persistency Reporting",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "31/12/2014",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP003/v1/REP003-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP003/v1/REP003-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP003/v1/REP003-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP003/v1/REP003-maptemplate.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "REP004",
+    "name": "Remuneration Benchmarking Report",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP004/2/REP004-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP004/2/REP004-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP004/2/REP004-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP004/2/REP004-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "REP004",
+    "name": "Remuneration Benchmarking Report",
+    "version": "1.1",
+    "status": "Previous",
+    "applicable_from": "14/03/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP004/1.1/REP004-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP004/1.1/REP004-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP004/1.1/REP004-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP004/1.1/REP004-MapTemplate.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "REP005",
+    "name": "High Earners Report",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP005/2/REP005-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP005/2/REP005-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP005/2/REP005-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP005",
+    "name": "High Earners Report",
+    "version": "1.2",
+    "status": "Previous",
+    "applicable_from": "22/05/2017",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP005/1.2/REP005-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP005/1.2/REP005-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP005/1.2/REP005%20Sample%20Nil%20Return.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP005",
+    "name": "High Earners Report - Template to generate XML file & Nil Return Sample",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP005/2/REP005-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP005/2/REP005-v2-TemplateAndGuidance.zip",
+        "text": "Zip"
+      }
+    ]
+  },
+  {
+    "code": "REP005",
+    "name": "High Earners Report - Template to generate XML file & Nil Return Sample",
+    "version": "1.2",
+    "status": "Previous",
+    "applicable_from": "22/05/2017",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP005/1.2/REP005%20Sample%20Nil%20Return.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP005/1.2/REP005-v1.1-TemplateandGuidance.zip",
+        "text": "Zip"
+      }
+    ]
+  },
+  {
+    "code": "REP006",
+    "name": "Recovery Plans",
+    "version": "1.1",
+    "status": "Latest",
+    "applicable_from": "19/09/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP006/v1.1/REP006-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP006/v1.1/REP006-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP006/v1.1/REP006-Sample-Full.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP006/v1.1/REP006-MapTemplate.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "REP006a",
+    "name": "Recovery Plans Notification",
+    "version": "1.1",
+    "status": "Latest",
+    "applicable_from": "19/09/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP006a/v1.1/REP006a-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP006a/v1.1/REP006a-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP006a/v1.1/REP006a-Sample-Full.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP006a/v1.1/REP006a-MapTemplate.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "REP007",
+    "name": "Resolution Plans",
+    "version": "1.1",
+    "status": "Latest",
+    "applicable_from": "19/09/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP007/v1.1/REP007-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP007/v1.1/REP007-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP007/v1.1/REP007-Sample-Full.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP007/v1.1/REP007-MapTemplate.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "REP007a",
+    "name": "Resolution Plans Notification",
+    "version": "1.1",
+    "status": "Latest",
+    "applicable_from": "19/09/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP007a/v1.1/REP007a-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP007a/v1.1/REP007a-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP007a/v1.1/REP007a-Sample-Full.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP007a/v1.1/REP007a-MapTemplate.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "REP008",
+    "name": "Notification of Disciplinary Action relating to conduct rules staff (other than SMF managers)",
+    "version": "5.1",
+    "status": "Latest",
+    "applicable_from": "31/08/2025",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP008/5.1/REP008-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP008/5.1/REP008-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP008/5.1/REP008-Sample-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP008",
+    "name": "Notification of Disciplinary Action relating to conduct rules staff (other than SMF managers)",
+    "version": "4.1",
+    "status": "Previous",
+    "applicable_from": "30/11/2024",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP008/4.1/REP008-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP008/4.1/REP008-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP008/4.1/REP008-Sample-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP008",
+    "name": "Notification of Disciplinary Action relating to conduct rules staff (other than SMF managers)",
+    "version": "3.1",
+    "status": "Previous",
+    "applicable_from": "31/08/2019",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP008/3.1/REP008-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP008/3.1/REP008-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP008/3.1/REP008-v3-samples.zip",
+        "text": "Zip"
+      }
+    ]
+  },
+  {
+    "code": "REP008",
+    "name": "Notification of Disciplinary Action relating to conduct rules staff (other than SMF managers)",
+    "version": "2",
+    "status": "Previous",
+    "applicable_from": "01/08/2017",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP008/2/REP008-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP008/2/REP008-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP008/2/REP008-v2-samples.zip",
+        "text": "Zip"
+      }
+    ]
+  },
+  {
+    "code": "REP009",
+    "name": "Consumer Buy-To-Let Mortgage Aggregated Data",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "31/08/2025",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP009/2/REP009%20Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP009/2/REP009%20Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP009/2/REP009-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP009",
+    "name": "Consumer Buy-To-Let Mortgage Aggregated Data",
+    "version": "1",
+    "status": "Previous",
+    "applicable_from": "01/04/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP009/1/REP009%20Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP009/1/REP009%20Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP009/1/REP009-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP010",
+    "name": "List of Overseas Regulators and Organogram",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP010/2/REP010-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP010/2/REP010-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP010/2/REP010-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP010/2/REP010-Map-Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "REP010",
+    "name": "List of Overseas Regulators and Organogram",
+    "version": "1",
+    "status": "Previous",
+    "applicable_from": "01/04/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP010/1/REP010-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP010/1/REP010-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP010/1/REP010-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP010/1/REP010_Map-Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "REP011",
+    "name": "Monthly Breach Report from Depositaries",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP011/2/REP011-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP011/2/REP011-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP011/2/REP011-Sample-Full-and-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP011/2/REP011-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "REP011",
+    "name": "Monthly Breach Report from Depositaries",
+    "version": "1",
+    "status": "Previous",
+    "applicable_from": "01/01/2017",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP011/1/REP011-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP011/1/REP011-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP011/1/REP011-Sample-Full-and-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP011/1/REP011-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "REP012",
+    "name": "Quarterly Oversight Report from Depositaries",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP012/2/REP012-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP012/2/REP012-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP012/2/REP012-Sample-Full-and-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP012/2/REP012-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "REP012",
+    "name": "Quarterly Oversight Report from Depositaries",
+    "version": "1",
+    "status": "Previous",
+    "applicable_from": "01/01/2017",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP012/1/REP012-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP012/1/REP012-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP012/1/REP012-Sample-Full-and-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP012/1/REP012-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "REP014",
+    "name": "Payment Account Report",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "01/03/2020",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP014/v1/REP014-Data-Definition%202021.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP014/v1/REP014-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP014/v1/REP014%20Sample-%20Full%20and%20Valid%20.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP015",
+    "name": "Retirement Income Flow Data",
+    "version": "3.1",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP015/3.1/REP015-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP015/3.1/REP015-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP015/3.1/REP015-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP015/3.1/REP015-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "REP015",
+    "name": "Retirement Income Flow Data",
+    "version": "2",
+    "status": "Previous",
+    "applicable_from": "01/12/2019",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP015/2/REP015-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP015/2/REP015-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP015/2/REP015-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP015",
+    "name": "Retirement Income Flow Data",
+    "version": "1",
+    "status": "Previous",
+    "applicable_from": "30/09/2018",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP015/v1/REP015-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP015/v1/REP015-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP015/v1/REP015-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP016",
+    "name": "Retirement Income Stock and Withdrawals Flow Data",
+    "version": "3.1",
+    "status": "Latest",
+    "applicable_from": "01/01/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP016/3.1/REP016-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP016/3.1/REP016-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP016/3.1/REP016-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP016/3.1/REP016-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "REP016",
+    "name": "Retirement Income Stock and Withdrawals Flow Data",
+    "version": "2",
+    "status": "Previous",
+    "applicable_from": "01/12/2019",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP016/2/REP016-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP016/2/REP016-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP016/2/REP016-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP016",
+    "name": "Retirement Income Stock and Withdrawals Flow Data",
+    "version": "1",
+    "status": "Previous",
+    "applicable_from": "30/09/2018",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP016/v1/REP016-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP016/v1/REP016-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP016/v1/REP016-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP017",
+    "name": "Payments Fraud Report",
+    "version": "4",
+    "status": "Latest",
+    "applicable_from": "30/06/2021",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017/v4/REP017%20v4%20-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017/v4/REP017%20v4%20-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017/v4/REP017%20v4%20Sample%20Full%20and%20Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017/v4/REP017-Map%20Template.xlsx",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "REP017",
+    "name": "Payments Fraud Report",
+    "version": "3.1",
+    "status": "Previous",
+    "applicable_from": "31/12/2019",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017/v3/REP017-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017/v3/REP017-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017/v3/REP017-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017/v3/REP017-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "REP017",
+    "name": "Payments Fraud Report",
+    "version": "2",
+    "status": "Previous",
+    "applicable_from": "30/06/2019",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017/v2/REP017-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017/v2/REP017-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017/v2/REP017-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017/v2/REP017-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "REP017",
+    "name": "Payments Fraud Report",
+    "version": "1",
+    "status": "Previous",
+    "applicable_from": "31/12/2018",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017/v1/REP017-Data-Definition.XLSX",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017/v1/REP017-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017/v1/REP017-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP017a",
+    "name": "Payments Fraud Report",
+    "version": "3",
+    "status": "Latest",
+    "applicable_from": "30/06/2021",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017a/v3/REP017a%20v3-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017a/v3/REP017a%20v3%20-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017a/v3/REP017a%20v3%20Sample%20full%20and%20valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017a/v3/REP017a-Map%20Template.xlsx",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "REP017a",
+    "name": "Payments Fraud Report",
+    "version": "2",
+    "status": "Previous",
+    "applicable_from": "31/12/2020",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017a/v2.0/REP017a-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017a/v2.0/REP017a-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017a/v2.0/REP017a-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP017a",
+    "name": "Payments Fraud Report",
+    "version": "1",
+    "status": "Previous",
+    "applicable_from": "31/12/2019",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017a/v1/REP017a-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017a/v1/REP017a-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017a/v1/REP017a-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017a/v1/REP017a-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "REP017b",
+    "name": "Payments Fraud Report",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "31/12/2021",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017b/v2/REP017b%20v2.0-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017b/v2/REP017b%20v2%20-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017b/v2/REP017b%20v2%20Sample%20Full%20and%20Valid.XML",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017b/v2/REP017b-Map%20Template.xlsx",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "REP017b",
+    "name": "Payments Fraud Report",
+    "version": "1",
+    "status": "Previous",
+    "applicable_from": "31/12/2019",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017b/v1/REP017b-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017b/v1/REP017b-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017b/v1/REP017b-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP017b/v1/REP017b-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "REP018",
+    "name": "Operational and Security Risk",
+    "version": "2.1",
+    "status": "Latest",
+    "applicable_from": "30/09/2019",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP018/v2/REP018-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP018/v2/REP018-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP018/v2/REP018-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP018/v2/REP018-Map-Template.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "REP018",
+    "name": "Operational and Security Risk",
+    "version": "1",
+    "status": "Previous",
+    "applicable_from": "30/09/2018",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP018/v1/REP018-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP018/v1/REP018-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP018/v1/REP018-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP019",
+    "name": "General - Insurance - Value Measures Report",
+    "version": "1.1",
+    "status": "Latest",
+    "applicable_from": "31/12/2021",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP019/1.1/REP019%20-Data%20Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP019/1.1/REP019-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP019/1.1/REP019%20Sample-full-and-valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP020",
+    "name": "Quarterly statistics on availability and performance of dedicated interfaces",
+    "version": "1.1",
+    "status": "Latest",
+    "applicable_from": "30/09/2019",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP020/REP020-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP020/REP020-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP020/REP020%20v1.0.zip",
+        "text": "ZIP"
+      }
+    ]
+  },
+  {
+    "code": "REP021",
+    "name": "General Insurance Pricing Information - Core Product by Channel",
+    "version": "1.3",
+    "status": "Latest",
+    "applicable_from": "31/03/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP021/1.3/REP021-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP021/1.3/REP021-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP021/1.3/REP021-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP021a",
+    "name": "General Insurance Pricing Information - Core Product by Channel, Financial Year End",
+    "version": "1.1",
+    "status": "Latest",
+    "applicable_from": "30/06/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP021a/1.1/REP021a-Data-Definition%20v1.1.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP021a/1.1/REP021a%20-%20Schema%20.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP021a/1.1/REP021a-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP021b",
+    "name": "General Insurance Pricing Information - Closed Books of Business",
+    "version": "1.2",
+    "status": "Latest",
+    "applicable_from": "04/08/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP021b/1.2/REP021b-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP021b/1.2/REP021b-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP021b/1.2/REP021b%20Samples.zip",
+        "text": "Zip"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP021b/1.2/REP021b-Map-Template.xlsm",
+        "text": "XLSM"
+      }
+    ]
+  },
+  {
+    "code": "REP021c",
+    "name": "General Insurance Pricing Information - Core Product by Channel",
+    "version": "1.1",
+    "status": "Latest",
+    "applicable_from": "30/06/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP021c/1.1/REP021c-Data-Definition%20v1.1.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP021c/1.1/REP021c-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP021c/1.1/REP021c-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP021d",
+    "name": "General Insurance Pricing Information - Closed Books of Business",
+    "version": "1.1",
+    "status": "Latest",
+    "applicable_from": "30/06/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP021d/1.1/REP021d-Data-Definition%20v1.1.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP021d/1.1/REP021d-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP021d/1.1/REP021d-Samples.zip",
+        "text": "Zip"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP021d/1.1/REP021d-Map-Template.xlsm",
+        "text": "XLSM"
+      }
+    ]
+  },
+  {
+    "code": "REP021e",
+    "name": "General Insurance Pricing Information - Premium Finance, Add-ons, Fees and Charges",
+    "version": "1.1",
+    "status": "Latest",
+    "applicable_from": "30/06/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP021e/1.1/REP021e%20Data%20Definition%20v1.1.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP021e/1.1/REP021e-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP021e/1.1/REP021e-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP022",
+    "name": "GI Attestation",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "30/06/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP022/2/REP022-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP022/2/REP022-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP022/2/REP022-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP022",
+    "name": "GI Attestation",
+    "version": "1",
+    "status": "Previous",
+    "applicable_from": "31/12/2022",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP022/1/REP022-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP022/1/REP022-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP022/1/REP022-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP023",
+    "name": "British Steel Pension Redress Scheme",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "01/11/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP023/2/REP023-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP023/2/REP023-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP023/2/REP023%20Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP023/2/REP023_v2-Excel_Template.xlsm",
+        "text": "XLSM"
+      }
+    ]
+  },
+  {
+    "code": "REP023",
+    "name": "British Steel Pension Redress Scheme",
+    "version": "1.1",
+    "status": "Previous",
+    "applicable_from": "31/03/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP023/1.1/REP023-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP023/1.1/REP023-Schema%20v1.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP023/1.1/REP023%20Sample%20Full%20v1.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP023/1.1/REP023_v1-Excel_Template.xlsm",
+        "text": "XLSM"
+      }
+    ]
+  },
+  {
+    "code": "REP024",
+    "name": "Financial Promotions - Aggregated Biannual Return",
+    "version": "1.1",
+    "status": "Latest",
+    "applicable_from": "04/09/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP024/1.1/REP024%20Data%20Definition%20v1.1.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP024/1.1/REP024%20schema%20v1.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP024/1.1/REP024%20Sample%20Full%20and%20Valid%20v1.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP024/1.1/REP024%20Mapped%20Template%20v1.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "REP025",
+    "name": "On-going Reporting by Principal Firms on Their Appointed Representatives",
+    "version": "1.6",
+    "status": "Latest",
+    "applicable_from": "01/12/2023",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP025/1.6/REP025-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP025/1.6/REP025-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP025/1.6/REP025-v1-Samples.zip",
+        "text": "Zip"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP025/1.6/REP025-Map-Template.xlsm",
+        "text": "XLSM"
+      }
+    ]
+  },
+  {
+    "code": "REP026a",
+    "name": "Access to Cash - Banks and Building Societies",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "01/01/2025",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP026a/2/REP026a-Data%20Definition%20v2.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP026a/2/REP026a-Schema%20v2.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP026a/2/REP026a-Sample%20Full%20and%20Valid%20v2.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP026a/2/REP026a-Mapped-Template-v1.xlsm",
+        "text": "XLSM"
+      }
+    ]
+  },
+  {
+    "code": "REP026a",
+    "name": "Access to Cash - Banks and Building Societies",
+    "version": "1",
+    "status": "Previous",
+    "applicable_from": "24/07/2024",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP026a/1/REP026a-Data%20Definition%20v1.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP026a/1/REP026a-Schema%20v1.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP026a/1/REP026a-Sample%20Full%20and%20Valid%20v1.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP026b",
+    "name": "Access to Cash - Post Office",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "24/07/2024",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP026b/1/REP026b-Data%20Definiton%20v1.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP026b/1/REP026b-Schema%20v1.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP026b/1/REP026b%20Full%20and%20Valid%20Sample%20v1.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP026c",
+    "name": "Access to Cash - ATM",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "24/07/2024",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP026c/1/REP026c%20Data%20Definition%20v1.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP026c/1/REP026c-Schema%20v1.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP026c/1/REP026c-Full%20and%20Valid%20Sample%20v1.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "REP027",
+    "name": "Safeguarding Return",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "01/06/2026",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP027/1/REP027%20Data%20Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP027/1/REP027%20schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/REP027/1/REP027%20Sample%20Full%20and%20Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "RIA-Complaints",
+    "name": "Complaints by Retail Investment Advisers",
+    "version": "2.1",
+    "status": "Latest",
+    "applicable_from": "19/09/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RIA-Complaints/v2.1/RIA-Complaints-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RIA-Complaints/v2.1/RIA-Complaints-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/.zip",
+        "text": "ZIP"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RIA-Complaints/v2.1/RIA-Complaints_v2_MapTemplate.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "RMA-A",
+    "name": "Balance sheet",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "31/12/2013",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-A/v2/RMA-A-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-A/v2/RMA-A-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-A/v2/RMA-A-v2-samples.zip",
+        "text": "ZIP"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-A/v2/rma-a-map-template_v2.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "RMA-B",
+    "name": "Profit and loss account",
+    "version": "4",
+    "status": "Latest",
+    "applicable_from": "21/03/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-B/v4/RMA-B-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-B/v4/RMA-B-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-B/v4/RMA-B_Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "RMA-C",
+    "name": "Client money and assets",
+    "version": "4",
+    "status": "Latest",
+    "applicable_from": "01/10/2018",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-C/v4/RMA-C-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-C/v4/RMA-C-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-C/v4/RMA-C-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-C/v4/RMA-C-Mapped%20Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "RMA-D1",
+    "name": "Regulatory capital",
+    "version": "5",
+    "status": "Latest",
+    "applicable_from": "30/06/2017",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-D1/v5/RMA-D1-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-D1/v5/RMA-D1-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-D1/v5/RMA-D1-v5-samples.zip",
+        "text": "ZIP"
+      }
+    ]
+  },
+  {
+    "code": "RMA-E",
+    "name": "Professional indemnity insurance (PII) self-certification",
+    "version": "9.2",
+    "status": "Latest",
+    "applicable_from": "01/10/2020",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-E/9.2/RMA-E-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-E/9.2/RMA-E-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-E/9.2/RMA-E-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "RMA-E",
+    "name": "Professional indemnity insurance (PII) self-certification",
+    "version": "8",
+    "status": "Previous",
+    "applicable_from": "01/10/2018",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-E/v8%20(IDD)/RMA-E-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-E/v8%20(IDD)/RMA-E-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-E/v8%20(IDD)/RMA-E-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "RMA-F",
+    "name": "Threshold conditions",
+    "version": "2",
+    "status": "Latest",
+    "applicable_from": "31/05/2013",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-F/v2/RMA-F-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-F/v2/RMA-F-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-F/v2/RMA-F-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "RMA-G",
+    "name": "Training and competence",
+    "version": "6",
+    "status": "Latest",
+    "applicable_from": "28/02/2018",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-G/v6/RMA-G-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-G/v6/RMA-G-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-G/v6/RMA-G-v6-samples.zip",
+        "text": "ZIP"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-G/v6/RMA-G-map-template_v6.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "RMA-H",
+    "name": "Conduct of Business Sourcebook (COBS) data",
+    "version": "3.2",
+    "status": "Latest",
+    "applicable_from": "31/10/2013",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-H/v3/RMA-H-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-H/v3/RMA-H-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-H/v3/RMA-H-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "RMA-I",
+    "name": "Supplementary product sales data",
+    "version": "3",
+    "status": "Latest",
+    "applicable_from": "31/12/2010",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-I/v3/RMA-I-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-I/v3/RMA-I-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-I/v3/RMA-I-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "RMA-J",
+    "name": "Data required for collection of fees",
+    "version": "7",
+    "status": "Latest",
+    "applicable_from": "01/04/2019",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-J/v7/RMA-J-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-J/v7/RMA-J-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-J/v7/RMA-J-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-J/v7/RMA-J-Map-Template-v7.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "RMA-J",
+    "name": "Data required for collection of fees",
+    "version": "6",
+    "status": "Previous",
+    "applicable_from": "01/04/2018",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-J/v6/RMA-J-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-J/v6/RMA-J-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-J/v6/RMA-J-Sample-Full-And-Valid.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-J/v6/RMA-J_v6_Mapped%20Template.xls",
+        "text": "XLS"
+      }
+    ]
+  },
+  {
+    "code": "RMA-K",
+    "name": "Adviser charges",
+    "version": "5",
+    "status": "Latest",
+    "applicable_from": "31/12/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-K/v5/RMA-K-Data-Definition.xlsx",
+        "text": "XLSX"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-K/v5/RMA-K-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-K/v5/RMA-K-Sample-Valid-And-Full.xml",
+        "text": "XML"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-K/v5/RMA-K-MapTemplate-v5.xlsx",
+        "text": "XLSX"
+      }
+    ]
+  },
+  {
+    "code": "RMA-M",
+    "name": "Pension Transfer Specialist advice",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "01/10/2020",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-M/v1/RMA-M-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-M/v1/RMA-M-Schema.xsd",
+        "text": "XSD"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/RMA-M/v1/RMA-M-Sample-Full-and-Valid.xml",
+        "text": "XML"
+      }
+    ]
+  },
+  {
+    "code": "SDS001",
+    "name": "Shared Definitions (PII definitions referenced in FSA031, FSA032 and RMA-E)",
+    "version": "9",
+    "status": "Previous",
+    "applicable_from": "21/11/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS001/v9/SDS001-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS001/v9/SDS001-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "SDS001",
+    "name": "Shared Definitions (PII definitions referenced in FSA031, FSA032 and RMA-E)",
+    "version": "8",
+    "status": "Previous",
+    "applicable_from": "01/12/2011",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS001/v8/SDS001-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS001/v8/SDS001-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "SDS001",
+    "name": "Shared Definitions (PII definitions referenced in FSA031, FSA032 and RMA-E)",
+    "version": "7",
+    "status": "Previous",
+    "applicable_from": "16/08/2010",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS001/v7/SDS001-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS001/v7/SDS001-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "SDS001",
+    "name": "Shared Definitions (PII definitions referenced in FSA031, FSA032 and RMA-E)",
+    "version": "6",
+    "status": "Previous",
+    "applicable_from": "01/06/2010",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS001/v6/SDS001-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS001/v6/SDS001-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "SDS001",
+    "name": "Shared Definitions (PII definitions referenced in FSA031, FSA032 and RMA-E)",
+    "version": "5",
+    "status": "Previous",
+    "applicable_from": "01/12/2009",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS001/v5/SDS001-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS001/v5/SDS001-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "SDS001",
+    "name": "Shared Definitions (PII definitions referenced in FSA031, FSA032 and RMA-E)",
+    "version": "4",
+    "status": "Previous",
+    "applicable_from": "05/06/2008",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS001/v4/SDS001-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS001/v4/SDS001-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "SDS001",
+    "name": "Shared Definitions (PII definitions referenced in FSA031, FSA032 and RMA-E)",
+    "version": "10",
+    "status": "Latest",
+    "applicable_from": "01/10/2020",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS001/v10/SDS001-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS001/v10/SDS001-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "SDS001",
+    "name": "Shared Definitions (complex types referenced in FSA031, FSA032 and RMA-E)",
+    "version": "3",
+    "status": "Previous",
+    "applicable_from": "19/12/2007",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS001/v3/SDS001-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS001/v3/SDS001-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "SDS002",
+    "name": "Shared Definitions (complex types referenced in MLA-F, MLA-F1, MLA-H and MLA-H1)",
+    "version": "3",
+    "status": "Latest",
+    "applicable_from": "21/11/2016",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS002/v3/SDS002-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS002/v3/SDS002-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "SDS002",
+    "name": "Shared Definitions (complex types referenced in MLA-F, MLA-F1, MLA-H and MLA-H1)",
+    "version": "2",
+    "status": "Previous",
+    "applicable_from": "25/01/2008",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS002/v2/SDS002-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS002/v2/SDS002-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "SDS003",
+    "name": "Shared Definitions (referenced by consolidated basis group data items).",
+    "version": "4",
+    "status": "Latest",
+    "applicable_from": "07/10/2009",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS003/v4/SDS003-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS003/v4/SDS003-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "SDS003",
+    "name": "Shared Definitions (referenced by consolidated basis group data items).",
+    "version": "3",
+    "status": "Previous",
+    "applicable_from": "25/01/2008",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS003/v3/SDS003-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS003/v3/SDS003-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "SDS003",
+    "name": "Shared Definitions (referenced by consolidated basis group data items).",
+    "version": "2",
+    "status": "Previous",
+    "applicable_from": "16/11/2007",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS003/v2/SDS003-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS003/v2/SDS003-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  },
+  {
+    "code": "SDS004",
+    "name": "Shared Definitions (complex types referenced in RMA-D1)",
+    "version": "1",
+    "status": "Latest",
+    "applicable_from": "05/06/2008",
+    "links": [
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS004/v1/SDS004-Data-Definition.xls",
+        "text": "XLS"
+      },
+      {
+        "href": "https://regdata.fca.org.uk/specifications/DRG/SDS004/v1/SDS004-Schema.xsd",
+        "text": "XSD"
+      }
+    ]
+  }
+]

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    ********************************************************************************
+    *
+    *    Schema for: Data Item REP-CRIM - Financial Crime Report
+    *
+    *    Version:   3
+    *    Date:      23 June 2022       
+    *
+    *    History:   Version 3 changes the CommonTypes-Schema to Version 14
+    *
+    *               Version 2 applies minOccurs="1" to multiple elements and
+    *               re-structure of 'OperatingJurisdictions' element
+    *               
+    *               Version 1 follows publication of CP15/42        
+    *
+    ********************************************************************************
+-->
+
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified" 
+    attributeFormDefault="unqualified" 
+    
+    targetNamespace="urn:fsa-gov-uk:MER:REP-CRIM:3" 
+    xmlns=          "urn:fsa-gov-uk:MER:REP-CRIM:3" 
+    xmlns:mer-meta= "urn:fsa-gov-uk:MER:Meta-Data:1" 
+    
+    version="3" 
+    id="MER-REP-CRIM">
+    
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>REP-CRIM</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>Financial Crime Report</mer-meta:DataItemName>
+        </xs:documentation>
+    </xs:annotation>
+    
+    <xs:include schemaLocation="../../CommonTypes/v14/CommonTypes-Schema.xsd"/>
+    
+    <xs:element name="REP-CRIM-FinancialCrimeReport">
+        <xs:complexType>
+            <xs:sequence>
+                
+                <xs:element name="GroupReporting" minOccurs="1">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="MoreThanOneEntity" type="YesNoType" minOccurs="1"/>
+                                <xs:element name="OtherFirms" minOccurs="0">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="FirmReferenceNumber" type="FRNType" minOccurs="0" maxOccurs="unbounded"/>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:sequence>
+                        </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="OperatingJurisdictions" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Operates"             minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="EndOfReportingPeriod"     type="CountryCodeType3"   minOccurs="1"/>                                       
+                                    </xs:sequence>
+                                </xs:complexType>                     
+                            </xs:element>
+                            <xs:element name="AssessedConsidered"   minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="HighRisk"                 type="CountryCodeType3"     minOccurs="0"/>                                        
+                                    </xs:sequence>
+                                </xs:complexType>                     
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="CustomerInfo" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="NumberOfRelationships" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="PoliticallyExposed" minOccurs="1">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="EndOfReportingPeriod" type="NonNegativeIntegerType" minOccurs="1"/>
+                                                    <xs:element name="NewReportingPeriod"   type="NonNegativeIntegerType" minOccurs="1"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="NonEEACorrespondentBanks" minOccurs="1">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="EndOfReportingPeriod" type="NonNegativeIntegerType" minOccurs="1"/>
+                                                    <xs:element name="NewReportingPeriod"   type="NonNegativeIntegerType" minOccurs="1"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="HighRiskCustomers" minOccurs="1">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="EndOfReportingPeriod" type="NonNegativeIntegerType" minOccurs="1"/>
+                                                    <xs:element name="NewReportingPeriod"   type="NonNegativeIntegerType" minOccurs="1"/>     
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="LocationOfRelationships" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Europe" minOccurs="1">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="EndOfReportingPeriod" type="NonNegativeIntegerType" minOccurs="1"/>
+                                                    <xs:element name="OfWhich" minOccurs="1">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="UnitedKingdom" minOccurs="1">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="EndOfReportingPeriod" type="NonNegativeIntegerType" minOccurs="1"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="EEAAndSwitzerland" minOccurs="1">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="EndOfReportingPeriod" type="NonNegativeIntegerType" minOccurs="1"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="OtherEurope" minOccurs="1">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="EndOfReportingPeriod" type="NonNegativeIntegerType" minOccurs="1"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="MiddleEastAfrica" minOccurs="1">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="EndOfReportingPeriod" type="NonNegativeIntegerType" minOccurs="1"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="NorthAmerica" minOccurs="1">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="EndOfReportingPeriod" type="NonNegativeIntegerType" minOccurs="1"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="CentralAmericaCaribbean" minOccurs="1">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="EndOfReportingPeriod" type="NonNegativeIntegerType" minOccurs="1"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="SouthAmerica" minOccurs="1">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="EndOfReportingPeriod" type="NonNegativeIntegerType" minOccurs="1"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Asia" minOccurs="1">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="EndOfReportingPeriod" type="NonNegativeIntegerType" minOccurs="1"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Oceania" minOccurs="1">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="EndOfReportingPeriod" type="NonNegativeIntegerType" minOccurs="1"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="CustLinkedToHighRiskJurisdictions" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="EndOfReportingPeriod" type="NonNegativeIntegerType" minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="NumberOfCustRelationships" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Refused"  type="NonNegativeIntegerType" minOccurs="1"/>
+                                        <xs:element name="Exited"   type="NonNegativeIntegerType" minOccurs="1"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="ComplianceInfo" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="NumberSARsUnderPOCA" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="SubmittedInternally"  type="NonNegativeIntegerType"   minOccurs="1"/>
+                                        <xs:element name="DisclosedToNCA"       type="NonNegativeIntegerType"   minOccurs="1"/>
+                                        <xs:element name="ConsentRequests"      type="NonNegativeIntegerType"   minOccurs="1"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="NumberSARsUnderTerrorismAct"  type="NonNegativeIntegerType" minOccurs="1"/>
+                            <xs:element name="InvestigativeCourtOrders"     type="NonNegativeIntegerType" minOccurs="1"/>
+                            <xs:element name="RestraintOrders" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="BeingServicedInEffect"    type="NonNegativeIntegerType" minOccurs="1"/>
+                                        <xs:element name="New"                      type="NonNegativeIntegerType" minOccurs="1"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="RelationshipsWhichIntroduceBusiness" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Maintained"   type="NonNegativeIntegerType" minOccurs="1"/>
+                                        <xs:element name="Exited"       type="NonNegativeIntegerType" minOccurs="1"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="AppointedReps" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ARsExited" minOccurs="1">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="DuringReportingPeriod" type="NonNegativeIntegerType" minOccurs="1"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="AllFirms" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="TotalFTEOfUKStaff" type="NonNegativeFloat2Type" minOccurs="1"/>
+                                        <xs:element name="OfWhich" minOccurs="1">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="PercentageOfFTE" type="PercentDP2Type" minOccurs="1"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="SanctionsSpecificInfo" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="AutomatedSystems"     type="YesNoType"    minOccurs="1"/>
+                            <xs:element name="TrueSanctionMatches"  minOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="CustomerMatches" type="NonNegativeIntegerType" minOccurs="1"/>
+                                        <xs:element name="PaymentsMatches" type="NonNegativeIntegerType" minOccurs="1"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="RepeatCustSanctionsScreening" type="YesNoType" minOccurs="1"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="Fraud" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="TopThreeFrauds" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="FirstPrevalentFraud" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="FraudTypology"        type="FraudType" minOccurs="0"/>
+                                                    <xs:element name="SuspectedPerpetrator" type="PerpetratorType" minOccurs="0"/>
+                                                    <xs:element name="PrimaryVictim"        type="VictimType" minOccurs="0"/>
+                                                    <xs:element name="Incidence"            type="IncidenceType" minOccurs="0"/> 
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="FirstOtherDesc" minOccurs="0">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="OtherFraudTypology"           type="String100Type" minOccurs="0"/>
+                                                <xs:element name="OtherSuspectedPerpetrator"    type="String100Type" minOccurs="0"/>
+                                                <xs:element name="OtherPrimaryVictim"           type="String100Type" minOccurs="0"/>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="SecondPrevalentFraud" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="FraudTypology"        type="FraudType" minOccurs="0"/>
+                                                    <xs:element name="SuspectedPerpetrator" type="PerpetratorType" minOccurs="0"/>
+                                                    <xs:element name="PrimaryVictim"        type="VictimType" minOccurs="0"/>
+                                                    <xs:element name="Incidence"            type="IncidenceType" minOccurs="0"/> 
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="SecondOtherDesc" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="OtherFraudTypology"           type="String100Type" minOccurs="0"/>
+                                                    <xs:element name="OtherSuspectedPerpetrator"    type="String100Type" minOccurs="0"/>
+                                                    <xs:element name="OtherPrimaryVictim"           type="String100Type" minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="ThirdPrevalentFraud" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="FraudTypology"        type="FraudType" minOccurs="0"/>
+                                                    <xs:element name="SuspectedPerpetrator" type="PerpetratorType" minOccurs="0"/>
+                                                    <xs:element name="PrimaryVictim"        type="VictimType" minOccurs="0"/>
+                                                    <xs:element name="Incidence"            type="IncidenceType" minOccurs="0"/> 
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="ThirdOtherDesc" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="OtherFraudTypology"           type="String100Type" minOccurs="0"/>
+                                                    <xs:element name="OtherSuspectedPerpetrator"    type="String100Type" minOccurs="0"/>
+                                                    <xs:element name="OtherPrimaryVictim"           type="String100Type" minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        </xs:element>
+    
+    <xs:simpleType name="FraudType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="419 emails and letters"/>
+            <xs:enumeration value="Abuse of position of trust"/>
+            <xs:enumeration value="Account takeover"/>
+            <xs:enumeration value="Advance fee fraud"/>
+            <xs:enumeration value="Application fraud"/>
+            <xs:enumeration value="Asset misappropriation fraud"/>
+            <xs:enumeration value="Bond fraud"/>
+            <xs:enumeration value="Carbon Credits fraud"/>
+            <xs:enumeration value="Cashpoint fraud"/>
+            <xs:enumeration value="Cheque fraud"/>
+            <xs:enumeration value="Companies - fraudulent"/>
+            <xs:enumeration value="Computer hacking"/>
+            <xs:enumeration value="Credit Card fraud"/>
+            <xs:enumeration value="Debit Card fraud"/>
+            <xs:enumeration value="Expenses fraud"/>
+            <xs:enumeration value="Exploiting assets and information"/>
+            <xs:enumeration value="Fraud recovery fraud"/>
+            <xs:enumeration value="Hedge Fund fraud"/>
+            <xs:enumeration value="Identity Fraud and Identity Theft"/>
+            <xs:enumeration value="Insurance fraud"/>
+            <xs:enumeration value="Landbanking fraud"/>
+            <xs:enumeration value="Loan repayment fraud"/>
+            <xs:enumeration value="Short and long firm fraud"/>
+            <xs:enumeration value="Malware-enabled fraud"/>
+            <xs:enumeration value="Mandate fraud"/>
+            <xs:enumeration value="Mortgage fraud"/>
+            <xs:enumeration value="Other investment fraud"/>
+            <xs:enumeration value="Pension liberation fraud"/>
+            <xs:enumeration value="Phishing"/>
+            <xs:enumeration value="Ponzi schemes"/>
+            <xs:enumeration value="Procurement fraud"/>
+            <xs:enumeration value="Pyramid schemes"/>
+            <xs:enumeration value="Share sale fraud"/>
+            <xs:enumeration value="Smishing"/>
+            <xs:enumeration value="Vishing"/>
+            <xs:enumeration value="Other"/>
+        </xs:restriction>
+    </xs:simpleType> 
+    
+    <xs:simpleType name="PerpetratorType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Customer"/>
+            <xs:enumeration value="Internal employee"/>
+            <xs:enumeration value="Organised crime group"/>
+            <xs:enumeration value="Third party contractor"/>
+            <xs:enumeration value="Third party professional"/>
+            <xs:enumeration value="Third party supplier"/>
+            <xs:enumeration value="Unknown third party"/>
+            <xs:enumeration value="Other"/>                                        
+        </xs:restriction>
+    </xs:simpleType> 
+    
+    <xs:simpleType name="VictimType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Customer"/>
+            <xs:enumeration value="Regulated firm/Electronic Money Institution (all jurisdictions)"/>
+            <xs:enumeration value="Other"/>
+        </xs:restriction>
+    </xs:simpleType> 
+    
+    <xs:simpleType name="IncidenceType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Decreasing"/>
+            <xs:enumeration value="Emerging Risk"/>
+            <xs:enumeration value="Increasing"/>
+            <xs:enumeration value="Stable"/>
+        </xs:restriction>
+    </xs:simpleType> 
+    
+</xs:schema>
+
+                
+                            
+ 
+                                
+
+
+
+
+
+
+ 
+
+
+        
+        
+
+
+    
+
+

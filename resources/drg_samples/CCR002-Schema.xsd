@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    *******************************************************************
+    *
+    *    Schema for: Data Item CCR002 Consumer Credit data: Volumes
+    *
+    *    Version:    4
+    *    Date:       1 June 2016
+    *
+    *    History:   Version 4 follows publication of CP16/8
+    *               Version 3 adds "not applicable" to FeeMechanism 
+    *                   for CreditBroking and AllOtherCreditRelatedActivity    
+    *               Version 2 follows publication of CP14/6
+    *               Version 1 follows publication of CP13/10
+    *                
+    *
+    *******************************************************************
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    attributeFormDefault="unqualified" targetNamespace="urn:fsa-gov-uk:MER:CCR002:4"
+    xmlns="urn:fsa-gov-uk:MER:CCR002:4" xmlns:mer-meta="urn:fsa-gov-uk:MER:Meta-Data:1" version="4"
+    id="MER-CCR002">
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>CCR002</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>Consumer Credit data: Volumes</mer-meta:DataItemName>
+        </xs:documentation>
+    </xs:annotation>
+
+    <xs:include schemaLocation="../../CommonTypes/v11/CommonTypes-Schema.xsd"/>
+    <xs:element name="CCR002-Volumes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Activities" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Lending" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="DebtPurchasing" type="LendingStructure"
+                                            minOccurs="0"/>
+                                        <xs:element name="HirePurchaseCondSaleAgreements"
+                                            type="LendingStructure" minOccurs="0"/>
+                                        <xs:element name="HomeCreditLoanAgreements"
+                                            type="LendingStructure" minOccurs="0"/>
+                                        <xs:element name="BillOfSaleLoanAgreements"
+                                            type="LendingStructure" minOccurs="0"/>
+                                        <xs:element name="Pawnbroking" type="LendingStructure"
+                                            minOccurs="0"/>
+                                        <xs:element name="HighCostShortTermCredit"
+                                            type="LendingStructure" minOccurs="0"/>
+                                        <xs:element name="Overdrafts"
+                                            type="LendingStructure" minOccurs="0"/>
+                                        <xs:element name="OtherRunningAccountCredit"
+                                            type="LendingStructure" minOccurs="0"/>
+                                        <xs:element name="OtherLending" type="LendingStructure"
+                                            minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="CreditBroking" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="FeeMechanism" minOccurs="0">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                  <xs:enumeration value="upfront only"/>
+                                                  <xs:enumeration value="on-going only"/>
+                                                  <xs:enumeration value="mainly upfront"/>
+                                                  <xs:enumeration value="mainly on-going"/>
+                                                  <xs:enumeration value="interest only"/>
+                                                  <xs:enumeration value="mainly interest"/>
+                                                   <xs:enumeration value="combination"/>
+                                                  <xs:enumeration value="not applicable"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="Revenue" type="MonetaryType" minOccurs="0"/>
+                                        <xs:element name="TotalCustomers"
+                                            type="NonNegativeIntegerType" minOccurs="0"/>
+                                        <xs:element name="TotalTransactions"
+                                            type="NonNegativeIntegerType" minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="DebtManagementActivity" type="LendingStructure"
+                                minOccurs="0"/>
+                            <xs:element name="AllOtherCreditRelatedActivity" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="FeeMechanism" minOccurs="0">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                  <xs:enumeration value="upfront only"/>
+                                                  <xs:enumeration value="on-going only"/>
+                                                  <xs:enumeration value="mainly upfront"/>
+                                                  <xs:enumeration value="mainly on-going"/>
+                                                  <xs:enumeration value="interest only"/>
+                                                  <xs:enumeration value="mainly interest"/>
+                                                  <xs:enumeration value="combination"/>
+                                                  <xs:enumeration value="not applicable"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="Revenue" type="MonetaryType" minOccurs="0"/>
+                                        <xs:element name="TotalCustomers"
+                                            type="NonNegativeIntegerType" minOccurs="0"/>
+                                        <xs:element name="TotalTransactions"
+                                            type="NonNegativeIntegerType" minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Fees" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="TotalAnnualIncome" type="NonNegativeMonetaryType"
+                                minOccurs="1"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attributeGroup ref="BasisCurrencyAndUnitsAttrGroup"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="LendingStructure">
+        <xs:sequence>
+            <xs:element name="FeeMechanism" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="upfront only"/>
+                        <xs:enumeration value="on-going only"/>
+                        <xs:enumeration value="mainly upfront"/>
+                        <xs:enumeration value="mainly on-going"/>
+                        <xs:enumeration value="interest only"/>
+                        <xs:enumeration value="mainly interest"/>
+                        <xs:enumeration value="mainly interest"/>
+                        <xs:enumeration value="combination"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="Revenue" type="MonetaryType" minOccurs="0"/>
+            <xs:element name="TotalCustomers" type="NonNegativeIntegerType" minOccurs="0"/>
+            <xs:element name="TotalTransactions" type="NonNegativeIntegerType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

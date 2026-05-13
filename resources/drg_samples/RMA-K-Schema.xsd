@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    *******************************************************************
+    *
+    *    Schema for: Data Item RMA-K-Adviser Charges
+    *
+    *    Version:    5
+    *    Date:       1 August 2016 
+    *
+    *    History:    Version 5  (01/08/2016) following publication of CP16/17
+    *                Version 4  (31/07/2015) change fields 4 and 9 to Float2Pos
+    *                Version 3  (21/10/2014) following publication of CP14/5 
+    *                Version 2  (14/01/2013) change to integer data type in AdviserChargeRevenueType
+    *                Version 1  (18/07/2012) follows publication of PS11/13
+    *
+    *******************************************************************
+-->
+<xs:schema    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified" 
+    
+    targetNamespace=    "urn:fsa-gov-uk:MER:RMA-K:5"
+    xmlns=              "urn:fsa-gov-uk:MER:RMA-K:5" 
+    xmlns:mer-meta=     "urn:fsa-gov-uk:MER:Meta-Data:1" 
+    version="5"
+    id="MER-RMA-K"> 
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>RMA-K</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>Adviser charges</mer-meta:DataItemName>
+        </xs:documentation>
+    </xs:annotation>
+    
+    <xs:include schemaLocation="../../CommonTypes/v11/CommonTypes-Schema.xsd"/>
+<xs:element name="RMA-K-AdviserCharges">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="TypeOfAdvice" minOccurs="1">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Independent"/>
+                        <xs:enumeration value="Restricted"/>
+                        <xs:enumeration value="Both"/>
+                        <xs:enumeration value="Did not provide advice"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="IndependentAdvice" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="RIProductRevenue" type="Revenue" minOccurs="0"/> 
+                        <xs:element name="Payments"         type="PaymentTypes" minOccurs="0"/>
+                        <xs:element name="OneOffServices"  minOccurs="0">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="NumberofOneOffServices" type="NonNegativeIntegerType" minOccurs="0"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>       
+            <xs:element name="RestrictedAdvice" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="RIProductRevenue" type="Revenue" minOccurs="0"/> 
+                        <xs:element name="Payments"         type="PaymentTypes" minOccurs="0"/>
+                        <xs:element name="OneOffServices"  minOccurs="0">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="NumberofOneOffServices" type="NonNegativeIntegerType" minOccurs="0"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>                         
+            <xs:element name="NumberOfOngoingServices" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="OngoingAdviceService" minOccurs="0">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="OngoingAdvicePayments"    type="NonNegativeIntegerType" minOccurs="0"/>
+                                    <xs:element name="StartedOngoingPayments"   type="NonNegativeIntegerType" minOccurs="0"/>
+                                    <xs:element name="StoppedOngoingPayments"   type="NonNegativeIntegerType" minOccurs="0"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="TypicalCharging" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="AdviserChargingStructure" minOccurs="0">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="InitialChargePerHour"     type="MonetaryChargeType" minOccurs="0"/>
+                                    <xs:element name="InitialChargePctInv"      type="PCT2ChargeType" minOccurs="0"/>
+                                    <xs:element name="InitialChargeFixFee"      type="MonetaryChargeType" minOccurs="0"/>
+                                    <xs:element name="InitialChargeCombined"    type="MonetaryChargeType" minOccurs="0"/>
+                                    <xs:element name="ChargePerHour"            type="MonetaryChargeType" minOccurs="0"/>
+                                    <xs:element name="ChargePctInv"             type="PCT2ChargeType" minOccurs="0"/>
+                                    <xs:element name="ChargeFixFee"             type="MonetaryChargeType" minOccurs="0"/>
+                                    <xs:element name="ChargeCombined"           type="MonetaryChargeType" minOccurs="0"/>                           
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>              
+        </xs:sequence>
+        <xs:attribute name="currency" fixed="GBP" use="required"/>
+        <xs:attribute name="units" fixed="single" use="required"/>
+        <xs:attribute name="accountingBasis" type="AccountingBasisType"/>
+    </xs:complexType>
+</xs:element>
+
+    <xs:complexType name="Revenue">
+        <xs:sequence>
+            <xs:element name="InitialRevenue" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="InitialPaidDirectly"         type="MonetaryType" minOccurs="0"/>
+                        <xs:element name="InitialViaServiceProvider"   type="MonetaryType" minOccurs="0"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="OngoingRevenue" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="OngoingPaidDirectly"             type="MonetaryType" minOccurs="0"/>
+                        <xs:element name="OngoingViaServiceProvider"       type="MonetaryType" minOccurs="0"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+    </xs:sequence>
+</xs:complexType>
+    <xs:complexType name="PaymentTypes">
+        <xs:sequence>
+            <xs:element name="LumpSumPayments" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="LumpSumPaidDirectly"          type="NonNegativeFloat2Type" minOccurs="0"/>
+                        <xs:element name="LumpSumViaServiceProvider"    type="NonNegativeFloat2Type" minOccurs="0"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="RegularInstalments" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="PaymentsPaidDirectly"         type="NonNegativeFloat2Type" minOccurs="0"/>
+                        <xs:element name="PaymentsViaServiceProvider"   type="NonNegativeFloat2Type"  minOccurs="0"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="MonetaryChargeType">
+        <xs:sequence>
+            <xs:element name="IndependentAdvice" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Minimum" type="NonNegativeMonetaryFloat2Type" minOccurs="0" />
+                        <xs:element name="Maximum" type="NonNegativeMonetaryFloat2Type"  minOccurs="0"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="RestrictedAdvice" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Minimum" type="NonNegativeMonetaryFloat2Type" minOccurs="0"/>
+                        <xs:element name="Maximum" type="NonNegativeMonetaryFloat2Type" minOccurs="0" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="ChargingStructure" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Indicator" type="YesNoType" minOccurs="0"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="PCT2ChargeType">
+        <xs:sequence>
+            <xs:element name="IndependentAdvice" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Minimum" type="PercentDP2Type" minOccurs="0"/>
+                        <xs:element name="Maximum" type="PercentDP2Type"  minOccurs="0"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="RestrictedAdvice" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Minimum" type="PercentDP2Type" minOccurs="0"/>
+                        <xs:element name="Maximum" type="PercentDP2Type"  minOccurs="0"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="ChargingStructure" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Indicator" type="YesNoType" minOccurs="0"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

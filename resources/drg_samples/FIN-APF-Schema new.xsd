@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+    *******************************************************************
+    *                                                                 
+    *    Schema for: Data Item FIN-APF Authorised Professional Firms Questionnaire                    
+    *                                                                 
+    *    Version:    3                                       
+    *    Date:       1 May 2017                                 
+    *                                                                 
+    *                Version 3 is subject to consultation
+    *                Version 2 is subject to consultation
+    *                Version 1 is subject to consultation              
+    *                                                                 
+    *******************************************************************
+-->
+<xs:schema 
+    xmlns:xs=               "http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault=     "qualified"
+    attributeFormDefault=   "unqualified" 
+   
+   targetNamespace=         "urn:fsa-gov-uk:MER:FIN-APF:4"
+    xmlns=                  "urn:fsa-gov-uk:MER:FIN-APF:4" 
+    xmlns:mer-meta=         "urn:fsa-gov-uk:MER:Meta-Data:1" 
+    
+    version="4"
+    id="MER-FIN-APF">
+
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>FIN-APF</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>Authorised Professional Firms Questionnaire</mer-meta:DataItemName>
+        </xs:documentation>
+    </xs:annotation>
+
+    <xs:include schemaLocation="../../CommonTypes/v11/CommonTypes-Schema.xsd"/>
+
+    <xs:element name="FIN-APF-Questionnaire">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ProfessionalRegulation" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="DesignatedProfBody" minOccurs="1" >                            
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="The Association of Chartered Certified Accountants"/>
+                                        <xs:enumeration value="The Institute of Actuaries"/>
+                                        <xs:enumeration value="The Institute of Chartered Accountants in England and Wales"/>
+                                        <xs:enumeration value="The Institute of Chartered Accountants in Ireland"/>
+                                        <xs:enumeration value="The Institute of Chartered Accountants of Scotland"/>
+                                        <xs:enumeration value="The Law Society of England and Wales"/>
+                                        <xs:enumeration value="The Law Society of Scotland"/>
+                                        <xs:enumeration value="The Law Society of Northern Ireland" />
+                                        <xs:enumeration value="The Council for Licensed Conveyancers" />
+                                        <xs:enumeration value="The Royal Institution of Chartered Surveyors" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>                     
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SupervisionAndMonitoring" minOccurs="1" >
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="AppointedReps"                    type="xs:nonNegativeInteger"    minOccurs="0" />
+                            <xs:element name="TotalIncomeRegulatedActivities"   type="MonetaryType"             minOccurs="1" />
+                            <xs:element name="PctOfTotalIncome"                                                 minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="PctInvestmentManagement"      type="PercentDP0Type"   minOccurs="0" />
+                                        <xs:element name="PctCorporateFinance"          type="PercentDP0Type"   minOccurs="0" />
+                                        <xs:element name="PctRetailInvestment"          type="PercentDP0Type"   minOccurs="0" />
+                                        <xs:element name="PctHomeFinanceMediation"      type="PercentDP0Type"   minOccurs="0" />
+                                        <xs:element name="PctInsuranceDistribution"     type="PercentDP0Type"   minOccurs="0" />
+                                        <xs:element name="PctCreditRelated"             type="PercentDP0Type"   minOccurs="0" />
+                                        <xs:element name="PctOther"                     type="PercentDP0Type"   minOccurs="0" />
+                                    </xs:sequence>
+                                </xs:complexType>                             
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>   
+                </xs:element>
+                <xs:element name="ClientMoneyAndAssets" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="HoldClientMoney"      type="YesNoType" minOccurs="1" />
+                            <xs:element name="HoldClientAssets"     type="YesNoType" minOccurs="1" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="MaterialChanges" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="NotifiedFCA" type="YesNoType" minOccurs="1" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="ProfessionalIndemnityInsurance" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="IndemnityInsurance" type="YesNoType" minOccurs="1" />
+                            <xs:element name="CurrentPolicyDetails" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="PIIBasicInformation"      type="PIIBasicStructure" minOccurs="0" /> 
+                                        <xs:element name="PIIDetailedInformation"   type="PIIDetailStructure" minOccurs="0" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="FinancialResourcesReporting" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="TotalIncomeAllActivities"     type="MonetaryType" minOccurs="1" />
+                            <xs:element name="ProfitAfterTax"               type="YesNoType" minOccurs="1" />
+                            <xs:element name="CurrentFutureLiabilities"     type="YesNoType" minOccurs="1" />
+                            <xs:element name="ActAsInvestmentManager"       type="YesNoType" minOccurs="1" />
+                            <xs:element name="DiscretionaryManagementServices" minOccurs="0">
+                               <xs:complexType>
+                                   <xs:sequence>
+                                       <xs:element name="InvestmentManagementRetailClients"     type="YesNoType" minOccurs="0" />
+                                       <xs:element name="InvestmentManagementProfClients"       type="YesNoType" minOccurs="0" />
+                                       <xs:element name="InvestmentManagementNonUKClients"      type="YesNoType" minOccurs="0" />
+                                       <xs:element name="TrusteeActivities"                     type="YesNoType" minOccurs="0" />
+                                       <xs:element name="ISAManagement"                         type="YesNoType" minOccurs="0" />
+                                   </xs:sequence>
+                               </xs:complexType> 
+                            </xs:element>
+                            <xs:element name="StateOther"                       type="String100Type" minOccurs="0" />
+                            <xs:element name="FundsUnderDiscretionaryMgmt"      type="MonetaryType" minOccurs="0" />
+                            <xs:element name="TotalFundsUnderDiscretionaryMgmt"  type="MonetaryType" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>   
+                </xs:element>                             
+            </xs:sequence>    
+            <xs:attributeGroup ref="CurrencyAndUnitsAttrGroup"/>
+        </xs:complexType>
+    </xs:element>
+          
+    
+    <xs:complexType name="PIIBasicStructure">
+        <xs:sequence>          
+            <xs:element name="AnnualisedPremium" type="NonNegativeMonetaryType" minOccurs="0"/>
+            <xs:element name="Insurer" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Acapella Syndicate 2014 (Managed by Pembroke Managing Agency Limited)" />
+      <xs:enumeration value="Ace" />
+      <xs:enumeration value="Aegis Syndicate 1225 at Lloyd's" />
+      <xs:enumeration value="AIG Europe Ltd" />
+      <xs:enumeration value="American International Group (AIG)" />
+      <xs:enumeration value="Amtrust at Lloyd's 1861" />
+      <xs:enumeration value="AmTrust Europe Limited" />
+      <xs:enumeration value="Antares Syndicate 1274" />
+      <xs:enumeration value="Arch Insurance Company (Europe) Ltd" />
+      <xs:enumeration value="Arch Underwriting at Lloyd's 2012" />
+      <xs:enumeration value="Argo Managing Agency" />
+      <xs:enumeration value="Assicurazioni Generali SpA (Branch of overseas firm)" />
+      <xs:enumeration value="Atrium Underwriting" />
+      <xs:enumeration value="Aviva" />
+      <xs:enumeration value="AXA insurance UK" />
+      <xs:enumeration value="Axis Specialty Europe SE / Axis Syndicate 1686 at Lloyd's" />
+      <xs:enumeration value="Beazley (Lloyd's Syndicate or Limited Company)" />
+      <xs:enumeration value="Brit (Lloyd's Syndicate or Limited Company)" />
+      <xs:enumeration value="Canopius Managing Agents (previously Trenwick)" />
+      <xs:enumeration value="Catlin Insurance Company Ltd" />
+      <xs:enumeration value="Channel Syndicate at Lloyd's 2015" />
+      <xs:enumeration value="Chartis UK" />
+      <xs:enumeration value="Chaucer Insurance Company" />
+      <xs:enumeration value="Chubb European Group SE" />
+      <xs:enumeration value="CNA Insurance" />
+      <xs:enumeration value="DCH Syndicate at Lloyd's 386" />
+      <xs:enumeration value="DTW Syndicate at Lloyd's 1991" />
+      <xs:enumeration value="DUAL Corporate Risks" />
+      <xs:enumeration value="Eureko Insurance Ireland Ltd" />
+      <xs:enumeration value="Everest at Lloyd's 2786" />
+      <xs:enumeration value="Golgate Insurance Company" />
+      <xs:enumeration value="Great Lakes Insurance SE (UK Branch)" />
+      <xs:enumeration value="HCC (Lloyd's syndicate)" />
+      <xs:enumeration value="HCC International Insurance Company Plc" />
+      <xs:enumeration value="HDI Global Specialty SE" />
+      <xs:enumeration value="Hiscox (Lloyd's Syndicate or Limited Company)" />
+      <xs:enumeration value="Liberty Managing Agency limited (4472 ; 5381)" />
+      <xs:enumeration value="Liberty Mutual Insurance Europe" />
+      <xs:enumeration value="Markel (Lloyd's Syndicate)" />
+      <xs:enumeration value="Markel International Insurance Company Ltd" />
+      <xs:enumeration value="MS Amlin" />
+      <xs:enumeration value="MS Amlin syndicate 2001" />
+      <xs:enumeration value="Munich Re Syndicate at Lloyd's 457" />
+      <xs:enumeration value="Named Underwriters at Lloyd's" />
+      <xs:enumeration value="Navigators Syndicate at Lloyd's 1221" />
+      <xs:enumeration value="Neon Syndicate at Lloyd's 2468" />
+      <xs:enumeration value="Other" />
+      <xs:enumeration value="Probitas Syndicate at Lloyd's 1492" />
+      <xs:enumeration value="QBE at Lloyd's (5386 ; 5334)" />
+      <xs:enumeration value="QBE International Insurance Limited" />
+      <xs:enumeration value="Royal and Sun Alliance plc" />
+      <xs:enumeration value="The Griffin Insurance Association Limited" />
+      <xs:enumeration value="Travelers Insurance Company" />
+      <xs:enumeration value="W R Berkley Syndicate at Lloyd's 1967" />
+      <xs:enumeration value="XL Insurance Company SE" />
+      <xs:enumeration value="Zurich Insurance PLC (Branch of overseas firm)" />
+      <xs:enumeration value="Allianz Global Corporate and Specialty SE" />
+      <xs:enumeration value="China Re Syndicate at Lloyd's 2088" />
+      <xs:enumeration value="Pembroke Syndicate at Lloyd's 4000" />
+      <xs:enumeration value="International General Insurance Company (UK) Ltd (IGI)" />
+      <xs:enumeration value="QIC Europe Limited" />
+      <xs:enumeration value="Sompo International Insurance Ltd" />
+      <xs:enumeration value="Starr International (Europe) Ltd" />
+      <xs:enumeration value="Starr Managing Agents Limited" />
+      <xs:enumeration value="Travelers Insurance DAC" />
+      <xs:enumeration value="Travelers at Lloyd's 5000" />
+      <xs:enumeration value="XL Insurance Company UK Limited" />
+	  <xs:enumeration value="Omnyy LLP" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="StartDate"         type="xs:date"                 minOccurs="0"/>
+            <xs:element name="RenewalDate"       type="xs:date"                 minOccurs="0"/>       
+            <xs:element name="RequiredIndemnityLimits" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="SingleRequiredLimit" minOccurs="0">           
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="GBP"/>
+                                    <xs:enumeration value="EUR"/>
+                                    <xs:enumeration value="Unlimited"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="SingleRequired" type="NonNegativeMonetaryType" minOccurs="0" />
+                        <xs:element name="AggregateRequiredLimit" minOccurs="0">           
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="GBP"/>
+                                    <xs:enumeration value="EUR"/>
+                                    <xs:enumeration value="Unlimited"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="AggregateRequired" type="NonNegativeMonetaryType" minOccurs="0" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="IndemnityLimits" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="SingleIndemnityLimit" minOccurs="0">           
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="GBP"/>
+                                    <xs:enumeration value="EUR"/>
+                                    <xs:enumeration value="Unlimited"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="Single" type="NonNegativeMonetaryType" minOccurs="0" />
+                        <xs:element name="AggregateIndemnityLimit" minOccurs="0">           
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="GBP"/>
+                                    <xs:enumeration value="EUR"/>
+                                    <xs:enumeration value="Unlimited"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="Aggregate" type="NonNegativeMonetaryType" minOccurs="0" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>      
+        </xs:sequence>
+     </xs:complexType>
+     
+    <xs:complexType name="PIIDetailStructure">
+         <xs:sequence>
+             <xs:element name="PolicyExcessDetail" type="PIIPolicyExcessStructure"   minOccurs="0" maxOccurs="unbounded"/>
+             <xs:element name="PolicyExclusionDetail" type="PIIPolicyExclusionStructure"   minOccurs="0" maxOccurs="unbounded"/>             
+          </xs:sequence>
+     </xs:complexType>         
+    
+    <xs:complexType name="PIIPolicyExcessStructure">
+        <xs:sequence>
+            <xs:element name="BusinessLine" type="PIIExcessBusinessLineType"     minOccurs="0"/>
+            <xs:element name="PolicyExcess" type="NonNegativeMonetaryType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+   
+
+      <xs:simpleType name="PIIExcessBusinessLineType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="All business lines" />
+      <xs:enumeration value="General insurance and pure protection - Standard/general" />
+      <xs:enumeration value="General insurance and pure protection - Commercial" />
+      <xs:enumeration value="General insurance and pure protection - Critical illness" />
+      <xs:enumeration value="General insurance and pure protection - Income protection" />
+      <xs:enumeration value="General insurance and pure protection - Delegated Authority Business" />
+      <xs:enumeration value="General insurance and pure protection - Other GI and Pure protection type" />
+      <xs:enumeration value="Mortgages - Standard/general" />
+      <xs:enumeration value="Mortgages - Impaired credit" />
+      <xs:enumeration value="Mortgages - Self certification" />
+      <xs:enumeration value="Mortgages - Endowments" />
+      <xs:enumeration value="Mortgages - Equity release" />
+      <xs:enumeration value="Mortgages - Other Mortgage type" />
+      <xs:enumeration value="Retail investments - Standard/general" />
+      <xs:enumeration value="Retail investments - Income drawdown / withdrawal" />
+      <xs:enumeration value="Retail investments - Investment bonds" />
+      <xs:enumeration value="Retail investments - Personal pensions and AVCs" />
+      <xs:enumeration value="Retail investments - Structured products" />
+      <xs:enumeration value="Retail investments - DB pension transfers/safeguarded benefits" />
+      <xs:enumeration value="Retail investments - NMPI/NRRS" />
+      <xs:enumeration value="Retail investments - Other retail investment type" />
+      <xs:enumeration value="Other FCA regulated business" />
+      <xs:enumeration value="All other" />
+    </xs:restriction>
+  </xs:simpleType>
+       
+       
+
+    
+  
+     <xs:complexType name="PIIPolicyExclusionStructure">
+    <xs:sequence>
+      <xs:element name="PolicyExclusion" type="PIIExclusionBusinessLineType" minOccurs="0" />
+      <xs:element name="TimePeriod" type="PIIExclusionTimePeriodType" minOccurs="0" />
+      <xs:element name="TypeOfExclusion" type="PIIExclusionCategoryType" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+  
+       <xs:simpleType name="PIIExclusionBusinessLineType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="No exclusions apply to this policy" />
+      <xs:enumeration value="General insurance and pure protection - Standard/general" />
+      <xs:enumeration value="General insurance and pure protection - Commercial" />
+      <xs:enumeration value="General insurance and pure protection - Critical illness" />
+      <xs:enumeration value="General insurance and pure protection - Income protection" />
+      <xs:enumeration value="General insurance and pure protection - Delegated Authority Business" />
+      <xs:enumeration value="General insurance and pure protection - Other GI and Pure protection type" />
+      <xs:enumeration value="Mortgages - Standard/general" />
+      <xs:enumeration value="Mortgages - Impaired credit" />
+      <xs:enumeration value="Mortgages - Self certification" />
+      <xs:enumeration value="Mortgages - Endowments" />
+      <xs:enumeration value="Mortgages - Equity release" />
+      <xs:enumeration value="Mortgages - Other Mortgage type" />
+      <xs:enumeration value="Retail investments - Standard/general" />
+      <xs:enumeration value="Retail investments - Income drawdown / withdrawal" />
+      <xs:enumeration value="Retail investments - Investment bonds" />
+      <xs:enumeration value="Retail investments - Personal pensions and AVCs" />
+      <xs:enumeration value="Retail investments - Structured products" />
+      <xs:enumeration value="Retail investments - DB pension transfers/safeguarded benefits" />
+      <xs:enumeration value="Retail investments - NMPI/NRRS" />
+      <xs:enumeration value="Retail investments - Other retail investment type" />
+      <xs:enumeration value="Other FCA regulated business" />
+      <xs:enumeration value="All other" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="PIIExclusionTimePeriodType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Past business" />
+      <xs:enumeration value="Future business" />
+      <xs:enumeration value="Past and future business" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="PIIExclusionCategoryType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="All business" />
+      <xs:enumeration value="Volume of business" />
+      <xs:enumeration value="Type of consumer" />
+      <xs:enumeration value="Type of business" />
+      <xs:enumeration value="Sub-limit of cover" />
+      <xs:enumeration value="Jurisdiction of insurers used" />
+      <xs:enumeration value="Rating of insurer used" />
+      <xs:enumeration value="Other" />
+    </xs:restriction>
+  </xs:simpleType>
+   </xs:schema>

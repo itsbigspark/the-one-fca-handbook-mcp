@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    *******************************************************************
+    *
+    *    Schema for: Data Item RMA-B-ProfitAndLoss
+    *
+    *    Version:    4
+    *    Date:       1 March 2016 
+    *                
+    *    History:    Version 4 - Issued for MCD changes following publication of PS15/9
+    *                Version 3 - MonPos data types changed to Mon as per instruction from Reporting Policy
+    *                Version 2 - Issued for RDR changes follows publication of PS11/13
+    *
+    *******************************************************************
+-->
+
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault=  "qualified" 
+    attributeFormDefault="unqualified" 
+
+    targetNamespace="urn:fsa-gov-uk:MER:RMA-B:4" 
+    xmlns=          "urn:fsa-gov-uk:MER:RMA-B:4" 
+    xmlns:mer-meta= "urn:fsa-gov-uk:MER:Meta-Data:2" 
+    
+    version="4" 
+    id="MER-RMA-B">
+    
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>RMA-B</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>ProfitAndLoss</mer-meta:DataItemName>
+        </xs:documentation>
+    </xs:annotation>
+    <xs:include schemaLocation="../../CommonTypes/v9/CommonTypes-Schema.xsd"/>
+    
+    <xs:element name="RMA-B-ProfitAndLoss">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="RegulatedBusinessRevenue" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Mortgage"                 type="RevenueStructure" minOccurs="0"/>
+                            <xs:element name="SecondCharge"             type="RevenueStructure" minOccurs="0"/>
+                            <xs:element name="NonInvestmentInsurance"   type="RevenueStructure" minOccurs="0"/>
+                            <xs:element name="RetailInvestments"        type="RevenueStructure" minOccurs="0"/>
+                            <xs:element name="Total"                    type="RevenueStructure" minOccurs="1"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="OtherProfitLossItems" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="OtherRegulatedIncome"  type="MonetaryType"            minOccurs="0"/>
+                            <xs:element name="NonRegulatedIncome"    type="MonetaryType"            minOccurs="1"/>
+                            <xs:element name="TotalRevenue"          type="MonetaryType"            minOccurs="1"/>
+                            <xs:element name="TotalExpenditure"      type="MonetaryType"            minOccurs="1"/>
+                            <xs:element name="OrdinaryProfit"        type="MonetaryType"            minOccurs="1"/>
+                            <xs:element name="ExtraordinaryProfit"   type="MonetaryType"            minOccurs="1"/>
+                            <xs:element name="Taxation"              type="MonetaryType"            minOccurs="1"/>
+                            <xs:element name="ProfitBeforeDividends" type="MonetaryType"            minOccurs="1"/>
+                            <xs:element name="Dividends"             type="MonetaryType"            minOccurs="1"/>
+                            <xs:element name="RetainedProfit"        type="MonetaryType"            minOccurs="1"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attributeGroup ref="CurrencyAndUnitsAttrGroup"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="RevenueStructure">
+        <xs:sequence>
+            <xs:element name="Commissions" minOccurs="1">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Gross" type="MonetaryType" minOccurs="1"/>
+                        <xs:element name="Net"   type="MonetaryType" minOccurs="1"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="FeesAdviserChargesConsultancyCharges"  type="MonetaryType" minOccurs="1"/>
+            <xs:element name="OtherIncome"                           type="MonetaryType" minOccurs="1"/>
+            <xs:element name="TotalBusinessRevenue"                  type="MonetaryType" minOccurs="1"/>            
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
+                    
+                            

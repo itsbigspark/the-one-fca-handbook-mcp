@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    *******************************************************************
+    *                                                                 
+    *    Schema for: Data Item FSA001-BalanceSheet                    
+    *                                                                 
+    *    Version:    4 
+    *    Date:       1 December 2009 
+    *                                                                 
+    *    History: Version 4 makes element 64A mandatory (ClientMoney)
+    *                 Parent elements MemorandumItems and OtherItems
+    *                 also change to minOccurs="1"
+    *                 version of CommonTypes changed to v5
+    *                 version of SDS003 changed to v4
+    *                
+    *                Version 3 includes GroupInfo element which replaces
+    *                the GroupFirmsGroup.
+    *
+    *                Version 2 created following changes
+    *                detailed in Handbook instrument FSA
+    *                2007/45. BasisCurrencyAndUnitsAttrGroup replaces
+    *                CurrencyAndUnitsAttrGroup and GroupFirmsGroup
+    *                replaces ConsolidationGroup (group) and 
+    *                NonUKConsolidationGroup (element). Intragroup replaces
+    *                IntraGroup (for consistency with other data items).
+    *
+    *                Version 1.0 issued following publication   
+    *                of the data item with Handbook Instrument  
+    *                FSA 2006/67. 
+    *                                                                 
+    *******************************************************************
+-->
+
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified" 
+    attributeFormDefault="unqualified" 
+    
+    targetNamespace="urn:fsa-gov-uk:MER:FSA001:4"
+    xmlns=          "urn:fsa-gov-uk:MER:FSA001:4" 
+    xmlns:mer-meta= "urn:fsa-gov-uk:MER:Meta-Data:1" 
+    
+    version="4" 
+    id="MER-FSA001">
+
+    <xs:annotation>
+        <xs:documentation>
+            <mer-meta:DataItemReference>FSA001</mer-meta:DataItemReference>
+            <mer-meta:DataItemName>Balance Sheet</mer-meta:DataItemName>
+        </xs:documentation>
+    </xs:annotation>
+
+    <xs:include schemaLocation="../../CommonTypes/v5/CommonTypes-Schema.xsd"/>
+    <xs:include schemaLocation="../../SDS003/v4/SDS003-Schema.xsd"/>
+    
+    <xs:element name="FSA001-BalanceSheet">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="GroupInfo" type="GroupInfoStructure" minOccurs="0"/>
+                <xs:group ref="AssetsGroup"/>
+                <xs:group ref="LiabilitiesGroup"/>
+                <xs:group ref="MemorandumItemsGroup"/>
+            </xs:sequence>
+            <xs:attributeGroup ref="BasisCurrencyAndUnitsAttrGroup"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:group name="AssetsGroup">
+        <xs:sequence>
+            <xs:element name="Assets" minOccurs="1">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Cash"                            type="TradingNonTradingStructure" minOccurs="0"/>
+                        <xs:element name="InCollection"                    type="TradingNonTradingStructure" minOccurs="0"/>
+                        <xs:element name="Bills"                           type="TradingNonTradingStructure" minOccurs="0"/>
+                        <xs:element name="DepositsLoansCreditInstitutions" type="TradingNonTradingStructure" minOccurs="0"/>
+                        <xs:element name="LoansAdvancesCustomers"          type="TradingNonTradingStructure" minOccurs="0"/>
+                        <xs:element name="DebtSecurities"                  type="TradingNonTradingStructure" minOccurs="0"/>
+                        <xs:element name="EquityShares"                    type="TradingNonTradingStructure" minOccurs="0"/>
+                        <xs:element name="InvestmentGroupUndertakings"     type="TradingNonTradingStructure" minOccurs="0"/>
+                        <xs:element name="ReverseRepurchases"              type="TradingNonTradingStructure" minOccurs="0"/>
+                        <xs:element name="Derivatives"                     type="TradingNonTradingStructure" minOccurs="0"/>
+                        <xs:element name="Goodwill"                        type="TradingNonTradingStructure" minOccurs="0"/>
+                        <xs:element name="OtherIntangible"                 type="TradingNonTradingStructure" minOccurs="0"/>
+                        <xs:element name="TangibleFixed"                   type="TradingNonTradingStructure" minOccurs="0"/>
+                        <xs:element name="PrepaymentsAccruals"             type="TradingNonTradingStructure" minOccurs="0"/>
+                        <xs:element name="Other"                           type="TradingNonTradingStructure" minOccurs="0"/>
+
+                        <xs:element name="TotalAssets" minOccurs="1">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="Trading"    type="MonetaryType"            minOccurs="0"/>
+                                    <xs:element name="NonTrading" type="NonNegativeMonetaryType" minOccurs="1"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:group name="LiabilitiesGroup">
+        <xs:sequence>
+            <xs:element name="Liabilities" minOccurs="1">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="OwnBankNotes"                     minOccurs="0" type="MonetaryType"/>
+                        <xs:element name="ItemsInCollection"                minOccurs="0" type="MonetaryType"/>
+                        <xs:element name="DepositsIncludingOverdraftsLoans" minOccurs="0" type="MonetaryType"/>
+                        <xs:element name="CustomerAccounts" minOccurs="0">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="Total"      minOccurs="0" type="MonetaryType"/>
+                                    <xs:element name="Retail"     minOccurs="0" type="MonetaryType"/>
+                                    <xs:element name="Emoney"     minOccurs="0" type="MonetaryType"/>
+                                    <xs:element name="Corporate"  minOccurs="0" type="MonetaryType"/>
+                                    <xs:element name="Intragroup" minOccurs="0" type="MonetaryType"/>
+                                    <xs:element name="Other"      minOccurs="0" type="MonetaryType"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="TradingLiabilities"      type="MonetaryType" minOccurs="0"/>
+                        <xs:element name="DebtSecuritiesInIssue"   type="MonetaryType" minOccurs="0"/>
+                        <xs:element name="CoveredBonds"            type="MonetaryType" minOccurs="0"/>
+                        <xs:element name="Derivatives"             type="MonetaryType" minOccurs="0"/>
+                        <xs:element name="SaleReposCashCollateral" type="MonetaryType" minOccurs="0"/>
+                        <xs:element name="RetirementBenefit"       type="MonetaryType" minOccurs="0"/>
+                        <xs:element name="Taxation"                type="MonetaryType" minOccurs="0"/>
+                        <xs:element name="Provisions"              type="MonetaryType" minOccurs="0"/>
+                        <xs:element name="Subordinated"            type="MonetaryType" minOccurs="0"/>
+                        <xs:element name="Accruals"                type="MonetaryType" minOccurs="0"/>
+                        <xs:element name="Other"                   type="MonetaryType" minOccurs="0"/>
+                        <xs:element name="Subtotal"                type="MonetaryType" minOccurs="0"/>
+                        <xs:element name="ShareCapital"            type="MonetaryType" minOccurs="0"/>
+                        <xs:element name="Reserves"                type="MonetaryType" minOccurs="0"/>
+                        <xs:element name="MinorityInterests"       type="MonetaryType" minOccurs="0"/>
+                        <xs:element name="TotalLiabilities"        type="MonetaryType" minOccurs="1"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:group name="MemorandumItemsGroup">
+        <xs:sequence>
+            <xs:element name="MemorandumItems" minOccurs="1">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Derivatives" minOccurs="0">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="ForeignExchange"   type="DerivativesStructure" minOccurs="0"/>
+                                    <xs:element name="InterestRate"      type="DerivativesStructure" minOccurs="0"/>
+                                    <xs:element name="CreditDerivatives" type="DerivativesStructure" minOccurs="0"/>
+                                    <xs:element name="EquityStockIndex"  type="DerivativesStructure" minOccurs="0"/>
+                                    <xs:element name="Commodity"         type="DerivativesStructure" minOccurs="0"/>
+                                    <xs:element name="Other"             type="DerivativesStructure" minOccurs="0"/>
+                                    <xs:element name="Total"             type="DerivativesStructure" minOccurs="0"/>
+                                    <xs:element name="AfterNetting" minOccurs="0">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="Assets"      type="MonetaryType" minOccurs="0"/>
+                                                <xs:element name="Liabilities" type="MonetaryType" minOccurs="0"/>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="OtherItems" minOccurs="1">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="CreditSubstitutes"      type="MonetaryType" minOccurs="0"/>
+                                    <xs:element name="TransactionContingents" type="MonetaryType" minOccurs="0"/>
+                                    <xs:element name="TradeContingents"       type="MonetaryType" minOccurs="0"/>
+                                    <xs:element name="RecourseAssetSales"     type="MonetaryType" minOccurs="0"/>
+                                    <xs:element name="ForwardPurchases"       type="MonetaryType" minOccurs="0"/>
+                                    <xs:element name="ForwardForwardDeposits" type="MonetaryType" minOccurs="0"/>
+                                    <xs:element name="PartlyPaid"             type="MonetaryType" minOccurs="0"/>
+                                    <xs:element name="NIFsRUFs"               type="MonetaryType" minOccurs="0"/>
+                                    <xs:element name="BillEndorsements"       type="MonetaryType" minOccurs="0"/>
+                                    <xs:element name="OtherCommitments"       type="MonetaryType" minOccurs="0"/>
+                                    <xs:element name="ClientMoney"            type="MonetaryType" minOccurs="1"/>
+                                    <xs:element name="Customers"              type="NonNegativeIntegerType" minOccurs="0"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:complexType name="DerivativesStructure">
+        <xs:sequence>
+            <xs:element name="NotionalAmount" type="MonetaryType" minOccurs="1"/>
+            <xs:element name="Assets"         type="MonetaryType" minOccurs="0"/>
+            <xs:element name="Liabilities"    type="MonetaryType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="TradingNonTradingStructure">
+        <xs:sequence>
+            <xs:element name="Trading"    type="MonetaryType" minOccurs="0"/>
+            <xs:element name="NonTrading" type="MonetaryType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

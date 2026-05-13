@@ -10,11 +10,15 @@ import re
 import httpx
 from mcp.server.fastmcp import FastMCP
 
-from src.kb_assets import download_release_assets, load_embeddings, load_index
+from src.kb_assets import ensure_assets, fetch_content, load_embeddings, load_index
 
 PORT = int(os.environ.get("FCA_HANDBOOK_PORT", "4103"))
 GIT_TOKEN = os.environ.get("FCA_HANDBOOK_GIT_TOKEN", "")
-KB_REPO = os.environ.get("FCA_HANDBOOK_KB_REPO", "itsbigspark/the-one-fca-handbook-kb")
+KB_URI = os.environ.get("FCA_HANDBOOK_KB_URI", "")
+KB_EMBEDDINGS_URI = os.environ.get(
+    "FCA_HANDBOOK_KB_EMBEDDINGS_URI",
+    "https://github.com/itsbigspark/the-one-fca-handbook-kb/releases/latest/download/embeddings.json",
+)
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 EMBEDDING_MODEL = "text-embedding-3-small"
 
@@ -36,8 +40,9 @@ async def _ensure_assets():
     global _index_cache, _embeddings_cache, _assets_ready
     if _assets_ready:
         return
-    await download_release_assets(
-        repo=KB_REPO,
+    await ensure_assets(
+        uri=KB_URI,
+        embeddings_uri=KB_EMBEDDINGS_URI,
         token=GIT_TOKEN,
         assets=["index.json", "embeddings.json"],
     )
@@ -123,7 +128,7 @@ async def _hybrid_search(query: str, max_results: int = 10) -> list[dict]:
 
 @mcp.tool()
 async def list_sourcebooks() -> str:
-    """List all available FCA Handbook sourcebooks (e.g., PRIN, COBS, SYSC)."""
+    """List FCA Handbook sourcebooks (PRIN, COBS, SYSC, etc.)."""
     await _ensure_assets()
     sourcebooks = sorted(set(e["sourcebook"] for e in _index_cache.get("entries", []) if e.get("sourcebook")))
     return json.dumps({"sourcebooks": sourcebooks})
@@ -131,7 +136,7 @@ async def list_sourcebooks() -> str:
 
 @mcp.tool()
 async def list_chapters(sourcebook: str) -> str:
-    """List all chapters within a sourcebook."""
+    """List chapters within a sourcebook."""
     await _ensure_assets()
     chapters = sorted(set(e["chapter"] for e in _index_cache.get("entries", []) if e.get("sourcebook") == sourcebook))
     if not chapters:
@@ -141,7 +146,7 @@ async def list_chapters(sourcebook: str) -> str:
 
 @mcp.tool()
 async def search_handbook(query: str, max_results: int = 10) -> str:
-    """Search the FCA Handbook using hybrid semantic + keyword search."""
+    """Search FCA Handbook by keyword + semantic similarity."""
     results = await _hybrid_search(query, max_results)
     if not results:
         return json.dumps({"query": query, "results": []})
@@ -151,7 +156,62 @@ async def search_handbook(query: str, max_results: int = 10) -> str:
     })
 
 
+@mcp.tool()
+async def get_handbook_section(path: str) -> str:
+    """Fetch FCA Handbook section content by path."""
+    from pathlib import Path as P
+    # Strip .md if user provided a path-like string ending in /
+    path = path.strip()
+    base = P("data") / "handbook" / path
+    # Caller may have given a chapter directory rather than a section file
+    if base.is_dir():
+        await _ensure_assets()
+        sections = []
+        if _index_cache:
+            for entry in _index_cache.get("entries", []):
+                if entry.get("path", "").startswith(path.rstrip("/") + "/"):
+                    sections.append({"path": entry["path"], "title": entry.get("title", "")})
+        return json.dumps({
+            "error": f"'{path}' is a chapter directory, not a section file.",
+            "hint": "Pick one of the listed sections below and call get_handbook_section with its full path.",
+            "sections": sections[:50],
+        })
+    # Add .md extension if missing
+    if not path.endswith(".md"):
+        path = path + ".md"
+    f = P("data") / "handbook" / path
+    if f.exists():
+        return f.read_text()
+    # Fallback: resolve display section number (e.g. "SUP/sup16/sup16s12.md" → actual ID)
+    # The display number "16.12" doesn't match the API section ID "sup16s41"
+    await _ensure_assets()
+    import re
+    # Extract chapter and section from the path: e.g. SUP/sup16/sup16s12.md
+    m = re.search(r"/([a-z]+)(\d+[a-z]*)/[a-z]+\d+[a-z]*s(\d+[a-z]*)\.md$", path, re.IGNORECASE)
+    if m and _index_cache:
+        sourcebook_part = m.group(1).upper()  # 'SUP'
+        chapter_num = m.group(2)              # '16'
+        section_num = m.group(3)              # '12'
+        display_num = f"{chapter_num}.{section_num}"
+        # Find by title prefix like "SUP 16.12 "
+        for entry in _index_cache.get("entries", []):
+            if entry.get("title", "").startswith(f"{sourcebook_part} {display_num} "):
+                resolved = P("data") / "handbook" / entry["path"]
+                if resolved.exists():
+                    return resolved.read_text()
+    # Fetch from KB repo if not local
+    text = await fetch_content(KB_URI, f"handbook/{path}", token=GIT_TOKEN)
+    if text is not None:
+        return text
+    return f"Section not found: {path}"
+
+
 def run() -> None:
+    if not KB_URI:
+        raise SystemExit(
+            "FCA_HANDBOOK_KB_URI is required. Set it to the base URI of the KB tree, "
+            "e.g. https://raw.githubusercontent.com/itsbigspark/the-one-fca-handbook-kb/main"
+        )
     mcp.run(transport="streamable-http")
 
 
