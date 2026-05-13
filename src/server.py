@@ -10,11 +10,18 @@ import re
 import httpx
 from mcp.server.fastmcp import FastMCP
 
-from src.kb_assets import download_release_assets, load_embeddings, load_index
+from src.kb_assets import ensure_assets, fetch_content, load_embeddings, load_index
 
 PORT = int(os.environ.get("FCA_HANDBOOK_PORT", "4103"))
 GIT_TOKEN = os.environ.get("FCA_HANDBOOK_GIT_TOKEN", "")
-KB_REPO = os.environ.get("FCA_HANDBOOK_KB_REPO", "itsbigspark/the-one-fca-handbook-kb")
+KB_URI = os.environ.get(
+    "FCA_HANDBOOK_KB_URI",
+    "https://raw.githubusercontent.com/itsbigspark/the-one-fca-handbook-kb/main",
+)
+KB_EMBEDDINGS_URI = os.environ.get(
+    "FCA_HANDBOOK_KB_EMBEDDINGS_URI",
+    "https://github.com/itsbigspark/the-one-fca-handbook-kb/releases/latest/download/embeddings.json",
+)
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 EMBEDDING_MODEL = "text-embedding-3-small"
 
@@ -36,8 +43,9 @@ async def _ensure_assets():
     global _index_cache, _embeddings_cache, _assets_ready
     if _assets_ready:
         return
-    await download_release_assets(
-        repo=KB_REPO,
+    await ensure_assets(
+        uri=KB_URI,
+        embeddings_uri=KB_EMBEDDINGS_URI,
         token=GIT_TOKEN,
         assets=["index.json", "embeddings.json"],
     )
@@ -195,14 +203,9 @@ async def get_handbook_section(path: str) -> str:
                 if resolved.exists():
                     return resolved.read_text()
     # Fetch from KB repo if not local
-    if GIT_TOKEN and KB_REPO:
-        url = f"https://raw.githubusercontent.com/{KB_REPO}/main/data/handbook/{path}"
-        async with httpx.AsyncClient(timeout=30) as client:
-            resp = await client.get(url, headers={"Authorization": f"token {GIT_TOKEN}"})
-            if resp.status_code == 200:
-                f.parent.mkdir(parents=True, exist_ok=True)
-                f.write_text(resp.text)
-                return resp.text
+    text = await fetch_content(KB_URI, f"handbook/{path}", token=GIT_TOKEN)
+    if text is not None:
+        return text
     return f"Section not found: {path}"
 
 

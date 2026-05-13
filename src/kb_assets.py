@@ -1,4 +1,17 @@
-"""Download KB assets from GitHub release on MCP server startup."""
+"""Fetch KB assets from a single base URI (raw git tree).
+
+The URI points at a base path that the KB tree is served from. Defaults to
+GitHub raw URL pointing at main branch. Override KB_URI to use a different
+branch, fork, or git host (e.g. GitLab raw URL, self-hosted gitea, etc.).
+
+Layout under the URI:
+    {KB_URI}/data/index.json
+    {KB_URI}/data/embeddings.json   # optional override via KB_EMBEDDINGS_URI
+    {KB_URI}/data/<content paths>   # per-section files fetched via fetch_content
+
+Auth: optional bearer token via the GIT_TOKEN env var, sent as "Authorization:
+token <value>" — works for private GitHub repos and most self-hosted Git hosts.
+"""
 
 from __future__ import annotations
 
@@ -12,76 +25,99 @@ CACHE_DIR = Path(os.environ.get("KB_CACHE_DIR", "data"))
 
 
 def _headers(token: str) -> dict:
-    return {"Authorization": f"token {token}", "Accept": "application/vnd.github.v3+json"}
+    return {"Authorization": f"token {token}"} if token else {}
 
 
-def _asset_headers(token: str) -> dict:
-    return {"Authorization": f"token {token}", "Accept": "application/octet-stream"}
-
-
-async def download_release_assets(
-    repo: str,
-    token: str,
+async def ensure_assets(
+    uri: str,
+    embeddings_uri: str = "",
+    token: str = "",
     assets: list[str] | None = None,
-    tag: str = "latest",
+    cache_dir: Path | None = None,
 ) -> Path:
-    """Download release assets from a GitHub repo.
-
-    Checks for local files first — if all requested assets exist locally,
-    skips the download entirely (useful for local dev/testing).
+    """Ensure required KB assets exist locally, fetching from `uri` if missing.
 
     Args:
-        repo: GitHub repo in 'owner/name' format
-        token: GitHub token with repo read access
-        assets: List of asset filenames to download (default: all)
-        tag: Release tag to download (default: 'latest')
+        uri: Base URI of the KB tree (e.g. raw GitHub URL pointing at a branch).
+        embeddings_uri: Override URI for embeddings.json. If empty, defaults to
+            ``{uri}/data/embeddings.json``. Useful for KBs whose embeddings.json
+            is too large for git and is published as a release asset instead.
+        token: Optional auth token for private repos.
+        assets: Filenames to ensure (default: ``["index.json", "embeddings.json"]``).
+        cache_dir: Local cache directory (default: ``./data``).
 
     Returns:
-        Path to the cache directory containing downloaded files.
+        Path to the cache directory containing the assets.
+
+    Notes:
+        - Existing local files are kept; this function only fetches missing ones.
+        - A 404 on embeddings.json is tolerated — callers fall back to keyword
+          search when ``load_embeddings`` returns None.
     """
-    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    cd = cache_dir or CACHE_DIR
+    cd.mkdir(parents=True, exist_ok=True)
+    assets = assets or ["index.json", "embeddings.json"]
+    embeddings_url = embeddings_uri or f"{uri}/data/embeddings.json"
 
-    # Skip download if all assets already exist locally
-    if assets and all((CACHE_DIR / a).exists() for a in assets):
-        return CACHE_DIR
-
-    etag_file = CACHE_DIR / ".release_etag"
-
-    async with httpx.AsyncClient(follow_redirects=True, timeout=120) as client:
-        # Get release info
-        url = f"https://api.github.com/repos/{repo}/releases/tags/{tag}"
-        resp = await client.get(url, headers=_headers(token))
-        resp.raise_for_status()
-        release = resp.json()
-
-        # Check if we already have this version
-        release_id = str(release["id"])
-        if etag_file.exists() and etag_file.read_text().strip() == release_id:
-            return CACHE_DIR
-
-        # Download each asset
-        for asset in release.get("assets", []):
-            name = asset["name"]
-            if assets and name not in assets:
+    async with httpx.AsyncClient(timeout=120, follow_redirects=True) as client:
+        for name in assets:
+            target = cd / name
+            if target.exists():
                 continue
-            dl_url = asset["url"]
-            resp = await client.get(dl_url, headers=_asset_headers(token))
+            asset_url = embeddings_url if name == "embeddings.json" else f"{uri}/data/{name}"
+            resp = await client.get(asset_url, headers=_headers(token))
+            if resp.status_code == 404 and name == "embeddings.json":
+                # Embeddings missing — keyword-only fallback
+                continue
             resp.raise_for_status()
-            (CACHE_DIR / name).write_bytes(resp.content)
+            target.write_bytes(resp.content)
 
-        # Save etag
-        etag_file.write_text(release_id)
+    return cd
 
-    return CACHE_DIR
+
+async def fetch_content(
+    uri: str,
+    path: str,
+    token: str = "",
+    cache_dir: Path | None = None,
+) -> str | None:
+    """Fetch a single content file from ``{uri}/data/{path}`` (cached locally).
+
+    Args:
+        uri: Base URI of the KB tree.
+        path: Relative path within the KB's data dir (e.g. ``"handbook/CRR/section.md"``).
+        token: Optional auth token.
+        cache_dir: Local cache directory.
+
+    Returns:
+        File contents as text, or None if the resource returned 404.
+    """
+    cd = cache_dir or CACHE_DIR
+    local = cd / path
+    if local.exists():
+        return local.read_text()
+
+    async with httpx.AsyncClient(timeout=30, follow_redirects=True) as client:
+        resp = await client.get(f"{uri}/data/{path}", headers=_headers(token))
+        if resp.status_code == 404:
+            return None
+        resp.raise_for_status()
+        local.parent.mkdir(parents=True, exist_ok=True)
+        local.write_text(resp.text)
+        return resp.text
 
 
 def load_index(cache_dir: Path | None = None) -> dict:
-    """Load index.json from cache."""
+    """Load index.json from cache. Returns ``{"entries": []}`` if missing."""
     path = (cache_dir or CACHE_DIR) / "index.json"
+    if not path.exists():
+        return {"entries": []}
     return json.loads(path.read_text())
 
 
-def load_embeddings(cache_dir: Path | None = None) -> list[dict]:
-    """Load embeddings.json from cache."""
+def load_embeddings(cache_dir: Path | None = None) -> list[dict] | None:
+    """Load embeddings entries from cache. Returns None if missing (keyword-only fallback)."""
     path = (cache_dir or CACHE_DIR) / "embeddings.json"
+    if not path.exists():
+        return None
     return json.loads(path.read_text()).get("entries", [])
